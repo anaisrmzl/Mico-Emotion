@@ -9,8 +9,6 @@ namespace Emotion.Splash
     {
         #region FIELDS
 
-        private const string Message = "Splash ended";
-
         [Inject] private SplashModule splashModule = null;
 
         #endregion
