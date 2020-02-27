@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Emotion.Screen1
 {
@@ -6,11 +7,26 @@ namespace Emotion.Screen1
     {
         #region FIELDS
 
-        [SerializeField] private AnimationClip planetIntroAnimation;
+        [SerializeField] private AnimationClip pressAnimation;
+
+        private Button playButton;
+        private Animator animator;
 
         #endregion
 
         #region BEHAVIORS
+
+        private void Awake()
+        {
+            animator = GetComponent<Animator>();
+            playButton = GetComponent<Button>();
+            playButton.onClick.AddListener(PlayGame);
+        }
+
+        private void PlayGame()
+        {
+            animator.Play(pressAnimation.name);
+        }
 
         #endregion
     }
