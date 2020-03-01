@@ -12,6 +12,7 @@ namespace Emotion.Screen1
 
         [SerializeField] private AnimationClip pressAnimation;
         [SerializeField] private PlayableDirector timelineSequence;
+        [SerializeField] private CanvasGroup canvasGroup;
 
         private Button playButton;
         private Animator animator;
@@ -30,7 +31,7 @@ namespace Emotion.Screen1
         private void PressButton()
         {
             animator.Play(pressAnimation.name);
-            playButton.interactable = false;
+            canvasGroup.blocksRaycasts = false;
             StartCoroutine(PlaySequence());
         }
 
@@ -40,7 +41,7 @@ namespace Emotion.Screen1
             timelineSequence.Stop();
             timelineSequence.Play();
             yield return new WaitForSeconds((float)timelineSequence.duration);
-            playButton.interactable = true;
+            canvasGroup.blocksRaycasts = true;
         }
 
         #endregion
