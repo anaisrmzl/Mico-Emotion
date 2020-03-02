@@ -16,6 +16,7 @@ namespace Emotion.Screen1
 
         private const int YearLength = 4;
         private const int MinAgeAllowed = 14;
+        private const int MaxAgeAllowed = 120;
         private const float ShakeDuration = 0.5f;
         private const float ShakeStrength = 50.0f;
         private const int MaxAttempts = 3;
@@ -95,7 +96,7 @@ namespace Emotion.Screen1
             if (inputField.text.Length < YearLength)
                 return false;
             else
-                return (DateTime.Today.Year - int.Parse(inputField.text) >= MinAgeAllowed);
+                return (DateTime.Today.Year - int.Parse(inputField.text) >= MinAgeAllowed && DateTime.Today.Year - int.Parse(inputField.text) <= MaxAgeAllowed);
         }
 
         #endregion
