@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
 using TMPro;
 using DG.Tweening;
+using Utilities.Scenes;
 
 namespace Emotion.Screen1
 {
@@ -76,7 +76,7 @@ namespace Emotion.Screen1
         {
             if (CheckAge())
             {
-                SceneManager.LoadScene(SceneNames.ForParents);
+                FadeSceneChanger.ChangeScene(SceneNames.ForParents);
             }
             else
             {

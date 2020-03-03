@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+
+using Utilities.Scenes;
 
 namespace Emotion.Screen1
 {
@@ -25,7 +26,7 @@ namespace Emotion.Screen1
 
         private void GoToScene()
         {
-            SceneManager.LoadScene(sceneName);
+            FadeSceneChanger.ChangeScene(sceneName);
         }
 
         #endregion
