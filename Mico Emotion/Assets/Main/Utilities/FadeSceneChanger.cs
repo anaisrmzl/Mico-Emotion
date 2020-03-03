@@ -15,7 +15,7 @@ namespace Utilities.Scenes
 
         #endregion
 
-        #region BEHAVIOURS
+        #region BEHAVIORS
 
         public static void ChangeScene(string sceneName)
         {
