@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Playables;
 using System.Collections;
+
+using Utilities.Scenes;
+using DG.Tweening;
 
 namespace Emotion.Screen1
 {
@@ -10,8 +12,14 @@ namespace Emotion.Screen1
     {
         #region FIELDS
 
+        private const float MinOrthographicSize = 0.5f;
+        private const float MinYCameraPosition = -1.5f;
+        private const float TransitionDuration = 2.0f;
+
         [SerializeField] private AnimationClip pressAnimation;
-        [SerializeField] private PlayableDirector timelineSequence;
+        [SerializeField] private AnimationClip appearAnimation;
+        [SerializeField] private Animator planetAnimator;
+        [SerializeField] private AnimationClip transitionPlanet;
         [SerializeField] private CanvasGroup canvasGroup;
 
         private Button playButton;
@@ -32,16 +40,23 @@ namespace Emotion.Screen1
         {
             animator.Play(pressAnimation.name);
             canvasGroup.blocksRaycasts = false;
+            canvasGroup.alpha = 0;
             StartCoroutine(PlaySequence());
         }
 
         private IEnumerator PlaySequence()
         {
             yield return new WaitForSeconds(pressAnimation.length);
-            timelineSequence.Stop();
-            timelineSequence.Play();
-            yield return new WaitForSeconds((float)timelineSequence.duration);
-            canvasGroup.blocksRaycasts = true;
+            planetAnimator.Play(transitionPlanet.name);
+            Camera.main.DOOrthoSize(MinOrthographicSize, TransitionDuration).SetEase(Ease.InOutQuart);
+            Camera.main.transform.DOMoveY(MinYCameraPosition, TransitionDuration);
+            yield return new WaitForSeconds(1.0f);
+            FadeSceneChanger.ChangeScene(SceneNames.Screen2);
+        }
+
+        public void AppearSequence()
+        {
+            animator.Play(appearAnimation.name);
         }
 
         #endregion
