@@ -11,7 +11,12 @@ namespace Emotion.Screen2
         [SerializeField] private Collider2D objectCollider;
 
         private bool draggin = false;
-        int finger = 0;
+        private int finger = 0;
+        #endregion
+
+        #region PROPERTIES
+
+        private int TapCount { get => Input.touchCount; }
 
         #endregion
 
@@ -19,13 +24,12 @@ namespace Emotion.Screen2
 
         private void Update()
         {
-            var tapCount = Input.touchCount;
-            if (tapCount == 0)
+            if (TapCount == 0)
                 return;
 
-            for (var i = 0; i < tapCount; i++)
+            for (int i = 0; i < TapCount; i++)
             {
-                var touch = Input.GetTouch(i);
+                Touch touch = Input.GetTouch(i);
                 switch (touch.phase)
                 {
                     case TouchPhase.Began:
