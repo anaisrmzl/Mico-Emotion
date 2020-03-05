@@ -5,13 +5,16 @@ public class DoubleClick : MonoBehaviour
 {
     #region FIELDS
 
+    private const int SingleClickAmount = 1;
+    private const int DoubleClickAmount = 2;
+
     private float clicked = 0;
     private float clickTime = 0;
     private float clickDelay = 0.5f;
 
     #endregion
 
-    #region  EVENTS
+    #region EVENTS
 
     public event UnityAction doubleClicked;
 
@@ -30,17 +33,17 @@ public class DoubleClick : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             clicked++;
-            if (clicked == 1)
+            if (clicked == SingleClickAmount)
                 clickTime = Time.time;
         }
 
-        if (clicked > 1 && Time.time - clickTime < clickDelay)
+        if (clicked > SingleClickAmount && Time.time - clickTime < clickDelay)
         {
             clicked = 0;
             clickTime = 0;
             return true;
         }
-        else if (clicked > 2 || Time.time - clickTime > 1)
+        else if (clicked > DoubleClickAmount || Time.time - clickTime > 1)
         {
             clicked = 0;
         }
