@@ -61,8 +61,8 @@ namespace Emotion.Screen2
 
         private bool CheckIfObjectIsTouched(Vector3 touchPosition)
         {
-            Vector3 pos = Camera.main.ScreenToWorldPoint(touchPosition);
-            RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
+            Vector3 position = Camera.main.ScreenToWorldPoint(touchPosition);
+            RaycastHit2D hit = Physics2D.Raycast(position, Vector2.zero);
             return (hit.collider == objectCollider);
         }
 
