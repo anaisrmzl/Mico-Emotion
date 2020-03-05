@@ -12,6 +12,7 @@ namespace Emotion.Screen2
 
         private bool draggin = false;
         private int finger = 0;
+
         #endregion
 
         #region PROPERTIES
