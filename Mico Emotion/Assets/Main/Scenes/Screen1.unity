@@ -691,80 +691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5869c498f968b4fc3860f5d5f399dd58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &349934072
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 349934073}
-  - component: {fileID: 349934075}
-  - component: {fileID: 349934074}
-  m_Layer: 0
-  m_Name: transitionSequence
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &349934073
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349934072}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 693328587}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &349934074
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349934072}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!320 &349934075
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349934072}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: bbaf720afdac14a01bc1c73527f94d6c, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 822904288992247154, guid: bbaf720afdac14a01bc1c73527f94d6c, type: 2}
-    value: {fileID: 723198390}
-  - key: {fileID: 2265885268406518795, guid: bbaf720afdac14a01bc1c73527f94d6c, type: 2}
-    value: {fileID: 1206997185}
-  - key: {fileID: 2215111521767105115, guid: bbaf720afdac14a01bc1c73527f94d6c, type: 2}
-    value: {fileID: 1629752602}
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &441017874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1266,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 170896911}
-  - {fileID: 349934073}
   - {fileID: 2114360458}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -3361,6 +3286,7 @@ MonoBehaviour:
   pressAnimation: {fileID: 7400000, guid: 854bcce25e176446cb687f23085aa9fc, type: 2}
   appearAnimation: {fileID: 7400000, guid: 0f8eeebc2c5f24cccb51f5e61958386a, type: 2}
   planetAnimator: {fileID: 723198390}
+  transitionPlanet: {fileID: 7400000, guid: 04021f70a2b1540bb9a9b9a863e02711, type: 2}
   canvasGroup: {fileID: 1629752603}
 --- !u!114 &1654764918
 MonoBehaviour:
@@ -4096,7 +4022,7 @@ Transform:
   - {fileID: 733497272}
   - {fileID: 723198391}
   m_Father: {fileID: 693328587}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2114360459
 Animator:

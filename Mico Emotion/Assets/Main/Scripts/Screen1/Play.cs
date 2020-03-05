@@ -40,13 +40,13 @@ namespace Emotion.Screen1
         {
             animator.Play(pressAnimation.name);
             canvasGroup.blocksRaycasts = false;
-            canvasGroup.alpha = 0;
             StartCoroutine(PlaySequence());
         }
 
         private IEnumerator PlaySequence()
         {
             yield return new WaitForSeconds(pressAnimation.length);
+            canvasGroup.alpha = 0;
             planetAnimator.Play(transitionPlanet.name);
             Camera.main.DOOrthoSize(MinOrthographicSize, TransitionDuration).SetEase(Ease.InOutQuart);
             Camera.main.transform.DOMoveY(MinYCameraPosition, TransitionDuration);
