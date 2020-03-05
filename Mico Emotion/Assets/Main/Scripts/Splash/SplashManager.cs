@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 using Utilities.Scenes;
+using Utilities.Gestures;
 using Zenject;
 
 namespace Emotion.Splash

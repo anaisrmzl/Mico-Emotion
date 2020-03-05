@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.Playables;
 
+using Utilities.Gestures;
+
 namespace Emotion.Screen1
 {
     [RequireComponent(typeof(PlayableDirector))]
