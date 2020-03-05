@@ -76,7 +76,7 @@ namespace Emotion.Screen1
         {
             if (CheckAge())
             {
-                FadeSceneChanger.ChangeScene(SceneNames.ForParents);
+                AnimationSceneChanger.ChangeScene(SceneNames.ForParents);
             }
             else
             {

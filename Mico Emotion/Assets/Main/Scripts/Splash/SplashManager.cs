@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
+using Utilities.Scenes;
+using Utilities.Gestures;
 using Zenject;
 
 namespace Emotion.Splash
@@ -11,9 +12,21 @@ namespace Emotion.Splash
 
         [Inject] private SplashModule splashModule = null;
 
+        [SerializeField] private DoubleClick doubleClick;
+
         #endregion
 
         #region BEHAVIORS
+
+        private void Awake()
+        {
+            doubleClick.doubleClicked += GoToFirstScene;
+        }
+
+        private void OnDestroy()
+        {
+            doubleClick.doubleClicked -= GoToFirstScene;
+        }
 
         private void Start()
         {
@@ -27,7 +40,7 @@ namespace Emotion.Splash
 
         private void GoToFirstScene()
         {
-            SceneManager.LoadScene(SceneNames.Screen1);
+            FadeSceneChanger.ChangeScene(SceneNames.Screen1);
         }
 
         #endregion

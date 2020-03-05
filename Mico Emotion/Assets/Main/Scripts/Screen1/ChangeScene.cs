@@ -26,7 +26,7 @@ namespace Emotion.Screen1
 
         private void GoToScene()
         {
-            FadeSceneChanger.ChangeScene(sceneName);
+            AnimationSceneChanger.ChangeScene(sceneName);
         }
 
         #endregion

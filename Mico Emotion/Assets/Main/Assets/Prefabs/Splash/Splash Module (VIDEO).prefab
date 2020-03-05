@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 9047888068691638446}
-  waitDelay: 0.5
+  waitDelay: 0
 --- !u!114 &9047888068065469417
 MonoBehaviour:
   m_ObjectHideFlags: 0

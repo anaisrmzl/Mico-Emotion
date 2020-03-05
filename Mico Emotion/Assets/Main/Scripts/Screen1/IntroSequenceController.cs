@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.Playables;
 
+using Utilities.Gestures;
+
 namespace Emotion.Screen1
 {
     [RequireComponent(typeof(PlayableDirector))]
@@ -9,7 +11,10 @@ namespace Emotion.Screen1
     {
         #region FIELDS
 
+        [SerializeField] private DoubleClick doubleClick;
         [SerializeField] private CanvasGroup canvasGroup;
+        [SerializeField] private Play play;
+        [SerializeField] private GameObject parentsButton;
 
         private PlayableDirector playableDirector;
 
@@ -25,11 +30,30 @@ namespace Emotion.Screen1
             StartCoroutine(WaitForSequenceToEnd());
         }
 
+        public void CameraStopped()
+        {
+            doubleClick.doubleClicked += SkipAnimation;
+        }
+
+        private void OnDestroy()
+        {
+            doubleClick.doubleClicked -= SkipAnimation;
+        }
+
         private IEnumerator WaitForSequenceToEnd()
         {
             yield return new WaitForSeconds((float)playableDirector.duration);
+            if (!parentsButton.activeSelf)
+                SkipAnimation();
+        }
+
+        private void SkipAnimation()
+        {
             playableDirector.Stop();
+            doubleClick.doubleClicked -= SkipAnimation;
             canvasGroup.blocksRaycasts = true;
+            play.AppearSequence();
+            parentsButton.SetActive(true);
         }
 
         #endregion
