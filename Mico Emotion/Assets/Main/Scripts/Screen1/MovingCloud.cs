@@ -18,13 +18,9 @@ namespace Emotion.Screen1
 
         private void Awake()
         {
-            Repeat();
-        }
-
-        private void Repeat()
-        {
             float startValue = Random.value > 0.5 ? 1.0f : -1.0f;
-            transform.DOMoveX(-MaxXPosition * startValue, Random.Range(MinSpeed, MaxSpeed)).From(MaxXPosition * startValue).OnComplete(Repeat);
+            float speed = Random.Range(MinSpeed, MaxSpeed);
+            transform.DOMoveX(-MaxXPosition * startValue, speed).From(MaxXPosition * startValue).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Goto(Random.Range(0, speed), true);
         }
 
         #endregion
