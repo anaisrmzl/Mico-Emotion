@@ -7,9 +7,9 @@ namespace Emotion.Screen2
         #region FIELDS
 
         [SerializeField] private float speed = 20.0f;
-        [SerializeField] private Rigidbody2D rigidBody;
-        [SerializeField] private Collider2D objectCollider;
 
+        private Rigidbody2D rigidBody;
+        private Collider2D objectCollider;
         private bool draggin = false;
         private int finger = 0;
 
@@ -22,6 +22,12 @@ namespace Emotion.Screen2
         #endregion
 
         #region BEHAVIORS
+
+        private void Awake()
+        {
+            rigidBody = GetComponent<Rigidbody2D>();
+            objectCollider = GetComponent<Collider2D>();
+        }
 
         private void Update()
         {

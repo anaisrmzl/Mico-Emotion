@@ -55,65 +55,23 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: aba0e1a876b9e4954ba86d6448762c1c, type: 3}
-    totalSpriteSurfaceArea: 1811447
+    totalSpriteSurfaceArea: 50464
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: bdaf72148f81049860a2d72ce6322429
+      Hash: 56cc5623f3e23f26a21af5c386f3a66b
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: df9bb0f01d4404f41bba4923d6b1aefc, type: 3}
   - {fileID: 21300000, guid: f360f555586544ef5bbffb839e853e4a, type: 3}
   - {fileID: 21300000, guid: 47408e65afb714be893567099c54b05f, type: 3}
   - {fileID: 21300000, guid: 9c8237c7319784914b089c002ec406a3, type: 3}
-  - {fileID: 8154425488999033623, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -187752440641473424, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -3815710188833710658, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: 5465650827717533081, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: 4091863177107614687, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: 585503054620650388, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -8205651529405147350, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -4754521762643812345, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -1293554636315195805, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -7428523810299788504, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -3172562894675824694, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: 3298365857183559195, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -4227875499585428010, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: 371282998777898404, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -7561141302105609517, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: 7245487366558409455, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -1870042200816232251, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -1405498488694949734, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -3857211449888478496, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -2842951011120313684, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: -8014551541289286226, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-  - {fileID: 124225307416037738, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 21300000, guid: 44f41ec8172d54e7a9b9f24d86cdbaaa, type: 3}
   m_PackedSpriteNamesToIndex:
   - Circle
   - stars
   - Square
   - Triangle
-  - OjosSorpresa
-  - MundoTriste
-  - MundoDia
-  - OjosCerrados
-  - OjosEnojados
-  - BocaMiedo
-  - OjosBajos
-  - BocaO
-  - Boca_Sonrisa
-  - BocaTriste
-  - Nube1
-  - MundoEnojado
-  - BocaDisgusto
-  - MundoDisgusto
-  - MundoSorpresa
-  - MundoNoche
-  - BocaContento
-  - BocaEnojado
-  - HieloBoca
-  - Lluvia
-  - MundoMiedo
-  - Gota
+  - Hexagon
   m_Tag: Mico_Atlas
   m_IsVariant: 0
