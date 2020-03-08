@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Emotion.Screen2
+namespace Utilities.Gestures
 {
     public class DragObject : MonoBehaviour
     {
@@ -8,8 +8,8 @@ namespace Emotion.Screen2
 
         [SerializeField] private float speed = 20.0f;
 
-        private Rigidbody2D rigidBody;
-        private Collider2D objectCollider;
+        protected Rigidbody2D rigidBody;
+        protected Collider2D objectCollider;
         private bool draggin = false;
         private int finger = 0;
 
@@ -18,6 +18,8 @@ namespace Emotion.Screen2
         #region PROPERTIES
 
         private int TapCount { get => Input.touchCount; }
+        protected bool DragAllowed { get; set; }
+        private float YLimit { get => -8.0f + (objectCollider.bounds.center.y - objectCollider.bounds.min.y); }
 
         #endregion
 
@@ -25,11 +27,23 @@ namespace Emotion.Screen2
 
         private void Awake()
         {
+            DragAllowed = true;
             rigidBody = GetComponent<Rigidbody2D>();
             objectCollider = GetComponent<Collider2D>();
         }
 
-        private void Update()
+        public virtual void Update()
+        {
+            if (!DragAllowed)
+                return;
+
+            if (Input.touchSupported)
+                HandleTouch();
+            else
+                HandleMouse();
+        }
+
+        private void HandleTouch()
         {
             if (TapCount == 0)
                 return;
@@ -43,6 +57,7 @@ namespace Emotion.Screen2
                         if (CheckIfObjectIsTouched(touch.position))
                         {
                             finger = touch.fingerId;
+                            rigidBody.gravityScale = 1;
                             draggin = true;
                         }
 
@@ -51,7 +66,7 @@ namespace Emotion.Screen2
                         if (draggin)
                         {
                             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(finger).position);
-                            Vector3 fingerPoint = new Vector3(worldPoint.x, worldPoint.y, 0.0f);
+                            Vector3 fingerPoint = new Vector3(worldPoint.x, Mathf.Max(worldPoint.y, YLimit), 0.0f);
                             rigidBody.velocity = (fingerPoint - transform.position) * speed;
                         }
 
@@ -62,6 +77,25 @@ namespace Emotion.Screen2
 
                         break;
                 }
+            }
+        }
+
+        private void HandleMouse()
+        {
+            if (Input.GetMouseButtonDown(0) && CheckIfObjectIsTouched(Input.mousePosition))
+            {
+                rigidBody.gravityScale = 1;
+                draggin = true;
+            }
+            else if (Input.GetMouseButton(0) && draggin)
+            {
+                Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector3 fingerPoint = new Vector3(worldPoint.x, Mathf.Max(worldPoint.y, YLimit), 0.0f);
+                rigidBody.velocity = (fingerPoint - transform.position) * speed;
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                draggin = false;
             }
         }
 

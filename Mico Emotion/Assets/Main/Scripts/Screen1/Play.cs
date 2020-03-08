@@ -51,7 +51,7 @@ namespace Emotion.Screen1
             Camera.main.DOOrthoSize(MinOrthographicSize, TransitionDuration).SetEase(Ease.InOutQuart);
             Camera.main.transform.DOMoveY(MinYCameraPosition, TransitionDuration);
             yield return new WaitForSeconds(1.0f);
-            FadeSceneChanger.ChangeScene(SceneNames.Screen2);
+            FadeSceneChanger.ChangeScene(SceneNames.Screen3);
         }
 
         public void AppearSequence()

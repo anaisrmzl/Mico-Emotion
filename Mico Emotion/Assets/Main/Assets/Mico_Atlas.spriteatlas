@@ -55,11 +55,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: aba0e1a876b9e4954ba86d6448762c1c, type: 3}
-    totalSpriteSurfaceArea: 50464
+    totalSpriteSurfaceArea: 323744
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: 56cc5623f3e23f26a21af5c386f3a66b
+      Hash: b0cae6551ad1b6bb625eb7a70a8f2d80
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: df9bb0f01d4404f41bba4923d6b1aefc, type: 3}
@@ -67,11 +67,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 47408e65afb714be893567099c54b05f, type: 3}
   - {fileID: 21300000, guid: 9c8237c7319784914b089c002ec406a3, type: 3}
   - {fileID: 21300000, guid: 44f41ec8172d54e7a9b9f24d86cdbaaa, type: 3}
+  - {fileID: 21300000, guid: 8bde4de967cc9460f9ddfbcec316831e, type: 3}
   m_PackedSpriteNamesToIndex:
   - Circle
   - stars
   - Square
   - Triangle
   - Hexagon
+  - rock
   m_Tag: Mico_Atlas
   m_IsVariant: 0
