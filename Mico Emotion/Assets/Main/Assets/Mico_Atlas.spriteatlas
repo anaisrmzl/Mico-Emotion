@@ -55,25 +55,97 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: aba0e1a876b9e4954ba86d6448762c1c, type: 3}
-    totalSpriteSurfaceArea: 323744
+    totalSpriteSurfaceArea: 8650639
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: b0cae6551ad1b6bb625eb7a70a8f2d80
+      Hash: 4149147131ec1bee34c3ddb7e399ec66
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: ebe3ae00a5fb145eda1244180d26f02f, type: 3}
   - {fileID: 21300000, guid: df9bb0f01d4404f41bba4923d6b1aefc, type: 3}
+  - {fileID: 21300000, guid: 64c69171de60049369d9660ce059f9ec, type: 3}
+  - {fileID: 21300000, guid: 3784289174a2649e0bafa46450d43a68, type: 3}
+  - {fileID: 21300000, guid: 4b8232a1f9b614001b4e70b172dd0625, type: 3}
+  - {fileID: 21300000, guid: fbf329d1fadf144988a5922d4f471512, type: 3}
+  - {fileID: 21300000, guid: 260de3e1e9fa9428dbe88aa24edc9f38, type: 3}
+  - {fileID: 21300000, guid: 6e29cfb3a55464be6a55c2c799e9b6e6, type: 3}
   - {fileID: 21300000, guid: f360f555586544ef5bbffb839e853e4a, type: 3}
   - {fileID: 21300000, guid: 47408e65afb714be893567099c54b05f, type: 3}
   - {fileID: 21300000, guid: 9c8237c7319784914b089c002ec406a3, type: 3}
   - {fileID: 21300000, guid: 44f41ec8172d54e7a9b9f24d86cdbaaa, type: 3}
   - {fileID: 21300000, guid: 8bde4de967cc9460f9ddfbcec316831e, type: 3}
+  - {fileID: 21300000, guid: 0d0fceede6e944fd6b1628d5d148b573, type: 3}
+  - {fileID: 21300000, guid: 9956c36e83143408bade01fd46dc3b32, type: 3}
+  - {fileID: -7391619914013186810, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -8898733426095939825, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 3296195302954903916, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -8431812648871789276, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 8946577614938989071, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 9112743202612870158, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -7822162901344794542, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -7878981796201666593, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 1267040207597791673, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -2901366116814483776, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -8979766662633256092, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -5444186944772166775, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 173351827876089187, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -696239769600459451, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -7902154349265309537, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 436116656234498426, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -1920080761902654671, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 5778259162694202184, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 8802494857264692828, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -1320100068957218030, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -9092720061442896650, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 6218671955372350983, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -7486694750973864918, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 5941448287425080841, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: 1644986564746689855, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -7627582187911731739, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
+  - {fileID: -7580557874410640614, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
   m_PackedSpriteNamesToIndex:
+  - klenex
   - Circle
+  - "aran\u0303a"
+  - lagrima
+  - helado
+  - bugger
+  - tito
+  - manzana
   - stars
   - Square
   - Triangle
   - Hexagon
   - rock
+  - yellow
+  - Staging_Screen1-2
+  - OjosSorpresa
+  - MundoTriste
+  - OjosTristes
+  - MundoDia
+  - HumoPart2
+  - HumoPart1
+  - OjosCerrados
+  - OjosEnojados
+  - Boca_Serio
+  - BocaMiedo
+  - OjosBajos
+  - OjosAenojados
+  - BocaO
+  - Boca_Sonrisa
+  - BocaTriste
+  - Nube1
+  - MundoEnojado
+  - BocaDisgusto
+  - MundoDisgusto
+  - MundoSorpresa
+  - MundoNoche
+  - BocaContento
+  - BocaEnojado
+  - HieloBoca
+  - Lluvia
+  - MundoMiedo
+  - Gota
   m_Tag: Mico_Atlas
   m_IsVariant: 0

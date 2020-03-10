@@ -10,7 +10,7 @@ namespace Utilities.Gestures
 
         protected Rigidbody2D rigidBody;
         protected Collider2D objectCollider;
-        private bool draggin = false;
+        private bool dragging = false;
         private int finger = 0;
 
         #endregion
@@ -58,12 +58,12 @@ namespace Utilities.Gestures
                         {
                             finger = touch.fingerId;
                             rigidBody.gravityScale = 1;
-                            draggin = true;
+                            dragging = true;
                         }
 
                         break;
                     case TouchPhase.Moved:
-                        if (draggin)
+                        if (dragging)
                         {
                             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(finger).position);
                             Vector3 fingerPoint = new Vector3(worldPoint.x, Mathf.Max(worldPoint.y, YLimit), 0.0f);
@@ -73,7 +73,7 @@ namespace Utilities.Gestures
                         break;
                     case TouchPhase.Ended:
                         if (finger == touch.fingerId)
-                            draggin = false;
+                            dragging = false;
 
                         break;
                 }
@@ -85,9 +85,9 @@ namespace Utilities.Gestures
             if (Input.GetMouseButtonDown(0) && CheckIfObjectIsTouched(Input.mousePosition))
             {
                 rigidBody.gravityScale = 1;
-                draggin = true;
+                dragging = true;
             }
-            else if (Input.GetMouseButton(0) && draggin)
+            else if (Input.GetMouseButton(0) && dragging)
             {
                 Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector3 fingerPoint = new Vector3(worldPoint.x, Mathf.Max(worldPoint.y, YLimit), 0.0f);
@@ -95,7 +95,7 @@ namespace Utilities.Gestures
             }
             else if (Input.GetMouseButtonUp(0))
             {
-                draggin = false;
+                dragging = false;
             }
         }
 
