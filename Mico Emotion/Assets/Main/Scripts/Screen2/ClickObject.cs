@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
+using Zenject;
+
 namespace Emotion.Screen2
 {
     public class ClickObject : MonoBehaviour, IPointerUpHandler
@@ -8,6 +10,13 @@ namespace Emotion.Screen2
         #region FIELDS
 
         private const int SingleClickAmount = 1;
+
+        [Inject] private InteractableCharacter interactableCharacter;
+
+        [SerializeField] private AnimationClip clickAnimation = null;
+        [SerializeField] private AnimationClip doubleClickAnimation = null;
+        [SerializeField] private int clickValue;
+        [SerializeField] private int doubleClickValue;
 
         private float clicked = 0;
         private float clickTime = 0;
@@ -18,6 +27,7 @@ namespace Emotion.Screen2
         #endregion
 
         #region BEHAVIORS   
+
         private void Awake()
         {
             objectCollider = GetComponent<Collider2D>();
@@ -55,12 +65,18 @@ namespace Emotion.Screen2
 
         private void DoDoubleClick()
         {
-            Debug.Log("double");
+            if (doubleClickAnimation == null)
+                return;
+
+            interactableCharacter.PlayAnimation(doubleClickAnimation, doubleClickValue, doubleClickAnimation.name + transform.name);
         }
 
         private void DoSingleClick()
         {
-            Debug.Log("single");
+            if (clickAnimation == null)
+                return;
+
+            interactableCharacter.PlayAnimation(clickAnimation, clickValue, clickAnimation.name + transform.name);
         }
 
         private void ResetClick()

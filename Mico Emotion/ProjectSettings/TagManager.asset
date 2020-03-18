@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Pile
   - Floor
+  - Destroyable
+  - Fall
+  - Interactable
+  - Touchable
   layers:
   - Default
   - TransparentFX
@@ -17,8 +21,8 @@ TagManager:
   - 
   - FixedRock
   - LooseRock
-  - 
-  - 
+  - Interactable
+  - Touchable
   - 
   - 
   - 
