@@ -3,7 +3,7 @@
 using Utilities.Gestures;
 using DG.Tweening;
 
-namespace Emotion.Screen3
+namespace Emotion.Screen4
 {
     public class DragStone : DragObject
     {
@@ -60,6 +60,11 @@ namespace Emotion.Screen3
         {
             rigidBody.gravityScale = 1;
             gameObject.layer = LayerMask.NameToLayer(FixedRockTag);
+        }
+
+        public override void StoppedDragging()
+        {
+
         }
 
         #endregion
