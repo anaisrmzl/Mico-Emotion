@@ -250,3 +250,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  limit: {x: -13.65, y: -8, z: 0}
