@@ -49,7 +49,7 @@ namespace Emotion.Screen1
             planetAnimator.Play(transitionPlanet.name);
             Camera.main.DOOrthoSize(MinOrthographicSize, TransitionDuration).SetEase(Ease.InOutQuart);
             yield return new WaitForSeconds(1.0f);
-            FadeSceneChanger.ChangeScene(SceneNames.Screen3);
+            FadeSceneChanger.ChangeScene(SceneNames.GameSelection);
         }
 
         public void AppearSequence()
