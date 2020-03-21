@@ -68,7 +68,7 @@ namespace Emotion.Screen2
             if (doubleClickAnimation == null)
                 return;
 
-            interactableCharacter.PlayAnimation(doubleClickAnimation, doubleClickValue, doubleClickAnimation.name + transform.name);
+            interactableCharacter.PlayAnimation(doubleClickAnimation, doubleClickValue, transform.name);
         }
 
         private void DoSingleClick()
@@ -76,7 +76,7 @@ namespace Emotion.Screen2
             if (clickAnimation == null)
                 return;
 
-            interactableCharacter.PlayAnimation(clickAnimation, clickValue, clickAnimation.name + transform.name);
+            interactableCharacter.PlayAnimation(clickAnimation, clickValue, transform.name);
         }
 
         private void ResetClick()
