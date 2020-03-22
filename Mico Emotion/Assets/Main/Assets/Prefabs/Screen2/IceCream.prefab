@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   limit: {x: -13.65, y: -10.24, z: 0}
-  spawnPosition: {x: -10, y: -6, z: 0}
+  spawnPosition: {x: -10.5, y: -3, z: 0}
   loopAnimation: {fileID: 7400000, guid: 23bb023534b6a4e3ea12006e2875d2a8, type: 2}
   onceAnimation: {fileID: 7400000, guid: d9c8c131b435d47cc86529fe52abf8e7, type: 2}
   idleAnimation: {fileID: 7400000, guid: 64800933ebfc34d16a02f43e5cc4f14e, type: 2}

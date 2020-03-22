@@ -11,7 +11,7 @@ namespace Emotion.Screen2
 
         private const int SingleClickAmount = 1;
 
-        [Inject] private InteractableCharacter interactableCharacter;
+        [Inject] protected InteractableCharacter interactableCharacter;
 
         [SerializeField] private AnimationClip clickAnimation = null;
         [SerializeField] private AnimationClip doubleClickAnimation = null;
@@ -38,7 +38,7 @@ namespace Emotion.Screen2
             if (count)
                 clickTime += Time.deltaTime;
 
-            if (clicked == 1 && clickTime > clickDelay)
+            if (clicked == SingleClickAmount && clickTime > clickDelay)
             {
                 ResetClick();
                 DoSingleClick();
@@ -63,7 +63,7 @@ namespace Emotion.Screen2
             }
         }
 
-        private void DoDoubleClick()
+        public virtual void DoDoubleClick()
         {
             if (doubleClickAnimation == null)
                 return;

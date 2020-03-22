@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1190208131232140913}
   - component: {fileID: 1967905845012308797}
   m_Layer: 10
-  m_Name: Klenex
+  m_Name: KlenexCry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,8 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   limit: {x: -13.65, y: -10.24, z: 0}
-  spawnPosition: {x: 10, y: -6, z: 0}
+  spawnPosition: {x: 10.5, y: -4, z: 0}
   loopAnimation: {fileID: 7400000, guid: 23bb023534b6a4e3ea12006e2875d2a8, type: 2}
-  onceAnimation: {fileID: 7400000, guid: 09b79975e99514397a557d967854a784, type: 2}
   idleAnimation: {fileID: 7400000, guid: 64800933ebfc34d16a02f43e5cc4f14e, type: 2}
   value: 1

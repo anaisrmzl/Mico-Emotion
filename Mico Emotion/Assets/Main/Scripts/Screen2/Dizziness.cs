@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 using Utilities.Accelerometer;
 using Zenject;
@@ -9,11 +7,17 @@ namespace Emotion.Screen2
 {
     public class Dizziness : MonoBehaviour
     {
+        #region FIELDS
+
         [Inject] private InteractableCharacter interactableCharacter;
 
         [SerializeField] private AccelerometerShake accelerometerShake;
         [SerializeField] private AnimationClip dizzyAnimation;
         [SerializeField] private int value;
+
+        #endregion
+
+        #region  BEHAVIORS
 
         private void Awake()
         {
@@ -24,5 +28,7 @@ namespace Emotion.Screen2
         {
             interactableCharacter.PlayAnimation(dizzyAnimation, value, transform.name);
         }
+
+        #endregion
     }
 }
