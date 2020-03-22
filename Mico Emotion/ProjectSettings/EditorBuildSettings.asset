@@ -18,12 +18,15 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/ForParents.unity
     guid: f0d117857dc51485f8cb6ae1a23cb67f
   - enabled: 1
-    path: Assets/Main/Scenes/Screen3.unity
+    path: Assets/Main/Scenes/Screen4.unity
     guid: b92c8d77564ae43c4bdfe4d655fa7d38
   - enabled: 1
-    path: Assets/Main/Scenes/Screen4.unity
+    path: Assets/Main/Scenes/Screen3.unity
     guid: facb2fcb8b82c4d268515ce7cabcefbd
   - enabled: 1
     path: Assets/Main/Scenes/Screen2.unity
     guid: be3684feb660f423aac09088990aea0e
+  - enabled: 1
+    path: Assets/Main/Scenes/GameSelection.unity
+    guid: be9edbc83a85f433f9a9c32f72ae14b6
   m_configObjects: {}

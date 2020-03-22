@@ -13,7 +13,6 @@ namespace Emotion.Screen1
         #region FIELDS
 
         private const float MinOrthographicSize = 0.5f;
-        private const float MinYCameraPosition = -1.5f;
         private const float TransitionDuration = 2.0f;
 
         [SerializeField] private AnimationClip pressAnimation;
@@ -49,9 +48,8 @@ namespace Emotion.Screen1
             canvasGroup.alpha = 0;
             planetAnimator.Play(transitionPlanet.name);
             Camera.main.DOOrthoSize(MinOrthographicSize, TransitionDuration).SetEase(Ease.InOutQuart);
-            Camera.main.transform.DOMoveY(MinYCameraPosition, TransitionDuration);
             yield return new WaitForSeconds(1.0f);
-            FadeSceneChanger.ChangeScene(SceneNames.Screen3);
+            FadeSceneChanger.ChangeScene(SceneNames.GameSelection);
         }
 
         public void AppearSequence()

@@ -8,6 +8,8 @@
         public const string Screen2 = "Screen2";
         public const string Screen3 = "Screen3";
         public const string ForParents = "ForParents";
+        public const string GameSelection = "GameSelection";
+        public const string CharacterSelection = "CharacterSelection";
 
         #endregion
     }

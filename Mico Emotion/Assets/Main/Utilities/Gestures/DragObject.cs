@@ -2,7 +2,7 @@
 
 namespace Utilities.Gestures
 {
-    public class DragObject : MonoBehaviour
+    public abstract class DragObject : MonoBehaviour
     {
         #region FIELDS
 
@@ -10,7 +10,7 @@ namespace Utilities.Gestures
 
         protected Rigidbody2D rigidBody;
         protected Collider2D objectCollider;
-        private bool draggin = false;
+        protected bool dragging = false;
         private int finger = 0;
 
         #endregion
@@ -19,13 +19,16 @@ namespace Utilities.Gestures
 
         private int TapCount { get => Input.touchCount; }
         protected bool DragAllowed { get; set; }
-        private float YLimit { get => -8.0f + (objectCollider.bounds.center.y - objectCollider.bounds.min.y); }
+        private float Height { get => Camera.main.orthographicSize * 2.0f; }
+        private float Width { get => Height * Camera.main.aspect; }
+        private float YLimit { get => (-Height / 2.0f) + (objectCollider.bounds.center.y - objectCollider.bounds.min.y); }
+        private float XLimit { get => (-Width / 2.0f) + (objectCollider.bounds.center.x - objectCollider.bounds.min.x); }
 
         #endregion
 
         #region BEHAVIORS
 
-        private void Awake()
+        public virtual void Awake()
         {
             DragAllowed = true;
             rigidBody = GetComponent<Rigidbody2D>();
@@ -58,44 +61,56 @@ namespace Utilities.Gestures
                         {
                             finger = touch.fingerId;
                             rigidBody.gravityScale = 1;
-                            draggin = true;
+                            dragging = true;
+                            StartedDragging();
                         }
 
                         break;
                     case TouchPhase.Moved:
-                        if (draggin)
+                        if (dragging)
                         {
                             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(finger).position);
-                            Vector3 fingerPoint = new Vector3(worldPoint.x, Mathf.Max(worldPoint.y, YLimit), 0.0f);
+                            Vector3 fingerPoint = new Vector3(Mathf.Clamp(worldPoint.x, XLimit, -XLimit), Mathf.Clamp(worldPoint.y, YLimit, -YLimit), 0.0f);
                             rigidBody.velocity = (fingerPoint - transform.position) * speed;
                         }
 
                         break;
                     case TouchPhase.Ended:
-                        if (finger == touch.fingerId)
-                            draggin = false;
+                        if (finger == touch.fingerId && dragging)
+                        {
+                            dragging = false;
+                            StoppedDragging();
+                        }
 
                         break;
                 }
             }
         }
 
+        public abstract void StoppedDragging();
+        public abstract void StartedDragging();
+
         private void HandleMouse()
         {
             if (Input.GetMouseButtonDown(0) && CheckIfObjectIsTouched(Input.mousePosition))
             {
                 rigidBody.gravityScale = 1;
-                draggin = true;
+                dragging = true;
+                StartedDragging();
             }
-            else if (Input.GetMouseButton(0) && draggin)
+            else if (Input.GetMouseButton(0) && dragging)
             {
                 Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Vector3 fingerPoint = new Vector3(worldPoint.x, Mathf.Max(worldPoint.y, YLimit), 0.0f);
+                Vector3 fingerPoint = new Vector3(Mathf.Clamp(worldPoint.x, XLimit, -XLimit), Mathf.Clamp(worldPoint.y, YLimit, -YLimit), 0.0f);
                 rigidBody.velocity = (fingerPoint - transform.position) * speed;
             }
             else if (Input.GetMouseButtonUp(0))
             {
-                draggin = false;
+                if (dragging)
+                {
+                    dragging = false;
+                    StoppedDragging();
+                }
             }
         }
 
