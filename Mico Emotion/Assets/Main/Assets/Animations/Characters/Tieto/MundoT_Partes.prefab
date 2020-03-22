@@ -46,7 +46,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -147,7 +146,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -229,7 +227,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -282,8 +279,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8417725559920871414}
   m_Bounds:
-    m_Center: {x: -0.021539688, y: 0.022140503, z: 0}
-    m_Extent: {x: 8.883299, y: 8.883299, z: 0}
+    m_Center: {x: 8.33, y: 0.022140503, z: 0}
+    m_Extent: {x: 14.87, y: 22.11, z: 0}
   m_UseBatching: 1
 --- !u!1 &662276812689124459
 GameObject:
@@ -330,7 +327,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -413,7 +409,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -515,7 +510,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -617,7 +611,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -749,7 +742,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -802,8 +794,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8417725559920871414}
   m_Bounds:
-    m_Center: {x: 0.0038604736, y: 0.02504158, z: 0}
-    m_Extent: {x: 8.876019, y: 8.885038, z: 0}
+    m_Center: {x: 8.33, y: 0.02504158, z: 0}
+    m_Extent: {x: 14.87, y: 22.11, z: 0}
   m_UseBatching: 1
 --- !u!1 &2546310008635189874
 GameObject:
@@ -851,7 +843,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1035,7 +1026,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1136,7 +1126,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1238,7 +1227,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1340,7 +1328,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1393,8 +1380,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8417725559920871414}
   m_Bounds:
-    m_Center: {x: 0.003440857, y: 0.038840294, z: 0}
-    m_Extent: {x: 9.625439, y: 9.664919, z: 0}
+    m_Center: {x: 8.33, y: 0.038840294, z: 0}
+    m_Extent: {x: 14.87, y: 22.11, z: 0}
   m_UseBatching: 1
 --- !u!1 &3906045296944947506
 GameObject:
@@ -1441,7 +1428,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1522,7 +1508,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1604,7 +1589,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1686,7 +1670,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1769,7 +1752,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1870,7 +1852,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1953,7 +1934,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2055,7 +2035,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2157,7 +2136,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2259,7 +2237,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2312,8 +2289,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8417725559920871414}
   m_Bounds:
-    m_Center: {x: -0.00055885315, y: 0.009918213, z: 0}
-    m_Extent: {x: 8.865318, y: 8.859919, z: 0}
+    m_Center: {x: 8.33, y: 0.009918213, z: 0}
+    m_Extent: {x: 14.87, y: 22.11, z: 0}
   m_UseBatching: 1
 --- !u!1 &6434230511438654911
 GameObject:
@@ -2392,7 +2369,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2494,7 +2470,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2595,7 +2570,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2677,7 +2651,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2760,7 +2733,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2813,8 +2785,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8417725559920871414}
   m_Bounds:
-    m_Center: {x: -0.018439293, y: 0.05989933, z: 0}
-    m_Extent: {x: 9.646998, y: 9.6409, z: 0}
+    m_Center: {x: 8.33, y: 0.05989933, z: 0}
+    m_Extent: {x: 14.87, y: 22.11, z: 0}
   m_UseBatching: 1
 --- !u!1 &7891128271676914148
 GameObject:
@@ -2862,7 +2834,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2915,8 +2886,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8417725559920871414}
   m_Bounds:
-    m_Center: {x: -0.0011196136, y: 0.007780075, z: 0}
-    m_Extent: {x: 8.8711195, y: 8.85778, z: 0}
+    m_Center: {x: 8.33, y: 0.007780075, z: 0}
+    m_Extent: {x: 14.87, y: 22.11, z: 0}
   m_UseBatching: 1
 --- !u!1 &8304235950286869787
 GameObject:
@@ -2964,7 +2935,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3097,7 +3067,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3150,6 +3119,6 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8417725559920871414}
   m_Bounds:
-    m_Center: {x: -0.03928089, y: 0.00385952, z: 0}
-    m_Extent: {x: 9.31504, y: 9.309059, z: 0}
+    m_Center: {x: 8.33, y: 0.00385952, z: 0}
+    m_Extent: {x: 14.87, y: 22.11, z: 0}
   m_UseBatching: 1
