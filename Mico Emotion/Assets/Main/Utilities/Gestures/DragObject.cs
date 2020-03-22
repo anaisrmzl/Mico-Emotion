@@ -7,7 +7,6 @@ namespace Utilities.Gestures
         #region FIELDS
 
         [SerializeField] private float speed = 20.0f;
-        [SerializeField] private Vector3 limit;
 
         protected Rigidbody2D rigidBody;
         protected Collider2D objectCollider;
@@ -20,8 +19,10 @@ namespace Utilities.Gestures
 
         private int TapCount { get => Input.touchCount; }
         protected bool DragAllowed { get; set; }
-        private float YLimit { get => limit.y + (objectCollider.bounds.center.y - objectCollider.bounds.min.y); }
-        private float XLimit { get => limit.x + (objectCollider.bounds.center.x - objectCollider.bounds.min.x); }
+        private float Height { get => Camera.main.orthographicSize * 2.0f; }
+        private float Width { get => Height * Camera.main.aspect; }
+        private float YLimit { get => (-Height / 2.0f) + (objectCollider.bounds.center.y - objectCollider.bounds.min.y); }
+        private float XLimit { get => (-Width / 2.0f) + (objectCollider.bounds.center.x - objectCollider.bounds.min.x); }
 
         #endregion
 
@@ -61,6 +62,7 @@ namespace Utilities.Gestures
                             finger = touch.fingerId;
                             rigidBody.gravityScale = 1;
                             dragging = true;
+                            StartedDragging();
                         }
 
                         break;
@@ -86,6 +88,7 @@ namespace Utilities.Gestures
         }
 
         public abstract void StoppedDragging();
+        public abstract void StartedDragging();
 
         private void HandleMouse()
         {
@@ -93,6 +96,7 @@ namespace Utilities.Gestures
             {
                 rigidBody.gravityScale = 1;
                 dragging = true;
+                StartedDragging();
             }
             else if (Input.GetMouseButton(0) && dragging)
             {

@@ -3,6 +3,7 @@
 using Utilities.Zenject;
 using Zenject;
 using Utilities.Extensions;
+using System.Collections.Generic;
 
 namespace Emotion.Screen2
 {
@@ -21,7 +22,10 @@ namespace Emotion.Screen2
 
         [Inject] private InteractableCharacter interactableCharacter;
 
-        public bool dragableOnScene = false;
+        private bool isDragging = false;
+        private GameObject currentDragable;
+        private List<int> dragableIndexes = new List<int>();
+        private int currentIndex;
 
         #endregion
 
@@ -29,6 +33,10 @@ namespace Emotion.Screen2
 
         private void Awake()
         {
+            currentIndex = dragables.Length - 1;
+            for (int i = 0; i < currentIndex; i++)
+                dragableIndexes.Add(i);
+
             interactableCharacter.idle += GenerateRandomInteraction;
         }
 
@@ -39,7 +47,7 @@ namespace Emotion.Screen2
 
         private void GenerateRandomInteraction()
         {
-            if (interactableCharacter.WaitingInteraction)
+            if (interactableCharacter.WaitingInteraction || isDragging)
                 return;
 
             switch (EnumExtensions.GetRandomEnum<Interactions>())
@@ -59,22 +67,31 @@ namespace Emotion.Screen2
             }
         }
 
-        public void IsDragableOnScene(bool status)
+        private bool IsDragableOnScene()
         {
-            dragableOnScene = status;
+            return currentDragable != null;
+        }
+
+        public void Dragging(bool status)
+        {
+            isDragging = status;
+            if (!status)
+                interactableCharacter.CountForIdle();
         }
 
         private void InstantiateFood()
         {
-            if (dragableOnScene)
+            if (IsDragableOnScene())
             {
-                GenerateRandomInteraction();
+                Destroy(currentDragable);
             }
-            else
-            {
-                DragTouchable chosen = dragables[Random.Range(0, dragables.Length)];
-                ZenjectUtilities.Instantiate<DragTouchable>(chosen, chosen.transform.position, chosen.transform.rotation, null);
-            }
+
+            int oldIndex = currentIndex;
+            currentIndex = dragableIndexes[Random.Range(0, dragableIndexes.Count)];
+            DragTouchable chosen = dragables[currentIndex];
+            dragableIndexes.Remove(currentIndex);
+            dragableIndexes.Add(oldIndex);
+            currentDragable = ZenjectUtilities.Instantiate<DragTouchable>(chosen, chosen.transform.position, chosen.transform.rotation, null).gameObject;
         }
 
         private void InstantiateTissue()

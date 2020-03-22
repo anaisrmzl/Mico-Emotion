@@ -79,24 +79,23 @@ namespace Emotion.Screen2
             if (interactableCharacter.LastInteractionId == loopAnimation.name + transform.name)
                 return;
 
-            interactableCharacter.interacted -= CancelInteraction;
-            interactableCharacter.WaitForInteraction(false);
-            interactableCharacter.PlayAnimation(idleAnimation, 0, transform.name);
-            rigidBody.velocity = Vector2.zero;
-            rigidBody.gravityScale = 1;
-            DragAllowed = false;
-            interacting = false;
+            StopInteraction();
         }
 
         private void StopInteraction()
         {
             interactableCharacter.interacted -= CancelInteraction;
             interactableCharacter.WaitForInteraction(false);
-            interactableCharacter.PlayAnimation(idleAnimation, 0, transform.name);
+            interactableCharacter.PlaySingleAnimation(idleAnimation);
             rigidBody.velocity = Vector2.zero;
             rigidBody.gravityScale = 1;
             DragAllowed = false;
             interacting = false;
+        }
+
+        public override void StartedDragging()
+        {
+
         }
 
         #endregion

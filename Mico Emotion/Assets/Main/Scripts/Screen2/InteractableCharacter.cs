@@ -16,15 +16,16 @@ namespace Emotion.Screen2
         private const float TweenDuration = 0.5f;
         private const float MaxIdleTime = 3.0f;
 
-        [SerializeField] private GameObject blocker;
         [SerializeField] private Image emotionsBar;
         [SerializeField] private AnimationClip winAnimation;
 
         private Animator animator;
         private bool isIdle = true;
         private bool animated;
+        private bool block = false;
         private float timer = 0.0f;
         private string lastInteractionId;
+        private int happiness;
 
         #endregion
 
@@ -47,6 +48,7 @@ namespace Emotion.Screen2
         private void Awake()
         {
             animator = GetComponent<Animator>();
+            happiness = (int)(emotionsBar.fillAmount * NumberOfSteps);
             CountForIdle();
         }
 
@@ -70,13 +72,16 @@ namespace Emotion.Screen2
 
         public void PlayAnimation(AnimationClip clip, int value, string name)
         {
-            string id = clip.name + name;
+            if (block)
+                return;
+
             isIdle = false;
             animated = true;
+            string id = clip.name + name;
             if (lastInteractionId != id)
             {
-                float finalFill = emotionsBar.fillAmount + (value / NumberOfSteps);
-                emotionsBar.DOFillAmount(finalFill, TweenDuration);
+                happiness += value;
+                emotionsBar.DOFillAmount(happiness / NumberOfSteps, TweenDuration);
             }
 
             lastInteractionId = id;
@@ -85,14 +90,25 @@ namespace Emotion.Screen2
             StartCoroutine(WaitAnimation(clip.length));
         }
 
+        public void PlaySingleAnimation(AnimationClip clip)
+        {
+            if (happiness == NumberOfSteps)
+                return;
+
+            animator.Play(clip.name);
+            interacted?.Invoke();
+        }
+
         private IEnumerator WaitAnimation(float clipLength)
         {
-            blocker.SetActive(true);
+            block = true;
             yield return new WaitForSeconds(clipLength);
-            blocker.SetActive(false);
+            if (CheckValue())
+                yield break;
+
+            block = false;
             animated = false;
             timer = 0.0f;
-            CheckValue();
         }
 
         public void CountForIdle()
@@ -101,15 +117,22 @@ namespace Emotion.Screen2
             timer = 0.0f;
         }
 
-        private void CheckValue()
+        private bool CheckValue()
         {
-            if (emotionsBar.fillAmount < 1)
-                return;
+            if (happiness < NumberOfSteps)
+                return false;
 
-            blocker.SetActive(true);
-            isIdle = true;
-            animated = true;
+            ResetValues();
             StartCoroutine(EndGame());
+            return true;
+        }
+
+        private void ResetValues()
+        {
+            block = true;
+            isIdle = true;
+            timer = 0.0f;
+            animated = true;
         }
 
         private IEnumerator EndGame()

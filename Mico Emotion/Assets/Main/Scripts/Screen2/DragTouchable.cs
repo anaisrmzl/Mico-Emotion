@@ -32,17 +32,12 @@ namespace Emotion.Screen2
         {
             base.Awake();
             transform.DOMove(spawnPosition, 1.0f);
-            randomInteractions.IsDragableOnScene(true);
             interactableCharacter.CountForIdle();
-        }
-
-        private void OnDestroy()
-        {
-            randomInteractions.IsDragableOnScene(false);
         }
 
         public override void StoppedDragging()
         {
+            randomInteractions.Dragging(dragging);
             if (!DragAllowed)
                 return;
 
@@ -57,12 +52,17 @@ namespace Emotion.Screen2
             transform.DOMove(spawnPosition, TweenDuration);
         }
 
+        public override void StartedDragging()
+        {
+            randomInteractions.Dragging(dragging);
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.tag == TouchableTag)
             {
                 touching = true;
-                interactableCharacter.PlayAnimation(loopAnimation, 0, transform.name);
+                interactableCharacter.PlaySingleAnimation(loopAnimation);
             }
         }
 
@@ -71,7 +71,7 @@ namespace Emotion.Screen2
             if (other.tag == TouchableTag)
             {
                 touching = false;
-                interactableCharacter.PlayAnimation(idleAnimation, 0, transform.name);
+                interactableCharacter.PlaySingleAnimation(idleAnimation);
             }
         }
 

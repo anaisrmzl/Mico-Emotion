@@ -67,6 +67,11 @@ namespace Emotion.Screen4
 
         }
 
+        public override void StartedDragging()
+        {
+
+        }
+
         #endregion
     }
 }
