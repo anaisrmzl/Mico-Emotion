@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 using Utilities.Zenject;
 using Zenject;
 using Utilities.Extensions;
-using System.Collections.Generic;
 
 namespace Emotion.Screen2
 {
