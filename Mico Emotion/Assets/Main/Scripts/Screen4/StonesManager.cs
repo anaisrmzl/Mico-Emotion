@@ -9,7 +9,10 @@ namespace Emotion.Screen4
         #region FIELDS
 
         public const string PileTag = "Pile";
-        private const int MaxStones = 6;
+        private const int MaxStones = 7;
+        private const int MaxHeight = 7;
+        private const float MaxScale = 1.0f;
+        private const float MinScale = 0.5f;
 
         [SerializeField] private DragStone[] stones;
         [SerializeField] private Vector2 spawningPoint;
@@ -35,25 +38,26 @@ namespace Emotion.Screen4
             newStone.transform.SetParent(transform);
             newStone.tag = PileTag;
             newStone.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            newStone.transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 1;
             SetBoundY();
         }
 
         private void SetBoundY()
         {
-            InstantiateStone();
             Collider2D objectCollider = transform.GetChild(transform.childCount - 1).GetComponent<Collider2D>();
             BoundY = objectCollider.bounds.max.y;
+            InstantiateStone();
         }
 
         private void InstantiateStone()
         {
-            if (transform.childCount >= MaxStones)
+            if (transform.childCount >= MaxStones || BoundY >= MaxHeight)
                 return;
 
             Vector3 position = new Vector3(Random.Range(-spawningPoint.x, spawningPoint.x), spawningPoint.y, 0.0f);
             DragStone chosen = stones[Random.Range(0, stones.Length)];
             DragStone stone = ZenjectUtilities.Instantiate<DragStone>(chosen, position, chosen.transform.rotation, null);
-            stone.transform.localScale = chosen.transform.localScale;
+            stone.transform.localScale = Vector3.one * Random.Range(MinScale, MaxScale);
             stone.Initialize(this);
         }
 

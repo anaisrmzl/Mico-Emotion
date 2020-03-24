@@ -13,12 +13,23 @@ namespace Emotion.Screen4
         private const float TweenDuration = 0.2f;
         private const string FloorTag = "Floor";
         private const string FixedRockTag = "FixedRock";
+        private const string ReleaseTrigger = "release";
+        private const string TouchTrigger = "touch";
 
+        [SerializeField] private AnimationClip sleepAnimation;
+
+        private Animator animator;
         private StonesManager stonesManager;
 
         #endregion
 
         #region BEHAVIORS
+
+        public override void Awake()
+        {
+            base.Awake();
+            animator = GetComponent<Animator>();
+        }
 
         public override void Update()
         {
@@ -45,6 +56,7 @@ namespace Emotion.Screen4
             {
                 rigidBody.bodyType = RigidbodyType2D.Static;
                 stonesManager.AddToThePile(gameObject);
+                animator.Play(sleepAnimation.name);
             }
 
             if (other.transform.tag == FloorTag)
@@ -64,12 +76,12 @@ namespace Emotion.Screen4
 
         public override void StoppedDragging()
         {
-
+            animator.SetTrigger(ReleaseTrigger);
         }
 
         public override void StartedDragging()
         {
-
+            animator.SetTrigger(TouchTrigger);
         }
 
         #endregion
