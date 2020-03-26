@@ -26,6 +26,7 @@ namespace Emotion.Screen1
 
         private void GoToScene()
         {
+            actionButton.interactable = false;
             AnimationSceneChanger.ChangeScene(sceneName);
         }
 

@@ -7,6 +7,7 @@ namespace Utilities.Gestures
         #region FIELDS
 
         [SerializeField] private float speed = 20.0f;
+        [SerializeField] private float offset = 0.0f;
 
         protected Rigidbody2D rigidBody;
         protected Collider2D objectCollider;
@@ -21,8 +22,8 @@ namespace Utilities.Gestures
         protected bool DragAllowed { get; set; }
         private float Height { get => Camera.main.orthographicSize * 2.0f; }
         private float Width { get => Height * Camera.main.aspect; }
-        private float YLimit { get => (-Height / 2.0f) + (objectCollider.bounds.center.y - objectCollider.bounds.min.y); }
-        private float XLimit { get => (-Width / 2.0f) + (objectCollider.bounds.center.x - objectCollider.bounds.min.x); }
+        private float YLimit { get => (Height / 2.0f) - (objectCollider.bounds.center.y - objectCollider.bounds.min.y); }
+        private float XLimit { get => (Width / 2.0f) - (objectCollider.bounds.center.x - objectCollider.bounds.min.x); }
 
         #endregion
 
@@ -70,7 +71,7 @@ namespace Utilities.Gestures
                         if (dragging)
                         {
                             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(finger).position);
-                            Vector3 fingerPoint = new Vector3(Mathf.Clamp(worldPoint.x, XLimit, -XLimit), Mathf.Clamp(worldPoint.y, YLimit, -YLimit), 0.0f);
+                            Vector3 fingerPoint = new Vector3(Mathf.Clamp(worldPoint.x, -XLimit, XLimit), Mathf.Clamp(worldPoint.y, -YLimit + offset, YLimit), 0.0f);
                             rigidBody.velocity = (fingerPoint - transform.position) * speed;
                         }
 
@@ -101,7 +102,7 @@ namespace Utilities.Gestures
             else if (Input.GetMouseButton(0) && dragging)
             {
                 Vector3 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Vector3 fingerPoint = new Vector3(Mathf.Clamp(worldPoint.x, XLimit, -XLimit), Mathf.Clamp(worldPoint.y, YLimit, -YLimit), 0.0f);
+                Vector3 fingerPoint = new Vector3(Mathf.Clamp(worldPoint.x, -XLimit, XLimit), Mathf.Clamp(worldPoint.y, -YLimit + offset, YLimit), 0.0f);
                 rigidBody.velocity = (fingerPoint - transform.position) * speed;
             }
             else if (Input.GetMouseButtonUp(0))
