@@ -47,6 +47,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: test
+  - name: angry
+    uniqueID: 1135294247
+    locked: 0
+  - name: fear
+    uniqueID: 319761395
+    locked: 0
+  - name: disgust
+    uniqueID: 290967159
+    locked: 0
+  - name: sad
+    uniqueID: 1129861395
+    locked: 0
+  - name: suprise
+    uniqueID: 1913618899
+    locked: 0
+  - name: happy
     uniqueID: 753237087
     locked: 0
