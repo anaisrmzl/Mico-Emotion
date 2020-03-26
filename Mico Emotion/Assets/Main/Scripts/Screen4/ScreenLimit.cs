@@ -7,6 +7,7 @@ namespace Emotion.Screen4
         #region FIELDS
 
         [SerializeField] private Vector2 coordinates;
+        [SerializeField] private bool offsetScale;
 
         private float Height { get => Camera.main.orthographicSize * 2.0f; }
         private float Width { get => Height * Camera.main.aspect; }
@@ -17,7 +18,7 @@ namespace Emotion.Screen4
 
         private void Awake()
         {
-            transform.position = new Vector3((Width + transform.localScale.x) / 2.0f, (Height + transform.localScale.y) / 2.0f, transform.position.z) * coordinates;
+            transform.position = new Vector3((Width + (offsetScale ? transform.localScale.x : 0)) / 2.0f, (Height + transform.localScale.y) / 2.0f, transform.position.z) * coordinates;
         }
 
         #endregion

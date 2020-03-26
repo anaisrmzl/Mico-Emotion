@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140, y: -100}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 150, y: -120}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &467421818
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a266cd3b96b49cbb7ee342417d6e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: GameSelection
+  sceneName: Map
 --- !u!114 &467421819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f413a7f3f4c0b4175ab2af941b3b6e78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feee9df73f6524899bf72a0e818db1a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 2048, y: 1536}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -544,7 +544,7 @@ MonoBehaviour:
   - {fileID: 9096558093355217995, guid: bb03f8da9f8fd4ec5a91c88974529467, type: 3}
   - {fileID: 6982069581407364620, guid: 4f3935c24bd0f4e43812e70421a6f08c, type: 3}
   - {fileID: 3811172489898951490, guid: 1b91ebe1253e44cbd886ffddf37e707d, type: 3}
-  spawningPoint: {x: 15, y: 12}
+  spawningPoint: {x: 11, y: 12}
 --- !u!4 &802524268
 Transform:
   m_ObjectHideFlags: 0
@@ -764,6 +764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coordinates: {x: 0, y: 1.3}
+  offsetScale: 1
 --- !u!1 &1040254303
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coordinates: {x: 1, y: 0}
+  offsetScale: 1
 --- !u!61 &1219522577
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1197,6 +1199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coordinates: {x: -1, y: 0}
+  offsetScale: 1
 --- !u!1 &1480612431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,7 +1233,7 @@ MonoBehaviour:
   - {fileID: 9096558093355217995, guid: 32230bf7ed6ca47e2908be5403f9cd38, type: 3}
   - {fileID: 6982069581407364620, guid: 4222d099f9cb1461091930a77f005e65, type: 3}
   - {fileID: 3811172489898951490, guid: c6b522b695f16427ba972f65d346244b, type: 3}
-  spawningPoint: {x: 15, y: 12}
+  spawningPoint: {x: 11, y: 12}
 --- !u!4 &1480612433
 Transform:
   m_ObjectHideFlags: 0
@@ -1386,7 +1389,7 @@ MonoBehaviour:
   - {fileID: 9096558093355217995, guid: 5d6ef05ff47a8477ab9ac9844d5282b7, type: 3}
   - {fileID: 6982069581407364620, guid: e3a6dd6ffbd8949f3b0468d303fcd0d2, type: 3}
   - {fileID: 3811172489898951490, guid: 04bd6aa415911408cbb9c50be81b7400, type: 3}
-  spawningPoint: {x: 15, y: 12}
+  spawningPoint: {x: 11, y: 12}
 --- !u!4 &1805910064
 Transform:
   m_ObjectHideFlags: 0
@@ -1935,6 +1938,7 @@ GameObject:
   - component: {fileID: 2082290282}
   - component: {fileID: 2082290281}
   - component: {fileID: 2082290280}
+  - component: {fileID: 2082290283}
   m_Layer: 5
   m_Name: Next_Button
   m_TagString: Untagged
@@ -1958,8 +1962,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -140, y: -100}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: -150, y: -120}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082290280
 MonoBehaviour:
@@ -1985,7 +1989,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2040,3 +2044,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082290278}
   m_CullTransparentMesh: 0
+--- !u!114 &2082290283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082290278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a266cd3b96b49cbb7ee342417d6e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: TitoTest

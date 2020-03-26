@@ -58,11 +58,11 @@ SpriteAtlas:
     - {fileID: 102900000, guid: 67040921b36a544d0af6355e9e336a5d, type: 3}
     - {fileID: 102900000, guid: ec9e0120cf2a94c9c97aea792850cac3, type: 3}
     - {fileID: 102900000, guid: 03529d1b98f654499a050759f87fbe87, type: 3}
-    totalSpriteSurfaceArea: 15028007
+    totalSpriteSurfaceArea: 16965415
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: ba078828e0c3cc5988e0e0a2db660c45
+      Hash: 34b65c563d20d1123afe11cbcd276158
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ebe3ae00a5fb145eda1244180d26f02f, type: 3}
@@ -120,6 +120,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4b8232a1f9b614001b4e70b172dd0625, type: 3}
   - {fileID: 21300000, guid: fbf329d1fadf144988a5922d4f471512, type: 3}
   - {fileID: 21300000, guid: a232d2226cd7f49508e67e67b1068d04, type: 3}
+  - {fileID: 21300000, guid: 289a8432c91f7402fa1d3377972824e8, type: 3}
   - {fileID: 21300000, guid: 2a1814e2718a3411da981ded42c2a204, type: 3}
   - {fileID: 21300000, guid: d541e90350fbd41ad8c8ef3b8ced1950, type: 3}
   - {fileID: 21300000, guid: 95baa413249464db4bac706fcec6d747, type: 3}
@@ -204,6 +205,7 @@ SpriteAtlas:
   - helado
   - bugger
   - return
+  - toti_Mesa de trabajo
   - barra-08
   - screen_4.1-08
   - staging
