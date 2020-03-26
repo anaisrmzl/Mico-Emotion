@@ -354,6 +354,7 @@ Transform:
   - {fileID: 519420032}
   - {fileID: 1274701652}
   - {fileID: 1705872572}
+  - {fileID: 1513513469}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -721,6 +722,7 @@ MonoBehaviour:
   goodbyeAnimation: {fileID: 7400000, guid: 6dc341502ba204921aa92a3408ddad98, type: 2}
   canvasGroup: {fileID: 662913363}
   goodbye: {fileID: 1513513468}
+  bodyRenderer: {fileID: 1179763000}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +806,12 @@ Transform:
   m_Father: {fileID: 127290289}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &519755181 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5062530682249702844, guid: 0d4096a73c3f54729a90a6dde88c7b34,
+    type: 3}
+  m_PrefabInstance: {fileID: 919194793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &662913358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1153,7 @@ MonoBehaviour:
   goodbyeAnimation: {fileID: 7400000, guid: 4d3884ef238f449d08a8887dba91f0ee, type: 2}
   canvasGroup: {fileID: 662913363}
   goodbye: {fileID: 1513513468}
+  bodyRenderer: {fileID: 1909577770}
 --- !u!1001 &919194793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1665,6 +1674,12 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!212 &1179763000 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 818902553307547232, guid: 6a72c8d01ba72431db963397fcbad799,
+    type: 3}
+  m_PrefabInstance: {fileID: 141445535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1229279214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,12 +2173,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513513467}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 127290289}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1591826575
 GameObject:
@@ -2528,6 +2543,12 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!212 &1909577770 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 198112670812518393, guid: 84fc8b0b04cd747a9a0f62edcc78cc05,
+    type: 3}
+  m_PrefabInstance: {fileID: 109928604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1918833140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,3 +2849,4 @@ MonoBehaviour:
   goodbyeAnimation: {fileID: 7400000, guid: 0de5c10cb4e3647c0ad299d621cde804, type: 2}
   canvasGroup: {fileID: 662913363}
   goodbye: {fileID: 1513513468}
+  bodyRenderer: {fileID: 519755181}
