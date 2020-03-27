@@ -2,7 +2,7 @@
 
 using Utilities.Zenject;
 
-namespace Emotion.Screen4
+namespace Emotion.Explore
 {
     public class StonesManager : MonoBehaviour
     {

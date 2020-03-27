@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/ForParents.unity
     guid: f0d117857dc51485f8cb6ae1a23cb67f
   - enabled: 1
-    path: Assets/Main/Scenes/Screen4.unity
+    path: Assets/Main/Scenes/Explore.unity
     guid: b92c8d77564ae43c4bdfe4d655fa7d38
   - enabled: 1
     path: Assets/Main/Scenes/Screen3.unity
@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/Map.unity
     guid: 37d0874dac02f411d8c54d849189be20
   - enabled: 1
-    path: Assets/Main/Scenes/Screen2.unity
+    path: Assets/Main/Scenes/Recognize.unity
     guid: be3684feb660f423aac09088990aea0e
   - enabled: 1
     path: Assets/Main/Scenes/GameSelection.unity

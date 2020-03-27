@@ -9,6 +9,7 @@
         public const string Screen3 = "Screen3";
         public const string ForParents = "ForParents";
         public const string GameSelection = "GameSelection";
+        public const string Explore = "Explore";
         public const string CharacterSelection = "CharacterSelection";
 
         #endregion

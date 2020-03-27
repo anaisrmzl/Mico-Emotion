@@ -3,7 +3,7 @@
 using Utilities.Gestures;
 using DG.Tweening;
 
-namespace Emotion.Screen4
+namespace Emotion.Explore
 {
     public class DragStone : DragObject
     {
