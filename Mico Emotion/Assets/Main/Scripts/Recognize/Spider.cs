@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 using Zenject;
 
-namespace Emotion.Screen2
+namespace Emotion.Recognize
 {
     public class Spider : MonoBehaviour
     {

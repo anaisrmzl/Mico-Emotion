@@ -3,7 +3,7 @@
 using Utilities.Accelerometer;
 using Zenject;
 
-namespace Emotion.Screen2
+namespace Emotion.Recognize
 {
     public class Dizziness : MonoBehaviour
     {

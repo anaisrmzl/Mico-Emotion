@@ -1,4 +1,4 @@
-﻿namespace Emotion.Screen2
+﻿namespace Emotion.Recognize
 {
     public enum Interactions
     {

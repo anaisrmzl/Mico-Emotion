@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 using Zenject;
 
-namespace Emotion.Screen2
+namespace Emotion.Recognize
 {
     public class ClickObject : MonoBehaviour, IPointerUpHandler
     {

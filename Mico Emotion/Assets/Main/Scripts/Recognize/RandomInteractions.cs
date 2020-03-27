@@ -5,7 +5,7 @@ using Utilities.Zenject;
 using Zenject;
 using Utilities.Extensions;
 
-namespace Emotion.Screen2
+namespace Emotion.Recognize
 {
     public class RandomInteractions : MonoBehaviour
     {
