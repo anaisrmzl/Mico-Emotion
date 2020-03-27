@@ -5,7 +5,7 @@ using System.Collections;
 using Utilities.Scenes;
 using DG.Tweening;
 
-namespace Emotion.Screen1
+namespace Emotion.MainMenu
 {
     [RequireComponent(typeof(Button))]
     public class Play : MonoBehaviour

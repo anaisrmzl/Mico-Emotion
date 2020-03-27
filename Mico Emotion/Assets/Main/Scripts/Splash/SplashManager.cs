@@ -40,7 +40,7 @@ namespace Emotion.Splash
 
         private void GoToFirstScene()
         {
-            FadeSceneChanger.ChangeScene(SceneNames.Screen1);
+            FadeSceneChanger.ChangeScene(SceneNames.MainMenu);
         }
 
         #endregion

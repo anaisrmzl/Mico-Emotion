@@ -7,7 +7,7 @@ using TMPro;
 using DG.Tweening;
 using Utilities.Scenes;
 
-namespace Emotion.Screen1
+namespace Emotion.MainMenu
 {
     [RequireComponent(typeof(Button))]
     public class ParentalControl : MonoBehaviour
