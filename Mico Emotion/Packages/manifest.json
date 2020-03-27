@@ -1,5 +1,15 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "Packages from jillejr",
+      "url": "https://registry.npmjs.org/",
+      "scopes": [
+        "jillejr"
+      ]
+    }
+  ],
   "dependencies": {
+    "jillejr.newtonsoft.json-for-unity": "12.0.1-patch-001",
     "com.unity.2d.animation": "2.2.1-preview.2",
     "com.unity.2d.ik": "1.2.0-preview.2",
     "com.unity.2d.psdimporter": "1.2.0-preview.4",
