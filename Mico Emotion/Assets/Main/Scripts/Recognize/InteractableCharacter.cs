@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using Utilities.Scenes;
 using DG.Tweening;
 
-namespace Emotion.Screen2
+namespace Emotion.Recognize
 {
     public class InteractableCharacter : MonoBehaviour
     {

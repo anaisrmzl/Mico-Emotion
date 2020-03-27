@@ -2,7 +2,7 @@
 
 using DG.Tweening;
 
-namespace Emotion.Screen1
+namespace Emotion.MainMenu
 {
     public class MovingCloud : MonoBehaviour
     {

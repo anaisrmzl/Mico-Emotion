@@ -3,7 +3,7 @@ using UnityEngine;
 
 using Utilities.Scenes;
 
-namespace Emotion.Screen2
+namespace Emotion.Recognize
 {
     public class Goodbye : MonoBehaviour
     {

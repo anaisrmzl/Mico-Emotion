@@ -4,7 +4,7 @@ using UnityEngine.Playables;
 
 using Utilities.Gestures;
 
-namespace Emotion.Screen1
+namespace Emotion.MainMenu
 {
     [RequireComponent(typeof(PlayableDirector))]
     public class IntroSequenceController : MonoBehaviour

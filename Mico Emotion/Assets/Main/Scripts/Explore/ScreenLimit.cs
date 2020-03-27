@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Emotion.Screen4
+namespace Emotion.Explore
 {
     public class ScreenLimit : MonoBehaviour
     {

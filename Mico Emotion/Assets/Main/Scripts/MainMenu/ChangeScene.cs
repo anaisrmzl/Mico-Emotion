@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 using Utilities.Scenes;
 
-namespace Emotion.Screen1
+namespace Emotion.MainMenu
 {
     [RequireComponent(typeof(Button))]
     public class ChangeScene : MonoBehaviour

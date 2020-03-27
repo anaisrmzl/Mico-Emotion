@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 using Utilities.Scenes;
 
-namespace Emotion.Screen2
+namespace Emotion.Recognize
 {
     public class SelectionCharacter : MonoBehaviour
     {
@@ -53,7 +53,7 @@ namespace Emotion.Screen2
         private IEnumerator CelebrationAnimation()
         {
             yield return new WaitForSeconds(celebration.length);
-            AnimationSceneChanger.ChangeScene(SceneNames.Screen2);
+            AnimationSceneChanger.ChangeScene(SceneNames.Recognize);
         }
 
         private void Celebrate()

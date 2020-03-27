@@ -4,7 +4,7 @@ using DG.Tweening;
 using Utilities.Gestures;
 using Zenject;
 
-namespace Emotion.Screen2
+namespace Emotion.Recognize
 {
     public class DragTouchable : DragObject
     {
