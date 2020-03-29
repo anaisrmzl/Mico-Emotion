@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29dff0c0bd714f9b973579b7d81cf87, type: 3}
   m_Name: 6_alegria
   m_EditorClassIdentifier: 
-  name: Alegria
-  id: 6
+  name: "Alegr\xEDa"
+  id: alegria
   type: 1
+  acquired: 0
   sprite: {fileID: 21300000, guid: 692eb0c86e8c14d7a89eeb79fda35f1d, type: 3}
   description: {fileID: 0}

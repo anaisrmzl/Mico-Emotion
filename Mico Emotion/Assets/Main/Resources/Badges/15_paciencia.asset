@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 15_paciencia
   m_EditorClassIdentifier: 
   name: Paciencia
-  id: 15
+  id: paciencia
   type: 2
+  acquired: 0
   sprite: {fileID: 21300000, guid: 7e177d7c38e29499f9e1e770cbde4386, type: 3}
   description: {fileID: 0}

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29dff0c0bd714f9b973579b7d81cf87, type: 3}
   m_Name: 16_respiracion
   m_EditorClassIdentifier: 
-  name: Respiracion
-  id: 16
+  name: "Respiraci\xF3n"
+  id: respiracion
   type: 2
+  acquired: 0
   sprite: {fileID: 21300000, guid: 4903212f527ea480bb08767f3e11863c, type: 3}
   description: {fileID: 0}

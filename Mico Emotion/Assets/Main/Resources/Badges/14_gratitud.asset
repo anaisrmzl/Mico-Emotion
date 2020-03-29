@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 14_gratitud
   m_EditorClassIdentifier: 
   name: Gratitud
-  id: 14
+  id: gratitud
   type: 2
+  acquired: 1
   sprite: {fileID: 21300000, guid: 61d1e1f958dcd414f94ef62aaf21b2f7, type: 3}
   description: {fileID: 0}

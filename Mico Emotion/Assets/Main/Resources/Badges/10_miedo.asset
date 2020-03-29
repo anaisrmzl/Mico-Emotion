@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 10_miedo
   m_EditorClassIdentifier: 
   name: Miedo
-  id: 10
+  id: miedo
   type: 1
+  acquired: 1
   sprite: {fileID: 21300000, guid: e7384f8161d2a4689bd902d452fd661c, type: 3}
   description: {fileID: 0}

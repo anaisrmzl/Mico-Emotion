@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 9_enojo
   m_EditorClassIdentifier: 
   name: Enojo
-  id: 9
+  id: enojo
   type: 1
+  acquired: 0
   sprite: {fileID: 21300000, guid: e7384f8161d2a4689bd902d452fd661c, type: 3}
   description: {fileID: 0}

@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
+using Utilities.Data;
 
 namespace Emotion.Badges
 {
@@ -12,20 +12,47 @@ namespace Emotion.Badges
         private const string ScriptableCreationRoute = "Emotion/Badges/Badge";
 
         [SerializeField] private new string name = null;
-        [SerializeField] private int id = default(int);
+        [SerializeField] string id = null;
         [SerializeField] private BadgeType type;
+        [SerializeField] private bool acquired = false;
         [SerializeField] private Sprite sprite = null;
         [SerializeField] private AudioClip description = null;
+
+        private DataManager dataManager = null;
+        private string[] keys = null;
 
         #endregion
 
         #region PROPERTIES
 
         public string Name { get => name; }
-        public int Id { get => id; }
+        public string Id { get => id; }
         public BadgeType Type { get => type; }
+        public bool Acquired { get => acquired; }
         public Sprite Sprite { get => sprite; }
         public AudioClip Description { get => description; }
+
+        #endregion
+
+        #region BEHAVIORS
+
+        public void Load(DataManager dataManager)
+        {
+            keys = DataManager.GenerateKeys(APIKeys.Badges, Id);
+            this.dataManager = dataManager;
+            Reload();
+        }
+
+        public void Reload()
+        {
+            acquired = dataManager.GetData<bool>(keys, false);
+        }
+
+        public void AcquireBadge()
+        {
+            acquired = true;
+            dataManager.SetData(keys, Acquired);
+        }
 
         #endregion
     }
