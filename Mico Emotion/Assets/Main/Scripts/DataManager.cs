@@ -29,7 +29,6 @@ namespace Utilities.Data
 
         private void Awake()
         {
-            PlayerPrefs.DeleteAll();//!
             LoadLocalData();
         }
 
