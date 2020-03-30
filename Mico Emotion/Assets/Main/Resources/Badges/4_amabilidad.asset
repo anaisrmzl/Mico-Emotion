@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e29dff0c0bd714f9b973579b7d81cf87, type: 3}
-  m_Name: 10_miedo
+  m_Name: 4_amabilidad
   m_EditorClassIdentifier: 
-  name: Miedo
-  id: miedo
-  type: 1
-  acquired: 1
-  sprite: {fileID: 21300000, guid: e7384f8161d2a4689bd902d452fd661c, type: 3}
-  description: {fileID: 0}
+  name: Amabilidad
+  id: amabilidad
+  type: 0
+  acquired: 0
+  sprite: {fileID: 21300000, guid: 574db049703874b1bbd2acc831dcfedc, type: 3}
+  description: {fileID: 8300000, guid: 58c100f2b1c624bba8283b7413c621f1, type: 3}

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e29dff0c0bd714f9b973579b7d81cf87, type: 3}
-  m_Name: 2_autoestima
+  m_Name: 3_gratitud
   m_EditorClassIdentifier: 
-  name: Autoestima
-  id: autoestima
-  type: 0
+  name: Gratitud
+  id: gratitud
+  type: 2
   acquired: 1
-  sprite: {fileID: 21300000, guid: ec9fc3226e005419580d22a51a59ee36, type: 3}
-  description: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 61d1e1f958dcd414f94ef62aaf21b2f7, type: 3}
+  description: {fileID: 8300000, guid: 4a0c9ade68b014a248bb47e64f6f7bd5, type: 3}

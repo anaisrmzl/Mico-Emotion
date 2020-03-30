@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e29dff0c0bd714f9b973579b7d81cf87, type: 3}
-  m_Name: 6_alegria
+  m_Name: 12_paciencia
   m_EditorClassIdentifier: 
-  name: "Alegr\xEDa"
-  id: alegria
-  type: 1
+  name: Paciencia
+  id: paciencia
+  type: 2
   acquired: 0
-  sprite: {fileID: 21300000, guid: 692eb0c86e8c14d7a89eeb79fda35f1d, type: 3}
-  description: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 7e177d7c38e29499f9e1e770cbde4386, type: 3}
+  description: {fileID: 8300000, guid: a6e620c1e4c1343c09e1968e6ad2429e, type: 3}
