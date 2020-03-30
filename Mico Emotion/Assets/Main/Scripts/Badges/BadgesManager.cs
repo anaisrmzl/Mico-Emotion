@@ -20,6 +20,11 @@ namespace Emotion.Badges
 
         #region BEHAVIORS
 
+        private void Start()
+        {
+            LoadCurrencies();
+        }
+
         public void LoadCurrencies()
         {
             Object[] badgeObjects = Resources.LoadAll(BadgesResourceFolder, typeof(Badge));
@@ -33,6 +38,11 @@ namespace Emotion.Badges
         public Badge GetBadgeById(string id)
         {
             return badges.Find(collectible => collectible.Id == id);
+        }
+
+        public List<Badge> GetAcquiredBadges(bool status)
+        {
+            return badges.FindAll(collectible => collectible.Acquired == status);
         }
 
         public Badge GetBadgeByType(BadgeType type)

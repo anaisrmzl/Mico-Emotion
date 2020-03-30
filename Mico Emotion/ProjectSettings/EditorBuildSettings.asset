@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/Map.unity
     guid: 37d0874dac02f411d8c54d849189be20
   - enabled: 1
+    path: Assets/Main/Scenes/Badges.unity
+    guid: 9cfbe083ba006442ab0c4762926eb97c
+  - enabled: 1
     path: Assets/Main/Scenes/Recognize.unity
     guid: be3684feb660f423aac09088990aea0e
   - enabled: 1
