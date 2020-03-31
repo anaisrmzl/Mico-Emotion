@@ -17,6 +17,7 @@ namespace Emotion.Badges
         [SerializeField] private bool acquired = false;
         [SerializeField] private Sprite sprite = null;
         [SerializeField] private AudioClip description = null;
+        [SerializeField] private AudioClip title = null;
 
         private DataManager dataManager = null;
         private string[] keys = null;
@@ -31,6 +32,7 @@ namespace Emotion.Badges
         public bool Acquired { get => acquired; }
         public Sprite Sprite { get => sprite; }
         public AudioClip Description { get => description; }
+        public AudioClip Title { get => title; }
 
         #endregion
 

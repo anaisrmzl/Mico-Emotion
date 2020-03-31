@@ -9,7 +9,7 @@ namespace Emotion.Badges
     {
         #region FIELDS
 
-        [Inject] private BadgeCreator badgeCreator;
+        [InjectOptional] private BadgeCreator badgeCreator;
 
         [SerializeField] private Image badgeImage;
         [SerializeField] private Image blocked;
@@ -35,7 +35,10 @@ namespace Emotion.Badges
 
         private void OpenBadge()
         {
-            badgeCreator.InspectBadge(badge.Sprite, badge.Description);
+            if (badgeCreator == null)
+                return;
+
+            badgeCreator.InspectBadge(badge.Sprite, badge.Title, badge.Description);
         }
 
         #endregion

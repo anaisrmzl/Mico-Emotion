@@ -487,7 +487,7 @@ PlayableDirector:
   - key: {fileID: 1890856010950868438, guid: 81b4c04db878e4a72bb041965c453b3a, type: 2}
     value: {fileID: 170896915}
   - key: {fileID: -8221180927868236931, guid: 81b4c04db878e4a72bb041965c453b3a, type: 2}
-    value: {fileID: 491049028}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &170896915
@@ -844,18 +844,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460971728}
   m_CullTransparentMesh: 0
---- !u!4 &491049027 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7401356926340842970, guid: 5b8f1801024564cdda0afc15e846cd00,
-    type: 3}
-  m_PrefabInstance: {fileID: 1112134836}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &491049028 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3906045296762548638, guid: 5b8f1801024564cdda0afc15e846cd00,
-    type: 3}
-  m_PrefabInstance: {fileID: 1112134836}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &556353005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,6 +1485,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819717132}
   m_CullTransparentMesh: 0
+--- !u!4 &845980263 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9059775784997018547, guid: 5b8f1801024564cdda0afc15e846cd00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1112134836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &845980264 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3808575914393367662, guid: 5b8f1801024564cdda0afc15e846cd00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1112134836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &872043320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,7 +2446,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2114360458}
+    m_TransformParent: {fileID: 2119191576}
     m_Modifications:
     - target: {fileID: 2044943634578905673, guid: 5b8f1801024564cdda0afc15e846cd00,
         type: 3}
@@ -2537,6 +2537,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7036676
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059775784997018547, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059775784997018547, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059775784997018547, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059775784997018547, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8f1801024564cdda0afc15e846cd00, type: 3}
@@ -3005,7 +3025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressAnimation: {fileID: 7400000, guid: 854bcce25e176446cb687f23085aa9fc, type: 2}
   appearAnimation: {fileID: 7400000, guid: 0f8eeebc2c5f24cccb51f5e61958386a, type: 2}
-  planetAnimator: {fileID: 491049028}
+  planetAnimator: {fileID: 845980264}
   transitionPlanet: {fileID: 7400000, guid: 9c43735344d7848a8aedecb14ddcfda0, type: 2}
   canvasGroup: {fileID: 1629752603}
 --- !u!114 &1654764918
@@ -3672,7 +3692,7 @@ Transform:
   - {fileID: 1084092452}
   - {fileID: 1644421208}
   - {fileID: 2092503588}
-  - {fileID: 491049027}
+  - {fileID: 2119191576}
   - {fileID: 556353006}
   m_Father: {fileID: 693328587}
   m_RootOrder: 1
@@ -3696,3 +3716,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &2119191575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119191576}
+  m_Layer: 0
+  m_Name: Planet_Master
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2119191576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119191575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.36, y: -19, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children:
+  - {fileID: 845980263}
+  m_Father: {fileID: 2114360458}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
