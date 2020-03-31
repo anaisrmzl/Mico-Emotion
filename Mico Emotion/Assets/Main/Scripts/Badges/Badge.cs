@@ -40,7 +40,7 @@ namespace Emotion.Badges
 
         public void Load(DataManager dataManager)
         {
-            keys = DataManager.GenerateKeys(APIKeys.Badges, Id);
+            keys = DataManager.GenerateKeys(APIKeys.BadgesKey, Id);
             this.dataManager = dataManager;
             Reload();
         }

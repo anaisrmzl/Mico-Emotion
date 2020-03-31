@@ -27,6 +27,12 @@ namespace Emotion.Data
             private set => dataManager.SetData<bool>(DataManager.GenerateKeys(APIKeys.CompletedMeditationGameKey), value);
         }
 
+        public int LastGamePlayed
+        {
+            get => dataManager.GetData<int>(DataManager.GenerateKeys(APIKeys.LastGamePlayedKey), default(int));
+            private set => dataManager.SetData<int>(DataManager.GenerateKeys(APIKeys.LastGamePlayedKey), value);
+        }
+
         #endregion
 
         #region BEHAVIORS
@@ -39,6 +45,11 @@ namespace Emotion.Data
         public void UpdateCompletedMeditationGame(bool status)
         {
             CompletedMeditationGame = status;
+        }
+
+        public void UpdateLastGamePlayed(int game)
+        {
+            LastGamePlayed = game;
         }
 
         #endregion

@@ -45,7 +45,7 @@ namespace Utilities.Data
         private void InitializeNewUser()
         {
             User = new UserData();
-            SetData<Dictionary<string, object>>(GenerateKeys(APIKeys.Badges), defaultDatabase.DefaultBadges);
+            SetData<Dictionary<string, object>>(GenerateKeys(APIKeys.BadgesKey), defaultDatabase.DefaultBadges);
         }
 
         public void SaveLocalData()

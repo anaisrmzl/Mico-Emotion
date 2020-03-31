@@ -5,6 +5,8 @@ using Utilities.Scenes;
 using Utilities.Zenject;
 using Zenject;
 
+using Emotion.Data;
+
 namespace Emotion.Badges
 {
     public class BadgeRewardManager : MonoBehaviour
@@ -12,6 +14,7 @@ namespace Emotion.Badges
         #region FIELDS
 
         [Inject] private BadgesManager badgesManager;
+        [Inject] private UserManager userManager;
 
         [SerializeField] private Animator planetAnimation;
         [SerializeField] private AnimationClip congratulationAnimation;
@@ -27,6 +30,7 @@ namespace Emotion.Badges
             Badge badge = badgesManager.UnlockRandomBadge(badgeType);
             BadgeUI badgeUI = ZenjectUtilities.Instantiate<BadgeUI>(badgePrefab, badgeHolder.position, Quaternion.identity, badgeHolder);
             badgeUI.Initialize(badge);
+            userManager.UpdateLastGamePlayed((int)badgeType);
             StartCoroutine(ChangeScene());
         }
 
@@ -34,7 +38,7 @@ namespace Emotion.Badges
         {
             planetAnimation.Play(congratulationAnimation.name);
             yield return new WaitForSeconds(congratulationAnimation.length);
-            AnimationSceneChanger.ChangeScene(SceneNames.GameSelection);
+            AnimationSceneChanger.ChangeScene(SceneNames.Mood);
         }
 
         #endregion
