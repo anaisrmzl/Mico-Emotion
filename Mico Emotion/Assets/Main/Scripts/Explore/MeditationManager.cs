@@ -50,6 +50,5 @@ namespace Emotion.Explore
         }
 
         #endregion
-
     }
 }

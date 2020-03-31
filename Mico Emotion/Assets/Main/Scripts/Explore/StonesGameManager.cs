@@ -46,12 +46,13 @@ namespace Emotion.Explore
                 return;
 
             finishCounter++;
-            if (finishCounter == MaxFinishedToWin)
-            {
-                userManager.UpdateCompletedStonesGame(true);
-                AnimationSceneChanger.ChangeScene(SceneNames.Meditation);
-            }
+            if (finishCounter != MaxFinishedToWin)
+                return;
+
+            userManager.UpdateCompletedStonesGame(true);
+            AnimationSceneChanger.ChangeScene(SceneNames.Meditation);
         }
+
         #endregion
     }
 }

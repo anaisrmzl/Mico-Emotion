@@ -46,11 +46,11 @@ namespace Utilities.Scenes
         public static float Animate(float stayDuration = 0.0f)
         {
             AnimationSceneChanger fadeScenePrefab = Resources.Load<AnimationSceneChanger>(PathToPrefab);
-            Instantiate(fadeScenePrefab, Vector3.zero, Quaternion.identity).DonOnlyAnimation(stayDuration);
+            Instantiate(fadeScenePrefab, Vector3.zero, Quaternion.identity).DoOnlyAnimation(stayDuration);
             return fadeScenePrefab.TransitionDuration + stayDuration;
         }
 
-        private IEnumerator DonOnlyAnimationCoroutine(float stayDuration)
+        private IEnumerator DoOnlyAnimationCoroutine(float stayDuration)
         {
             animator.Play(transitionAnimation.name);
             yield return new WaitForSeconds(transitionAnimation.length);
@@ -59,9 +59,9 @@ namespace Utilities.Scenes
             Destroy(this.gameObject);
         }
 
-        private void DonOnlyAnimation(float stayDuration)
+        private void DoOnlyAnimation(float stayDuration)
         {
-            StartCoroutine(DonOnlyAnimationCoroutine(stayDuration));
+            StartCoroutine(DoOnlyAnimationCoroutine(stayDuration));
         }
 
         #endregion
