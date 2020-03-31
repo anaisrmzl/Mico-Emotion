@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using Utilities.Scenes;
+using Utilities.Zenject;
 using DG.Tweening;
+
+using Emotion.Badges;
 
 namespace Emotion.Recognize
 {
@@ -16,6 +19,7 @@ namespace Emotion.Recognize
         private const float TweenDuration = 0.5f;
         private const float MaxIdleTime = 3.0f;
 
+        [SerializeField] private BadgeRewardManager badgeRewardManagerPrefab;
         [SerializeField] private Image emotionsBar;
         [SerializeField] private AnimationClip winAnimation;
         [SerializeField] private Animator characterAnimator;
@@ -138,7 +142,9 @@ namespace Emotion.Recognize
         {
             characterAnimator.Play(winAnimation.name);
             yield return new WaitForSeconds(winAnimation.length);
-            AnimationSceneChanger.ChangeScene(SceneNames.GameSelection);
+            yield return new WaitForSeconds(AnimationSceneChanger.Animate());
+            BadgeRewardManager badgeRewardManager = ZenjectUtilities.Instantiate<BadgeRewardManager>(badgeRewardManagerPrefab, Vector3.zero, Quaternion.identity, null);
+            badgeRewardManager.CreateBadge(BadgeType.Recognize);
         }
 
         #endregion

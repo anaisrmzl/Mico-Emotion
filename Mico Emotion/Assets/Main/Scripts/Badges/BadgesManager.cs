@@ -45,9 +45,25 @@ namespace Emotion.Badges
             return badges.FindAll(collectible => collectible.Acquired == status);
         }
 
-        public Badge GetBadgeByType(BadgeType type)
+        public List<Badge> GetLockedBadgesByType(BadgeType type)
         {
-            return badges.Find(collectible => collectible.Type == type);
+            return GetAcquiredBadges(false).FindAll(collectible => collectible.Type == type);
+        }
+
+        public List<Badge> GetUnlockedBadgesByType(BadgeType type)
+        {
+            return GetAcquiredBadges(true).FindAll(collectible => collectible.Type == type);
+        }
+
+        public Badge UnlockRandomBadge(BadgeType type)
+        {
+            List<Badge> badges = GetLockedBadgesByType(type);
+            if (badges.Count == 0)
+                badges = GetUnlockedBadgesByType(type);
+
+            int randomBadge = Random.Range(0, badges.Count);
+            badges[randomBadge].AcquireBadge();
+            return badges[randomBadge];
         }
 
         #endregion

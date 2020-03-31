@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 using Utilities.Zenject;
 
@@ -21,10 +22,17 @@ namespace Emotion.Explore
 
         #endregion
 
+        #region EVENTS
+
+        public event UnityAction<bool> finished;
+
+        #endregion
+
         #region PROPERTIES
 
         public float BoundY { get; private set; }
         public float BaseX { get => transform.GetChild(0).transform.position.x; }
+        public bool FinishedPile { get => (transform.childCount >= MaxStones || BoundY >= MaxHeight); }
 
         #endregion
 
@@ -48,12 +56,13 @@ namespace Emotion.Explore
         {
             Collider2D objectCollider = transform.GetChild(transform.childCount - 1).GetComponent<Collider2D>();
             BoundY = objectCollider.bounds.max.y;
+            finished?.Invoke(FinishedPile);
             InstantiateStone();
         }
 
         private void InstantiateStone()
         {
-            if (transform.childCount >= MaxStones || BoundY >= MaxHeight)
+            if (FinishedPile)
                 return;
 
             Vector3 position = new Vector3(Random.Range(-spawningPoint.x, spawningPoint.x), spawningPoint.y, 0.0f);

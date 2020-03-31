@@ -18,3 +18,4 @@ MonoBehaviour:
   acquired: 1
   sprite: {fileID: 21300000, guid: ef317ac40edad473d8772b59c19b4195, type: 3}
   description: {fileID: 8300000, guid: ca615ff021b1f403c8c2ef5b83701936, type: 3}
+  title: {fileID: 8300000, guid: 2df00a231ca6a48fcbf8e80ad6423e25, type: 3}

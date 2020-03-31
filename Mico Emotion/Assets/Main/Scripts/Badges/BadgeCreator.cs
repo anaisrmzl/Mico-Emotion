@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 using Zenject;
@@ -11,16 +12,15 @@ namespace Emotion.Badges
     {
         #region FIELDS
 
+        private const float WaitBetweenAudios = 0.5f;
+
         [Inject] private BadgesManager badgesManager;
         [Inject] private SoundManager soundManager;
 
         [SerializeField] private Image zoomedBadge;
-        [SerializeField] private Button hearButton;
         [SerializeField] private Button backButton;
         [SerializeField] private GameObject zoomPanel;
         [SerializeField] private BadgeUI badgePrefab;
-
-        private AudioClip currentAudio;
 
         #endregion
 
@@ -29,7 +29,6 @@ namespace Emotion.Badges
         private void Awake()
         {
             backButton.onClick.AddListener(CloseZoom);
-            hearButton.onClick.AddListener(HearDescription);
 
             foreach (Badge badge in badgesManager.GetAcquiredBadges(true))
             {
@@ -44,21 +43,24 @@ namespace Emotion.Badges
             }
         }
 
-        public void InspectBadge(Sprite badgeImage, AudioClip badgeAudio)
+        public void InspectBadge(Sprite badgeImage, AudioClip titleBadgeAudio, AudioClip descriptionAudioClip)
         {
             zoomedBadge.sprite = badgeImage;
-            currentAudio = badgeAudio;
+            soundManager.PlayEffect(titleBadgeAudio);
             zoomPanel.SetActive(true);
+            StartCoroutine(HearDescription(titleBadgeAudio.length, descriptionAudioClip));
         }
 
-        private void HearDescription()
+        private IEnumerator HearDescription(float timeToWait, AudioClip descriptionAudioClip)
         {
-            soundManager.PlayEffect(currentAudio);
+            yield return new WaitForSeconds(timeToWait + WaitBetweenAudios);
+            soundManager.PlayEffect(descriptionAudioClip);
         }
 
         private void CloseZoom()
         {
             zoomPanel.SetActive(false);
+            StopAllCoroutines();
             soundManager.StopEffect();
         }
 

@@ -94,7 +94,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 2073
-      y: 6260
+      y: 5605
       width: 540
       height: 726
     spriteID: 41cfe047819674709a78290fcd91773b
@@ -564,7 +564,7 @@ ScriptedImporter:
     - {x: 0, y: 36}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -164, y: 5543}
+    uvTransform: {x: -164, y: 4888}
   - name: HumoPart1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -572,8 +572,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2073
-      y: 5771
+      x: 3822
+      y: 7665
       width: 922
       height: 481
     spriteID: 8504c5a19dc5140589dee69907a7b536
@@ -1014,7 +1014,7 @@ ScriptedImporter:
     - {x: 0, y: 37}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 402, y: 4932}
+    uvTransform: {x: 2151, y: 6826}
   - name: Lluvia
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1022,8 +1022,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2621
-      y: 6260
+      x: 808
+      y: 7895
       width: 659
       height: 247
     spriteID: 9415580c4b7134ccab8e617c835d74bd
@@ -3013,7 +3013,7 @@ ScriptedImporter:
     - {x: 42, y: 181}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1473, y: 5254}
+    uvTransform: {x: -340, y: 6889}
   - name: Nube1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3022,7 +3022,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 808
-      y: 7840
+      y: 7668
       width: 806
       height: 219
     spriteID: 89ecf6980d0f84ac69faed8ab108888d
@@ -3480,7 +3480,7 @@ ScriptedImporter:
     - {x: 0, y: 34}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -232, y: 6542}
+    uvTransform: {x: -232, y: 6370}
   - name: Gota
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3488,8 +3488,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3890
-      y: 1892
+      x: 1706
+      y: 7895
       width: 112
       height: 153
     spriteID: 8be318f35feb541b89f1895ef7edaeec
@@ -3796,7 +3796,7 @@ ScriptedImporter:
     - {x: 0, y: 23}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1277, y: 377}
+    uvTransform: {x: -907, y: 6380}
   - name: OjosEnojados
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3805,7 +3805,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1622
-      y: 7840
+      y: 7668
       width: 393
       height: 192
     spriteID: 85071bdc80155409f99a7f4d583eb9e9
@@ -4438,7 +4438,7 @@ ScriptedImporter:
     - {x: 56, y: 29}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -353, y: 6732}
+    uvTransform: {x: -353, y: 6560}
   - name: OjosCerrados
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4446,8 +4446,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 808
-      y: 8067
+      x: 3228
+      y: 5780
       width: 385
       height: 69
     spriteID: 6665d1a0b333e4f3484518feb746a4c1
@@ -5116,7 +5116,7 @@ ScriptedImporter:
     - {x: 24, y: 60}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1171, y: 6932}
+    uvTransform: {x: 1249, y: 4645}
   - name: OjosSorpresa
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5124,8 +5124,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1622
-      y: 8040
+      x: 5437
+      y: 8030
       width: 356
       height: 123
     spriteID: 046bc7042d06149a4a7d59bb99b1c6bf
@@ -5501,7 +5501,7 @@ ScriptedImporter:
     - {x: 14, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -371, y: 6928}
+    uvTransform: {x: 3444, y: 6918}
   - name: OjosBajos
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5509,8 +5509,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3003
-      y: 6136
+      x: 5441
+      y: 7848
       width: 397
       height: 92
     spriteID: 19f5e0b7313e04bd2b022803d8733f5b
@@ -6178,7 +6178,7 @@ ScriptedImporter:
     - {x: 60, y: 9}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1030, y: 5016}
+    uvTransform: {x: 3468, y: 6728}
   - name: HieloBoca
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -6186,8 +6186,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3692
-      y: 5954
+      x: 1475
+      y: 7895
       width: 223
       height: 256
     spriteID: d357b98fec8d34f4fb173d7438cc18ae
@@ -6565,7 +6565,7 @@ ScriptedImporter:
     - {x: 0, y: 29}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1632, y: 5267}
+    uvTransform: {x: -585, y: 7208}
   - name: Boca_Sonrisa
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -6573,8 +6573,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2073
-      y: 1892
+      x: 4
+      y: 7979
       width: 700
       height: 131
     spriteID: 7a69a2a850b6c45f1a7d94efafb9f937
@@ -7643,7 +7643,7 @@ ScriptedImporter:
     - {x: 98, y: 1}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 248, y: 911}
+    uvTransform: {x: -1821, y: 6998}
   - name: BocaO
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -7651,8 +7651,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3923
-      y: 5954
+      x: 3652
+      y: 5605
       width: 155
       height: 188
     spriteID: dcc1d81ba70684b21b75614aaa593af4
@@ -7988,7 +7988,7 @@ ScriptedImporter:
     - {x: 0, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1830, y: 5105}
+    uvTransform: {x: 1559, y: 4756}
   - name: BocaDisgusto
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -7997,7 +7997,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 7840
+      y: 7668
       width: 796
       height: 303
     spriteID: 1ef51407695df4a62995c5ca7f0bb518
@@ -8784,7 +8784,7 @@ ScriptedImporter:
     - {x: 24, y: 70}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1776, y: 6967}
+    uvTransform: {x: -1776, y: 6795}
   - name: BocaMiedo
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -8792,8 +8792,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3288
-      y: 6260
+      x: 2621
+      y: 5860
       width: 695
       height: 123
     spriteID: 1bb1b3f9004be4da9a2a16ef96716cea
@@ -9964,7 +9964,7 @@ ScriptedImporter:
     - {x: 107, y: 14}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1473, y: 5346}
+    uvTransform: {x: 806, y: 4946}
   - name: BocaEnojado
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -9973,7 +9973,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 2621
-      y: 6515
+      y: 5605
       width: 599
       height: 247
     spriteID: 7053dd5b978cb47e793a6596f343f6c7
@@ -10415,7 +10415,7 @@ ScriptedImporter:
     - {x: 33, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 746, y: 5683}
+    uvTransform: {x: 746, y: 4773}
   - name: BocaTriste
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -10423,8 +10423,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2781
-      y: 1892
+      x: 4752
+      y: 8030
       width: 677
       height: 135
     spriteID: a4eab393255ce4144aa51da3d9b828ad
@@ -11413,7 +11413,7 @@ ScriptedImporter:
     - {x: 90, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 941, y: 986}
+    uvTransform: {x: 2912, y: 7124}
   - name: BocaContento
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -11421,8 +11421,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3003
-      y: 5771
+      x: 4752
+      y: 7665
       width: 681
       height: 357
     spriteID: fc264ee28837c4d2abe8a1e58a522ae4
@@ -12183,7 +12183,7 @@ ScriptedImporter:
     - {x: 0, y: 42}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1173, y: 4963}
+    uvTransform: {x: 2922, y: 6857}
   - name: MundoNoche
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -12191,8 +12191,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2073
-      y: 4
+      x: 3822
+      y: 2067
       width: 1880
       height: 1880
     spriteID: affb4aacf049d4ebbadee70c7ddd6df0
@@ -12605,7 +12605,7 @@ ScriptedImporter:
     - {x: 0, y: 34}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 834, y: -135}
+    uvTransform: {x: 2583, y: 1928}
   - name: MundoSorpresa
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -12613,8 +12613,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2073
-      y: 3919
+      x: 5891
+      y: 1856
       width: 1842
       height: 1844
     spriteID: 6a4d348ccdd764a3988104b9859c2f6a
@@ -13104,7 +13104,7 @@ ScriptedImporter:
     - {x: 41, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 813, y: 3761}
+    uvTransform: {x: 4631, y: 1698}
   - name: MundoDisgusto
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -13112,8 +13112,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2073
-      y: 2067
+      x: 5891
+      y: 4
       width: 1844
       height: 1844
     spriteID: c8e5db378083948daab27f6924369bb5
@@ -13636,7 +13636,7 @@ ScriptedImporter:
     - {x: 44, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 815, y: 1909}
+    uvTransform: {x: 4633, y: -154}
   - name: MundoDia
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -13645,7 +13645,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 5605
       width: 2061
       height: 2055
     spriteID: 12fc3e5a776b2457689d1029d5569b1c
@@ -14102,7 +14102,7 @@ ScriptedImporter:
     - {x: 38, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1144, y: -45}
+    uvTransform: {x: -1144, y: 5556}
   - name: MundoTriste
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -14110,8 +14110,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4130
+      x: 3822
+      y: 3955
       width: 1848
       height: 1848
     spriteID: 5b6e9061ad0324016aa9c6f0b47a2f48
@@ -14568,7 +14568,7 @@ ScriptedImporter:
     - {x: 0, y: 38}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1252, y: 3974}
+    uvTransform: {x: 2566, y: 3799}
   - name: MundoMiedo
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -14576,8 +14576,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 5986
+      x: 3822
+      y: 5811
       width: 1846
       height: 1846
     spriteID: 9eb8c4e7c66184d13bdac20b0dbdb095
@@ -15023,7 +15023,7 @@ ScriptedImporter:
     - {x: 0, y: 37}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1254, y: 5828}
+    uvTransform: {x: 2564, y: 5653}
   - name: MundoEnojado
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -15031,8 +15031,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 2067
+      x: 3822
+      y: 4
       width: 2061
       height: 2055
     spriteID: a23544481b2694b85a5415e4d236ff04
@@ -15511,7 +15511,7 @@ ScriptedImporter:
     - {x: 40, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1144, y: 2018}
+    uvTransform: {x: 2674, y: -45}
   - name: OjosTristes
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -15519,8 +15519,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3466
-      y: 1892
+      x: 3228
+      y: 5605
       width: 416
       height: 167
     spriteID: 03fd7937b457548fba7ee8290c4ca947
@@ -15962,7 +15962,7 @@ ScriptedImporter:
     - {x: 33, y: 16}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1503, y: 802}
+    uvTransform: {x: 1265, y: 4515}
   - name: OjosAenojados
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -15970,8 +15970,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3692
-      y: 5771
+      x: 5441
+      y: 7665
       width: 356
       height: 175
     spriteID: bf186f550f4ad4f90bb858a6b01b9278
@@ -16485,7 +16485,7 @@ ScriptedImporter:
     - {x: 31, y: 45}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1699, y: 4684}
+    uvTransform: {x: 3448, y: 6578}
   - name: Boca_Serio
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -16493,8 +16493,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 8151
+      x: 808
+      y: 8150
       width: 458
       height: 37
     spriteID: f94ae84a9263c4fcc822c8bae3fc3c06
@@ -16973,20 +16973,86 @@ ScriptedImporter:
     - {x: 42, y: 3}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1942, y: 7165}
+    uvTransform: {x: -1138, y: 7164}
+  - name: Planeta_Tieto_Mapa
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 3810
+      height: 1859
+    spriteID: a730652a2c8da479791ef438708223f1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -154, y: -153}
+  - name: Planeta_Tieto_Mapa_verde
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1871
+      width: 3810
+      height: 1859
+    spriteID: 28c39f80859384110b24ff5ec32a5c7f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -154, y: 1714}
+  - name: Planeta_Tieto_Mapa_congelado
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3738
+      width: 3810
+      height: 1859
+    spriteID: 245aedc612e194caa92d8b69467cf2db
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -154, y: 3581}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 1024
+  importedTextureWidth: 2048
   importedTextureHeight: 2048
   documentSize: {x: 3968, y: 2104}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 4096
+  textureActualWidth: 8192
   textureActualHeight: 8192
   spritePackingTag: 
   resliceFromLayer: 0
@@ -17006,189 +17072,210 @@ ScriptedImporter:
     parentIndex: 0
     spriteID: 41cfe047819674709a78290fcd91773b
     layerID: 116
-    mosaicPosition: {x: 2073, y: 6260}
+    mosaicPosition: {x: 2073, y: 5605}
   - name: HumoPart1
     spriteName: HumoPart1
     isGroup: 0
     parentIndex: 0
     spriteID: 8504c5a19dc5140589dee69907a7b536
     layerID: 114
-    mosaicPosition: {x: 2073, y: 5771}
+    mosaicPosition: {x: 3822, y: 7665}
   - name: Lluvia
     spriteName: Lluvia
     isGroup: 0
     parentIndex: 0
     spriteID: 9415580c4b7134ccab8e617c835d74bd
     layerID: 88
-    mosaicPosition: {x: 2621, y: 6260}
+    mosaicPosition: {x: 808, y: 7895}
   - name: Nube1
     spriteName: Nube1
     isGroup: 0
     parentIndex: 0
     spriteID: 89ecf6980d0f84ac69faed8ab108888d
     layerID: 86
-    mosaicPosition: {x: 808, y: 7840}
+    mosaicPosition: {x: 808, y: 7668}
   - name: Gota
     spriteName: Gota
     isGroup: 0
     parentIndex: 0
     spriteID: 8be318f35feb541b89f1895ef7edaeec
     layerID: 12
-    mosaicPosition: {x: 3890, y: 1892}
+    mosaicPosition: {x: 1706, y: 7895}
   - name: OjosEnojados
     spriteName: OjosEnojados
     isGroup: 0
     parentIndex: 0
     spriteID: 85071bdc80155409f99a7f4d583eb9e9
     layerID: 20
-    mosaicPosition: {x: 1622, y: 7840}
+    mosaicPosition: {x: 1622, y: 7668}
   - name: OjosCerrados
     spriteName: OjosCerrados
     isGroup: 0
     parentIndex: 0
     spriteID: 6665d1a0b333e4f3484518feb746a4c1
     layerID: 42
-    mosaicPosition: {x: 808, y: 8067}
+    mosaicPosition: {x: 3228, y: 5780}
   - name: OjosTristes
     spriteName: OjosTristes
     isGroup: 0
     parentIndex: 0
     spriteID: 03fd7937b457548fba7ee8290c4ca947
     layerID: 118
-    mosaicPosition: {x: 3466, y: 1892}
+    mosaicPosition: {x: 3228, y: 5605}
   - name: OjosAenojados
     spriteName: OjosAenojados
     isGroup: 0
     parentIndex: 0
     spriteID: bf186f550f4ad4f90bb858a6b01b9278
     layerID: 120
-    mosaicPosition: {x: 3692, y: 5771}
+    mosaicPosition: {x: 5441, y: 7665}
   - name: OjosSorpresa
     spriteName: OjosSorpresa
     isGroup: 0
     parentIndex: 0
     spriteID: 046bc7042d06149a4a7d59bb99b1c6bf
     layerID: 36
-    mosaicPosition: {x: 1622, y: 8040}
+    mosaicPosition: {x: 5437, y: 8030}
   - name: OjosBajos
     spriteName: OjosBajos
     isGroup: 0
     parentIndex: 0
     spriteID: 19f5e0b7313e04bd2b022803d8733f5b
     layerID: 10
-    mosaicPosition: {x: 3003, y: 6136}
+    mosaicPosition: {x: 5441, y: 7848}
   - name: HieloBoca
     spriteName: HieloBoca
     isGroup: 0
     parentIndex: 0
     spriteID: d357b98fec8d34f4fb173d7438cc18ae
     layerID: 34
-    mosaicPosition: {x: 3692, y: 5954}
+    mosaicPosition: {x: 1475, y: 7895}
   - name: Boca_Serio
     spriteName: Boca_Serio
     isGroup: 0
     parentIndex: 0
     spriteID: f94ae84a9263c4fcc822c8bae3fc3c06
     layerID: 119
-    mosaicPosition: {x: 4, y: 8151}
+    mosaicPosition: {x: 808, y: 8150}
   - name: Boca_Sonrisa
     spriteName: Boca_Sonrisa
     isGroup: 0
     parentIndex: 0
     spriteID: 7a69a2a850b6c45f1a7d94efafb9f937
     layerID: 44
-    mosaicPosition: {x: 2073, y: 1892}
+    mosaicPosition: {x: 4, y: 7979}
   - name: BocaO
     spriteName: BocaO
     isGroup: 0
     parentIndex: 0
     spriteID: dcc1d81ba70684b21b75614aaa593af4
     layerID: 32
-    mosaicPosition: {x: 3923, y: 5954}
+    mosaicPosition: {x: 3652, y: 5605}
   - name: BocaDisgusto
     spriteName: BocaDisgusto
     isGroup: 0
     parentIndex: 0
     spriteID: 1ef51407695df4a62995c5ca7f0bb518
     layerID: 28
-    mosaicPosition: {x: 4, y: 7840}
+    mosaicPosition: {x: 4, y: 7668}
   - name: BocaMiedo
     spriteName: BocaMiedo
     isGroup: 0
     parentIndex: 0
     spriteID: 1bb1b3f9004be4da9a2a16ef96716cea
     layerID: 24
-    mosaicPosition: {x: 3288, y: 6260}
+    mosaicPosition: {x: 2621, y: 5860}
   - name: BocaEnojado
     spriteName: BocaEnojado
     isGroup: 0
     parentIndex: 0
     spriteID: 7053dd5b978cb47e793a6596f343f6c7
     layerID: 18
-    mosaicPosition: {x: 2621, y: 6515}
+    mosaicPosition: {x: 2621, y: 5605}
   - name: BocaTriste
     spriteName: BocaTriste
     isGroup: 0
     parentIndex: 0
     spriteID: a4eab393255ce4144aa51da3d9b828ad
     layerID: 14
-    mosaicPosition: {x: 2781, y: 1892}
+    mosaicPosition: {x: 4752, y: 8030}
   - name: BocaContento
     spriteName: BocaContento
     isGroup: 0
     parentIndex: 0
     spriteID: fc264ee28837c4d2abe8a1e58a522ae4
     layerID: 7
-    mosaicPosition: {x: 3003, y: 5771}
+    mosaicPosition: {x: 4752, y: 7665}
   - name: MundoNoche
     spriteName: MundoNoche
     isGroup: 0
     parentIndex: 0
     spriteID: affb4aacf049d4ebbadee70c7ddd6df0
     layerID: 38
-    mosaicPosition: {x: 2073, y: 4}
+    mosaicPosition: {x: 3822, y: 2067}
   - name: MundoSorpresa
     spriteName: MundoSorpresa
     isGroup: 0
     parentIndex: 0
     spriteID: 6a4d348ccdd764a3988104b9859c2f6a
     layerID: 30
-    mosaicPosition: {x: 2073, y: 3919}
+    mosaicPosition: {x: 5891, y: 1856}
   - name: MundoDisgusto
     spriteName: MundoDisgusto
     isGroup: 0
     parentIndex: 0
     spriteID: c8e5db378083948daab27f6924369bb5
     layerID: 26
-    mosaicPosition: {x: 2073, y: 2067}
+    mosaicPosition: {x: 5891, y: 4}
   - name: MundoDia
     spriteName: MundoDia
     isGroup: 0
     parentIndex: 0
     spriteID: 12fc3e5a776b2457689d1029d5569b1c
     layerID: 5
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 5605}
   - name: MundoTriste
     spriteName: MundoTriste
     isGroup: 0
     parentIndex: 0
     spriteID: 5b6e9061ad0324016aa9c6f0b47a2f48
     layerID: 90
-    mosaicPosition: {x: 4, y: 4130}
+    mosaicPosition: {x: 3822, y: 3955}
   - name: MundoMiedo
     spriteName: MundoMiedo
     isGroup: 0
     parentIndex: 0
     spriteID: 9eb8c4e7c66184d13bdac20b0dbdb095
     layerID: 22
-    mosaicPosition: {x: 4, y: 5986}
+    mosaicPosition: {x: 3822, y: 5811}
   - name: MundoEnojado
     spriteName: MundoEnojado
     isGroup: 0
     parentIndex: 0
     spriteID: a23544481b2694b85a5415e4d236ff04
     layerID: 16
-    mosaicPosition: {x: 4, y: 2067}
+    mosaicPosition: {x: 3822, y: 4}
+  - name: Planeta_Tieto_Mapa
+    spriteName: Planeta_Tieto_Mapa
+    isGroup: 0
+    parentIndex: 0
+    spriteID: a730652a2c8da479791ef438708223f1
+    layerID: 148
+    mosaicPosition: {x: 4, y: 4}
+  - name: Planeta_Tieto_Mapa_verde
+    spriteName: Planeta_Tieto_Mapa_verde
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 28c39f80859384110b24ff5ec32a5c7f
+    layerID: 147
+    mosaicPosition: {x: 4, y: 1871}
+  - name: Planeta_Tieto_Mapa_congelado
+    spriteName: Planeta_Tieto_Mapa_congelado
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 245aedc612e194caa92d8b69467cf2db
+    layerID: 146
+    mosaicPosition: {x: 4, y: 3738}
   characterData:
     bones:
     - name: B_mundo

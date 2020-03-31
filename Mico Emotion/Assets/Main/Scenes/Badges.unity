@@ -1398,7 +1398,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomedBadge: {fileID: 316306584}
-  hearButton: {fileID: 316306583}
   backButton: {fileID: 760465292}
   zoomPanel: {fileID: 1081631560}
   badgePrefab: {fileID: 876602006263674662, guid: 729d552ae2e994cdb948586d2c2f6f80,
