@@ -24,6 +24,11 @@ namespace Emotion.Recognize
             accelerometerShake.shakeDevice += CharacterGoesDizzy;
         }
 
+        private void OnDestroy()
+        {
+            accelerometerShake.shakeDevice -= CharacterGoesDizzy;
+        }
+
         private void CharacterGoesDizzy()
         {
             interactableCharacter.PlayAnimation(dizzyAnimation, value, transform.name);

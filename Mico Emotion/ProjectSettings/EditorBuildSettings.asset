@@ -36,6 +36,6 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/GameSelection.unity
     guid: be9edbc83a85f433f9a9c32f72ae14b6
   - enabled: 1
-    path: Assets/Main/Scenes/TitoTest.unity
+    path: Assets/Main/Scenes/Meditation.unity
     guid: 2d4a703b52a6d4dfe9506cd63868417e
   m_configObjects: {}

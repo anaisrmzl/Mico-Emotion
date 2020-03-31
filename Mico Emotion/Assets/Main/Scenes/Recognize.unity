@@ -3023,7 +3023,7 @@ MonoBehaviour:
   badgeRewardManagerPrefab: {fileID: 734971829222553394, guid: 0532f86dcbe5e4b1295e23e6a78e986a,
     type: 3}
   emotionsBar: {fileID: 2062689301}
-  winAnimation: {fileID: 7400000, guid: c166be0d548f34a5ab8764f3d9b1c436, type: 2}
+  winAnimation: {fileID: 7400000, guid: b043bed48ca39984f84c7bc03df0f23c, type: 2}
   characterAnimator: {fileID: 1217232353}
 --- !u!4 &1179076474
 Transform:

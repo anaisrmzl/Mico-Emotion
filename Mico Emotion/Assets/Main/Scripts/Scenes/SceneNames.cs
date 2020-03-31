@@ -11,6 +11,7 @@
         public const string GameSelection = "GameSelection";
         public const string Explore = "Explore";
         public const string CharacterSelection = "CharacterSelection";
+        public const string Meditation = "Meditation";
 
         #endregion
     }

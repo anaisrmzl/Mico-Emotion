@@ -28,6 +28,11 @@ namespace Emotion.Splash
             videoPlayer.loopPointReached += VideoEnded;
         }
 
+        private void OnDestroy()
+        {
+            videoPlayer.loopPointReached -= VideoEnded;
+        }
+
         private void VideoEnded(VideoPlayer videoPlayer)
         {
             videoPlayer.Stop();
