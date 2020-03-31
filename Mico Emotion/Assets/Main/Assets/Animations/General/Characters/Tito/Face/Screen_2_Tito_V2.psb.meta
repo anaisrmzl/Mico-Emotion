@@ -1,0 +1,1393 @@
+fileFormatVersion: 2
+guid: 24655f549aff5ec4c95bd6ce7efb8673
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Forma 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7899
+      y: 2346
+      width: 284
+      height: 206
+    spriteID: fae5213b16dea8448a6ee7dee1ac3b93
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5207, y: 1426}
+  - name: Forma 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3906
+      y: 2748
+      width: 158
+      height: 183
+    spriteID: a475ac805edb556488eb3472a9e987ae
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2440, y: 1859}
+  - name: ARA_CUERPO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7899
+      y: 2060
+      width: 232
+      height: 278
+    spriteID: 0dc21e264a436ca4c846fbdcf34ca815
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4791, y: 446}
+  - name: ARA_COLMILLO_DCHO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6210
+      y: 1563
+      width: 23
+      height: 65
+    spriteID: dcd20ba0ba6ee354a9c9a4adfa9861fd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2971, y: -14}
+  - name: ARA_COLMILLO_IZQ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2801
+      y: 3050
+      width: 22
+      height: 65
+    spriteID: 5f149651cca32b641879064169be20dc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -388, y: 1473}
+  - name: ARA_PATA_1_DCHA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3743
+      y: 3041
+      width: 83
+      height: 118
+    spriteID: 487930f16121d6a44b42532293706853
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 474, y: 1442}
+  - name: ARA_PATA_2_DCHA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2586
+      y: 3050
+      width: 100
+      height: 88
+    spriteID: 556b74d2423d3f740a937ff4f6e51ccd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -711, y: 1372}
+  - name: ARA_PATA_3_DCHA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7989
+      y: 2560
+      width: 118
+      height: 76
+    spriteID: 496b6085d3df6e945bd7f7b899b616c7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4701, y: 773}
+  - name: ARA_PATA_4_DCHA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6118
+      y: 1563
+      width: 84
+      height: 96
+    spriteID: 3d83b154676a095429e1abaf3c2d7a82
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2847, y: -270}
+  - name: ARA_PATA_1_IZQ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7899
+      y: 2560
+      width: 82
+      height: 118
+    spriteID: 23d1abb936fa6174295e0b0a49fb162a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4800, y: 961}
+  - name: ARA_PATA_2_IZQ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2694
+      y: 3050
+      width: 99
+      height: 88
+    spriteID: aad521ea1c4628f419e65a1eceae828d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -360, y: 1372}
+  - name: ARA_PATA_3_IZQ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7989
+      y: 2644
+      width: 118
+      height: 76
+    spriteID: 2ea1e8da6aa853d4ea71535b876e2f7d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4945, y: 857}
+  - name: ARA_PATA_4_IZQ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6118
+      y: 1667
+      width: 84
+      height: 96
+    spriteID: 38de53f153ac4464f902676a4327272a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3023, y: -166}
+  - name: TITO_LAGRIMA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5170
+      y: 2508
+      width: 102
+      height: 142
+    spriteID: daee50d51d53bc247ae621133de21e2e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3249, y: 1822}
+  - name: moco
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3743
+      y: 2748
+      width: 155
+      height: 285
+    spriteID: 5b48613210289074a86f5b948aa108e6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1632, y: 2247}
+  - name: TITO_OJOS_APRETADOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1901
+      y: 3050
+      width: 677
+      height: 100
+    spriteID: 374fa803c751f844685d031934d9cfa7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 50, y: 2149}
+  - name: TITO_OJOS_ENOJO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6579
+      y: 2481
+      width: 541
+      height: 241
+    spriteID: 2bb4740adc9352f4c861a4e590daebff
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4644, y: 1634}
+  - name: TITO_OJO_CONTENTO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5739
+      y: 1951
+      width: 499
+      height: 86
+    spriteID: 02a7b02c221c6f841adcc5deed1fb0b8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3773, y: 1072}
+  - name: TITO_OJO_CERRADOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3221
+      y: 3004
+      width: 499
+      height: 86
+    spriteID: 53edd99740ae91e46bdec09135d4fefa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1255, y: 2125}
+  - name: TITO_OJOS_ENOJO_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3221
+      y: 2748
+      width: 514
+      height: 248
+    spriteID: 8021dd822df8c294cbfa266b5324594a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1265, y: 1888}
+  - name: TITO_OJOS_MAREADOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5291
+      y: 2481
+      width: 636
+      height: 241
+    spriteID: 91b7d660441a22d429f5e0159e2f6a13
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3421, y: 1651}
+  - name: TITO_OJOS_TRISTES
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3434
+      y: 2508
+      width: 617
+      height: 144
+    spriteID: 19e6913823574404eaabb5a3fb2ad93a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1539, y: 1668}
+  - name: TITO_OJOS_LLOROSOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5935
+      y: 2481
+      width: 636
+      height: 214
+    spriteID: 1f940c4dbe9561947955b596cb51cc9d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4047, y: 1669}
+  - name: TITO_OJOS_TRISTES_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4059
+      y: 2508
+      width: 617
+      height: 144
+    spriteID: 58e88d0b27508d045b53f95767c7a877
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2164, y: 1668}
+  - name: TITO_OJOS_SEMITRISTES
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1901
+      y: 2748
+      width: 934
+      height: 294
+    spriteID: 026d5fcf965dc8c4eb5726e0a731534d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 178, y: 1899}
+  - name: TITO_OJOS_ABIERTOS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4684
+      y: 2508
+      width: 478
+      height: 163
+    spriteID: 0dbaf00e6c845d74f9389ec748533ed6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2717, y: 1661}
+  - name: TITO_BOCA_LLORANDO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6247
+      y: 1484
+      width: 1889
+      height: 464
+    spriteID: 4471607bdad2f1246aeddbd5c9208abf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4974, y: 1204}
+  - name: TITO_BOCA_PUCHERO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3434
+      y: 2060
+      width: 1849
+      height: 440
+    spriteID: e97072fa44ecd0d44a4358833f55d547
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2142, y: 1684}
+  - name: TITO_BOCA_TRISTE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5291
+      y: 2060
+      width: 1889
+      height: 413
+    spriteID: 961dfd5134b7cc0488721d87ec4c6fbb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4016, y: 1733}
+  - name: TITO_BOCA_TRISTE_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2748
+      width: 1889
+      height: 413
+    spriteID: 2353db6d84522c84589257e3116ca8c4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1271, y: 2421}
+  - name: TITO_BOCA_NEUTRA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6409
+      y: 4
+      width: 1673
+      height: 658
+    spriteID: a4544a6267c19bc4d8bf64ae2407c37d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5042, y: -150}
+  - name: TITO_BOCA_SONRISA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4447
+      y: 4
+      width: 1954
+      height: 771
+    spriteID: c805c7088ad2ef047bb925d572dca7e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3204, y: -146}
+  - name: TITO_BOCA_ABIERTA_FELIZ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2060
+      width: 1824
+      height: 680
+    spriteID: c8474391532cb044dadfc12b83cf7808
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1284, y: 1962}
+  - name: TITO_BOCA_MIEDO/SORPRESA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6247
+      y: 783
+      width: 1928
+      height: 693
+    spriteID: 0c991eccee8a6c24a9ca31ea388e647b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4984, y: 601}
+  - name: "TITO_BOCA_GRU\xD1IDO"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3609
+      width: 1139
+      height: 455
+    spriteID: 0f93559ab3a8ce8449ad04429d9eb9cf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1638, y: 3261}
+  - name: TITO_BOCA_ABIERTA_FELIZ_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 2060
+      width: 1590
+      height: 597
+    spriteID: 8a306f076eca27542853976d372b111c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 425, y: 1900}
+  - name: TITO_BOCA_COMIENDO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4447
+      y: 783
+      width: 1792
+      height: 772
+    spriteID: 100be5fe2f9dd6340801b32827483fa6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3148, y: 686}
+  - name: TITO_BOCA_DISGUSTO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4447
+      y: 1563
+      width: 1284
+      height: 471
+    spriteID: 0b19508fb95879746bb91144bbdefcd4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2883, y: 1323}
+  - name: BOCA DISGUSTO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3169
+      width: 1238
+      height: 432
+    spriteID: f926b942d07829942946d13c0ac3413c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1569, y: 2874}
+  - name: TITO_CUERNO_DCHO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2843
+      y: 2748
+      width: 370
+      height: 380
+    spriteID: 826bcb4fa95a617428bb5562b9cfdb86
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 347, y: 1249}
+  - name: TITO_CUERNO_IZQ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5739
+      y: 1563
+      width: 371
+      height: 380
+    spriteID: 6ac77bb482f04604d8b10d3e76857d26
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4159, y: 64}
+  - name: TITO_OREJA_IZQ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7188
+      y: 2060
+      width: 703
+      height: 543
+    spriteID: 9c05a38512ac1524684cd1b20489d03d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4326, y: 787}
+  - name: TITO_OREJA_IZQ_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4072
+      width: 701
+      height: 543
+    spriteID: 1e14d10a57cc50642a7eefe07b4de153
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -887, y: 2799}
+  - name: FONDO_TITO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 4435
+      height: 2048
+    spriteID: 0654a0905d3fb0640ac49028a5884d72
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 4435, y: 2048}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 8192
+  textureActualHeight: 8192
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Forma 1
+    spriteName: Forma 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fae5213b16dea8448a6ee7dee1ac3b93
+    layerID: 195
+    mosaicPosition: {x: 7899, y: 2346}
+  - name: Forma 2
+    spriteName: Forma 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a475ac805edb556488eb3472a9e987ae
+    layerID: 196
+    mosaicPosition: {x: 3906, y: 2748}
+  - name: ARA_CUERPO
+    spriteName: ARA_CUERPO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0dc21e264a436ca4c846fbdcf34ca815
+    layerID: 147
+    mosaicPosition: {x: 7899, y: 2060}
+  - name: ARA_COLMILLO_DCHO
+    spriteName: ARA_COLMILLO_DCHO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dcd20ba0ba6ee354a9c9a4adfa9861fd
+    layerID: 146
+    mosaicPosition: {x: 6210, y: 1563}
+  - name: ARA_COLMILLO_IZQ
+    spriteName: ARA_COLMILLO_IZQ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5f149651cca32b641879064169be20dc
+    layerID: 145
+    mosaicPosition: {x: 2801, y: 3050}
+  - name: ARA_PATA_1_DCHA
+    spriteName: ARA_PATA_1_DCHA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 487930f16121d6a44b42532293706853
+    layerID: 144
+    mosaicPosition: {x: 3743, y: 3041}
+  - name: ARA_PATA_2_DCHA
+    spriteName: ARA_PATA_2_DCHA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 556b74d2423d3f740a937ff4f6e51ccd
+    layerID: 143
+    mosaicPosition: {x: 2586, y: 3050}
+  - name: ARA_PATA_3_DCHA
+    spriteName: ARA_PATA_3_DCHA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 496b6085d3df6e945bd7f7b899b616c7
+    layerID: 142
+    mosaicPosition: {x: 7989, y: 2560}
+  - name: ARA_PATA_4_DCHA
+    spriteName: ARA_PATA_4_DCHA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3d83b154676a095429e1abaf3c2d7a82
+    layerID: 141
+    mosaicPosition: {x: 6118, y: 1563}
+  - name: ARA_PATA_1_IZQ
+    spriteName: ARA_PATA_1_IZQ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23d1abb936fa6174295e0b0a49fb162a
+    layerID: 140
+    mosaicPosition: {x: 7899, y: 2560}
+  - name: ARA_PATA_2_IZQ
+    spriteName: ARA_PATA_2_IZQ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: aad521ea1c4628f419e65a1eceae828d
+    layerID: 139
+    mosaicPosition: {x: 2694, y: 3050}
+  - name: ARA_PATA_3_IZQ
+    spriteName: ARA_PATA_3_IZQ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ea1e8da6aa853d4ea71535b876e2f7d
+    layerID: 138
+    mosaicPosition: {x: 7989, y: 2644}
+  - name: ARA_PATA_4_IZQ
+    spriteName: ARA_PATA_4_IZQ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 38de53f153ac4464f902676a4327272a
+    layerID: 137
+    mosaicPosition: {x: 6118, y: 1667}
+  - name: TITO_LAGRIMA
+    spriteName: TITO_LAGRIMA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: daee50d51d53bc247ae621133de21e2e
+    layerID: 75
+    mosaicPosition: {x: 5170, y: 2508}
+  - name: moco
+    spriteName: moco
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5b48613210289074a86f5b948aa108e6
+    layerID: 218
+    mosaicPosition: {x: 3743, y: 2748}
+  - name: TITO_OJOS_APRETADOS
+    spriteName: TITO_OJOS_APRETADOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 374fa803c751f844685d031934d9cfa7
+    layerID: 205
+    mosaicPosition: {x: 1901, y: 3050}
+  - name: TITO_OJOS_ENOJO
+    spriteName: TITO_OJOS_ENOJO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2bb4740adc9352f4c861a4e590daebff
+    layerID: 209
+    mosaicPosition: {x: 6579, y: 2481}
+  - name: TITO_OJO_CONTENTO
+    spriteName: TITO_OJO_CONTENTO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 02a7b02c221c6f841adcc5deed1fb0b8
+    layerID: 197
+    mosaicPosition: {x: 5739, y: 1951}
+  - name: TITO_OJO_CERRADOS
+    spriteName: TITO_OJO_CERRADOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 53edd99740ae91e46bdec09135d4fefa
+    layerID: 189
+    mosaicPosition: {x: 3221, y: 3004}
+  - name: TITO_OJOS_ENOJO
+    spriteName: TITO_OJOS_ENOJO_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8021dd822df8c294cbfa266b5324594a
+    layerID: 183
+    mosaicPosition: {x: 3221, y: 2748}
+  - name: TITO_OJOS_MAREADOS
+    spriteName: TITO_OJOS_MAREADOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 91b7d660441a22d429f5e0159e2f6a13
+    layerID: 179
+    mosaicPosition: {x: 5291, y: 2481}
+  - name: TITO_OJOS_TRISTES
+    spriteName: TITO_OJOS_TRISTES
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 19e6913823574404eaabb5a3fb2ad93a
+    layerID: 25
+    mosaicPosition: {x: 3434, y: 2508}
+  - name: TITO_OJOS_LLOROSOS
+    spriteName: TITO_OJOS_LLOROSOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1f940c4dbe9561947955b596cb51cc9d
+    layerID: 111
+    mosaicPosition: {x: 5935, y: 2481}
+  - name: TITO_OJOS_TRISTES
+    spriteName: TITO_OJOS_TRISTES_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58e88d0b27508d045b53f95767c7a877
+    layerID: 120
+    mosaicPosition: {x: 4059, y: 2508}
+  - name: TITO_OJOS_SEMITRISTES
+    spriteName: TITO_OJOS_SEMITRISTES
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 026d5fcf965dc8c4eb5726e0a731534d
+    layerID: 131
+    mosaicPosition: {x: 1901, y: 2748}
+  - name: TITO_OJOS_ABIERTOS
+    spriteName: TITO_OJOS_ABIERTOS
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0dbaf00e6c845d74f9389ec748533ed6
+    layerID: 16
+    mosaicPosition: {x: 4684, y: 2508}
+  - name: TITO_BOCA_LLORANDO
+    spriteName: TITO_BOCA_LLORANDO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4471607bdad2f1246aeddbd5c9208abf
+    layerID: 104
+    mosaicPosition: {x: 6247, y: 1484}
+  - name: TITO_BOCA_PUCHERO
+    spriteName: TITO_BOCA_PUCHERO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e97072fa44ecd0d44a4358833f55d547
+    layerID: 116
+    mosaicPosition: {x: 3434, y: 2060}
+  - name: TITO_BOCA_TRISTE
+    spriteName: TITO_BOCA_TRISTE
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 961dfd5134b7cc0488721d87ec4c6fbb
+    layerID: 65
+    mosaicPosition: {x: 5291, y: 2060}
+  - name: TITO_BOCA_TRISTE
+    spriteName: TITO_BOCA_TRISTE_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2353db6d84522c84589257e3116ca8c4
+    layerID: 128
+    mosaicPosition: {x: 4, y: 2748}
+  - name: TITO_BOCA_NEUTRA
+    spriteName: TITO_BOCA_NEUTRA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a4544a6267c19bc4d8bf64ae2407c37d
+    layerID: 194
+    mosaicPosition: {x: 6409, y: 4}
+  - name: TITO_BOCA_SONRISA
+    spriteName: TITO_BOCA_SONRISA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c805c7088ad2ef047bb925d572dca7e3
+    layerID: 55
+    mosaicPosition: {x: 4447, y: 4}
+  - name: TITO_BOCA_ABIERTA_FELIZ
+    spriteName: TITO_BOCA_ABIERTA_FELIZ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c8474391532cb044dadfc12b83cf7808
+    layerID: 176
+    mosaicPosition: {x: 4, y: 2060}
+  - name: TITO_BOCA_MIEDO/SORPRESA
+    spriteName: TITO_BOCA_MIEDO/SORPRESA
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0c991eccee8a6c24a9ca31ea388e647b
+    layerID: 163
+    mosaicPosition: {x: 6247, y: 783}
+  - name: "TITO_BOCA_GRU\xD1IDO"
+    spriteName: "TITO_BOCA_GRU\xD1IDO"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0f93559ab3a8ce8449ad04429d9eb9cf
+    layerID: 159
+    mosaicPosition: {x: 4, y: 3609}
+  - name: TITO_BOCA_ABIERTA_FELIZ
+    spriteName: TITO_BOCA_ABIERTA_FELIZ_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8a306f076eca27542853976d372b111c
+    layerID: 217
+    mosaicPosition: {x: 1836, y: 2060}
+  - name: TITO_BOCA_COMIENDO
+    spriteName: TITO_BOCA_COMIENDO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 100be5fe2f9dd6340801b32827483fa6
+    layerID: 155
+    mosaicPosition: {x: 4447, y: 783}
+  - name: TITO_BOCA_DISGUSTO
+    spriteName: TITO_BOCA_DISGUSTO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0b19508fb95879746bb91144bbdefcd4
+    layerID: 213
+    mosaicPosition: {x: 4447, y: 1563}
+  - name: BOCA DISGUSTO
+    spriteName: BOCA DISGUSTO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f926b942d07829942946d13c0ac3413c
+    layerID: 201
+    mosaicPosition: {x: 4, y: 3169}
+  - name: TITO_CUERNO_DCHO
+    spriteName: TITO_CUERNO_DCHO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 826bcb4fa95a617428bb5562b9cfdb86
+    layerID: 13
+    mosaicPosition: {x: 2843, y: 2748}
+  - name: TITO_CUERNO_IZQ
+    spriteName: TITO_CUERNO_IZQ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6ac77bb482f04604d8b10d3e76857d26
+    layerID: 10
+    mosaicPosition: {x: 5739, y: 1563}
+  - name: TITO_OREJA_IZQ
+    spriteName: TITO_OREJA_IZQ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9c05a38512ac1524684cd1b20489d03d
+    layerID: 7
+    mosaicPosition: {x: 7188, y: 2060}
+  - name: TITO_OREJA_IZQ
+    spriteName: TITO_OREJA_IZQ_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1e14d10a57cc50642a7eefe07b4de153
+    layerID: 4
+    mosaicPosition: {x: 4, y: 4072}
+  - name: FONDO_TITO
+    spriteName: FONDO_TITO
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0654a0905d3fb0640ac49028a5884d72
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  boneGOs: []
+  generateGOHierarchy: 0
+  textureAssetName: Screen_2_Tito_V2 Texture
+  prefabAssetName: Screen_2_Tito_V2 Prefab
+  spriteLibAssetName: Screen_2_Tito_V2 Sprite Lib

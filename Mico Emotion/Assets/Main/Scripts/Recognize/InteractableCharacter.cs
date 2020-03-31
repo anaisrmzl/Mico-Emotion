@@ -18,8 +18,8 @@ namespace Emotion.Recognize
 
         [SerializeField] private Image emotionsBar;
         [SerializeField] private AnimationClip winAnimation;
+        [SerializeField] private Animator characterAnimator;
 
-        private Animator animator;
         private bool isIdle = true;
         private bool animated;
         private bool block = false;
@@ -47,7 +47,6 @@ namespace Emotion.Recognize
 
         private void Awake()
         {
-            animator = GetComponent<Animator>();
             happiness = (int)(emotionsBar.fillAmount * NumberOfSteps);
             CountForIdle();
         }
@@ -85,7 +84,7 @@ namespace Emotion.Recognize
             }
 
             lastInteractionId = id;
-            animator.Play(clip.name);
+            characterAnimator.Play(clip.name);
             interacted?.Invoke();
             StartCoroutine(WaitAnimation(clip.length));
         }
@@ -95,7 +94,7 @@ namespace Emotion.Recognize
             if (happiness == NumberOfSteps)
                 return;
 
-            animator.Play(clip.name);
+            characterAnimator.Play(clip.name);
             interacted?.Invoke();
         }
 
@@ -137,7 +136,7 @@ namespace Emotion.Recognize
 
         private IEnumerator EndGame()
         {
-            animator.Play(winAnimation.name);
+            characterAnimator.Play(winAnimation.name);
             yield return new WaitForSeconds(winAnimation.length);
             AnimationSceneChanger.ChangeScene(SceneNames.GameSelection);
         }

@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 50
   m_Sprite: {fileID: 8100452913196303293, guid: 94815ce0026084e2eb82fbb292cea07b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -134,9 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  limit: {x: -13.65, y: -10.24, z: 0}
+  offset: 0
   spawnPosition: {x: -10.5, y: -4, z: 0}
-  loopAnimation: {fileID: 7400000, guid: 23bb023534b6a4e3ea12006e2875d2a8, type: 2}
-  onceAnimation: {fileID: 7400000, guid: d9c8c131b435d47cc86529fe52abf8e7, type: 2}
-  idleAnimation: {fileID: 7400000, guid: 64800933ebfc34d16a02f43e5cc4f14e, type: 2}
+  loopAnimation: {fileID: 7400000, guid: 68dcc92a99cef4ba3af6eb7cfd0a6721, type: 2}
+  onceAnimation: {fileID: 7400000, guid: d58093d2957c3274381389524c44abf7, type: 2}
+  idleAnimation: {fileID: 7400000, guid: 8f3d41bd62c594d4c8964bdaea46b40a, type: 2}
   value: 1
