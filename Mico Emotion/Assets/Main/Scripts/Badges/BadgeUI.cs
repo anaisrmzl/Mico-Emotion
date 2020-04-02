@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 
 using Zenject;
+using Utilities.Sound;
 
 namespace Emotion.Badges
 {
@@ -10,6 +11,7 @@ namespace Emotion.Badges
         #region FIELDS
 
         [InjectOptional] private BadgeCreator badgeCreator;
+        [Inject] private SoundManager soundManager;
 
         [SerializeField] private Image badgeImage;
         [SerializeField] private Image blocked;
@@ -30,6 +32,7 @@ namespace Emotion.Badges
         {
             badge = newBadge;
             badgeImage.sprite = badge.Sprite;
+            blocked.sprite = badge.Sprite;
             blocked.gameObject.SetActive(!badge.Acquired);
         }
 
@@ -38,7 +41,11 @@ namespace Emotion.Badges
             if (badgeCreator == null)
                 return;
 
-            badgeCreator.InspectBadge(badge.Sprite, badge.Title, badge.Description);
+            soundManager.PlayEffect(badge.Title);
+            if (!badge.Acquired)
+                return;
+
+            badgeCreator.InspectBadge(badge.Sprite, badge.Title.length, badge.Description);
         }
 
         #endregion
