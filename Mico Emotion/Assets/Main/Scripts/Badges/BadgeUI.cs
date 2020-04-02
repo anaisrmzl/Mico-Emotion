@@ -41,7 +41,7 @@ namespace Emotion.Badges
             if (badgeCreator == null)
                 return;
 
-            soundManager.PlayEffect(badge.Title);
+            soundManager.PlayVoice(badge.Title);
             if (!badge.Acquired)
                 return;
 

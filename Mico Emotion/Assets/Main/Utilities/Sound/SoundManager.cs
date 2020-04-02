@@ -2,9 +2,13 @@
 
 namespace Utilities.Sound
 {
-    public class SoundManager : MonoBehaviour
+    public partial class SoundManager : MonoBehaviour
     {
         #region FIELDS
+
+        private const float DefaultMusicVolume = 0.5f;
+        private const float DefaultSFXVolume = 0.8f;
+        private const float DefaultVoiceVolume = 1.0f;
 
         [SerializeField] private AudioSource effectSource;
         [SerializeField] private AudioSource musicSource;
@@ -20,6 +24,7 @@ namespace Utilities.Sound
         public AudioSource VoiceSource { get => voiceSource; }
         public AudioSource MusicSource { get => musicSource; }
         public bool MusicIsPlaying { get => musicSource.isPlaying; }
+        public AudioClip CurrentMusic { get => musicSource.clip; }
 
         #endregion
 
@@ -27,9 +32,9 @@ namespace Utilities.Sound
 
         public void Awake()
         {
-            effectSource.volume = 1;
-            musicSource.volume = 1;
-            voiceSource.volume = 1;
+            effectSource.volume = DefaultSFXVolume;
+            musicSource.volume = DefaultMusicVolume;
+            voiceSource.volume = DefaultVoiceVolume;
         }
 
         public void PlayEffect(AudioClip clip, bool isLoop = false)

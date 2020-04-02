@@ -14,6 +14,7 @@
         public const string Meditation = "Meditation";
         public const string Mood = "Mood";
         public const string Map = "Map";
+        public const string Stories = "Stories";
 
         #endregion
     }

@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5b4b83af8520b4faaa698c39ad5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioGeneral: {fileID: 8300000, guid: b570bb14b76f04e4db227ce40308128c, type: 3}
+  musicJungle: {fileID: 8300000, guid: e089a8f620023472aad902b5a85b4fc0, type: 3}
   effectSource: {fileID: 5523456067852743923}
   musicSource: {fileID: 5472770691038224219}
   voiceSource: {fileID: 6478967540979926558}

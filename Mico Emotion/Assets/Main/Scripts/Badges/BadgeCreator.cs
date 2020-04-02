@@ -56,14 +56,14 @@ namespace Emotion.Badges
             blocker.blocksRaycasts = true;
             zoomedBadge.sprite = badgeImage;
             zoomPanel.SetActive(true);
-            soundManager.PlayEffect(descriptionAudioClip);
+            soundManager.PlayVoice(descriptionAudioClip);
         }
 
         private void CloseZoom()
         {
             zoomPanel.SetActive(false);
             StopAllCoroutines();
-            soundManager.StopEffect();
+            soundManager.StopVoice();
         }
 
         #endregion
