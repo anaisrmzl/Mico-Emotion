@@ -58,11 +58,11 @@ SpriteAtlas:
     - {fileID: 102900000, guid: 67040921b36a544d0af6355e9e336a5d, type: 3}
     - {fileID: 102900000, guid: ec9e0120cf2a94c9c97aea792850cac3, type: 3}
     - {fileID: 102900000, guid: 03529d1b98f654499a050759f87fbe87, type: 3}
-    totalSpriteSurfaceArea: 17897628
+    totalSpriteSurfaceArea: 19302854
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: c3879f027f626fbada3afe2d58049f3d
+      Hash: babd42a61d4081a4fd1cda24a256d4db
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ebe3ae00a5fb145eda1244180d26f02f, type: 3}
@@ -131,13 +131,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6e29cfb3a55464be6a55c2c799e9b6e6, type: 3}
   - {fileID: 21300000, guid: f413a7f3f4c0b4175ab2af941b3b6e78, type: 3}
   - {fileID: 21300000, guid: e7a5822428db349ed89efad1c7381911, type: 3}
-  - {fileID: 21300000, guid: 111bf0b47497f4efb90b5c0fbdfcc50b, type: 3}
   - {fileID: 21300000, guid: e9c0d235e4dcb4a3db420cc58cfcab97, type: 3}
   - {fileID: 21300000, guid: f32ba465c98ac4adeae4c6712e6a692a, type: 3}
+  - {fileID: 21300000, guid: a4ad38656d9254f7898f2823c3dd9927, type: 3}
+  - {fileID: 21300000, guid: 38dbb3c559d8b4d7fb30e690ce85323f, type: 3}
   - {fileID: 21300000, guid: e8db3ff5200014f9899898cd2193c746, type: 3}
   - {fileID: 21300000, guid: 230146b738b7c44c4bcfb3788291c02f, type: 3}
   - {fileID: 21300000, guid: feee9df73f6524899bf72a0e818db1a8, type: 3}
   - {fileID: 21300000, guid: 0429adf780c3f465bae6b7905719f4f5, type: 3}
+  - {fileID: 21300000, guid: 5ca688184527145539c55a8886f952bf, type: 3}
   - {fileID: 21300000, guid: 1c0d854846b8d46a9a996286fc4fae32, type: 3}
   - {fileID: 21300000, guid: 17041329bb61b4c92a7ea79b32a40d5d, type: 3}
   - {fileID: 21300000, guid: c2b2346914dbc4926b9925f2f9368bf5, type: 3}
@@ -148,6 +150,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6d74d67b0eaf14016b950c848f4d3bff, type: 3}
   - {fileID: 21300000, guid: 04a882cca5b534c3d97ee12299f74a22, type: 3}
   - {fileID: 21300000, guid: 6152c22d4811741a0ae693d3157c30ac, type: 3}
+  - {fileID: 21300000, guid: 438cec2d0735849b5b6aa0f0a56dd34b, type: 3}
   - {fileID: 21300000, guid: 8f1694fd0852c40a7a1e3bf6fe290724, type: 3}
   - {fileID: 21300000, guid: ad72da1ed8bf3470c9e06d2996db03c7, type: 3}
   - {fileID: 21300000, guid: 4e1ba52e78e1b46f19da8171bc6ebca0, type: 3}
@@ -221,13 +224,15 @@ SpriteAtlas:
   - manzana
   - regresar-02
   - screen_4.1-02
-  - screen_4.1-05
   - suelo_base_roca
   - bgcharacter_selection
+  - boton_cerrar
+  - contenedor_edad
   - roca_3
   - Estado_mal
   - "bot\xF3n menu"
   - bgexplore
+  - cave
   - Cara_triste_barra
   - bgrocksgame
   - Cara_feliz_barra
@@ -238,6 +243,7 @@ SpriteAtlas:
   - roca_2
   - button_arrow_left
   - barra-07
+  - lock
   - screen_4.1-06
   - roca_1
   - cara_roca_1
