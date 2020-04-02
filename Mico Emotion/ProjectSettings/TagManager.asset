@@ -53,6 +53,9 @@ TagManager:
   - name: Badge
     uniqueID: 1139750347
     locked: 0
+  - name: UI
+    uniqueID: 3632652323
+    locked: 0
   - name: angry
     uniqueID: 1135294247
     locked: 0
