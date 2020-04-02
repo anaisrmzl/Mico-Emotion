@@ -1919,7 +1919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a266cd3b96b49cbb7ee342417d6e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Discover
+  sceneName: Stories
 --- !u!1 &1860607286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2011,7 @@ GameObject:
   - component: {fileID: 1991400586}
   - component: {fileID: 1991400585}
   - component: {fileID: 1991400584}
+  - component: {fileID: 1991400587}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2083,6 +2084,18 @@ Transform:
   m_Father: {fileID: 1329121676}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1991400587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991400583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e420479e83a4fefb3172b3719d3d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1999969186
 GameObject:
   m_ObjectHideFlags: 0

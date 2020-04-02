@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e29dff0c0bd714f9b973579b7d81cf87, type: 3}
-  m_Name: 6_bondad
+  m_Name: 03_gratitud
   m_EditorClassIdentifier: 
-  name: Bondad
-  id: bondad
+  name: Gratitud
+  id: gratitud
   type: 2
-  acquired: 0
-  sprite: {fileID: 21300000, guid: fb3d33c0be06f4063aa1447914cf1d7d, type: 3}
-  description: {fileID: 8300000, guid: 00ca0f9deb875474d8fc28586c0fe498, type: 3}
-  title: {fileID: 8300000, guid: 00ca0f9deb875474d8fc28586c0fe498, type: 3}
+  acquired: 1
+  sprite: {fileID: 21300000, guid: 61d1e1f958dcd414f94ef62aaf21b2f7, type: 3}
+  description: {fileID: 8300000, guid: 4a0c9ade68b014a248bb47e64f6f7bd5, type: 3}
+  title: {fileID: 8300000, guid: dd459ec9c0cfc436cad64e2e8ae6ab10, type: 3}

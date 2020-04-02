@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e29dff0c0bd714f9b973579b7d81cf87, type: 3}
-  m_Name: 9_cuidado
+  m_Name: 12_bondad
   m_EditorClassIdentifier: 
-  name: Cuidado
-  id: cuidado
+  name: Bondad
+  id: bondad
   type: 2
-  acquired: 0
-  sprite: {fileID: 21300000, guid: 6df28d6bc481f485089793ec98bcf91f, type: 3}
-  description: {fileID: 8300000, guid: 68ed9a35aa86044c0ab748a356b2b4a8, type: 3}
-  title: {fileID: 8300000, guid: 68ed9a35aa86044c0ab748a356b2b4a8, type: 3}
+  acquired: 1
+  sprite: {fileID: 21300000, guid: fb3d33c0be06f4063aa1447914cf1d7d, type: 3}
+  description: {fileID: 8300000, guid: 00ca0f9deb875474d8fc28586c0fe498, type: 3}
+  title: {fileID: 8300000, guid: 00ca0f9deb875474d8fc28586c0fe498, type: 3}

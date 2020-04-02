@@ -18,6 +18,7 @@ namespace Emotion.Badges
         [Inject] private SoundManager soundManager;
 
         [SerializeField] private Image zoomedBadge;
+        [SerializeField] private CanvasGroup blocker;
         [SerializeField] private Button backButton;
         [SerializeField] private GameObject zoomPanel;
         [SerializeField] private BadgeUI badgePrefab;
@@ -43,25 +44,26 @@ namespace Emotion.Badges
             }
         }
 
-        public void InspectBadge(Sprite badgeImage, AudioClip titleBadgeAudio, AudioClip descriptionAudioClip)
+        public void InspectBadge(Sprite badgeImage, float titleBadgeAudioLength, AudioClip descriptionAudioClip)
         {
-            zoomedBadge.sprite = badgeImage;
-            soundManager.PlayEffect(titleBadgeAudio);
-            zoomPanel.SetActive(true);
-            StartCoroutine(HearDescription(titleBadgeAudio.length, descriptionAudioClip));
+            blocker.blocksRaycasts = false;
+            StartCoroutine(HearDescription(badgeImage, titleBadgeAudioLength, descriptionAudioClip));
         }
 
-        private IEnumerator HearDescription(float timeToWait, AudioClip descriptionAudioClip)
+        private IEnumerator HearDescription(Sprite badgeImage, float timeToWait, AudioClip descriptionAudioClip)
         {
             yield return new WaitForSeconds(timeToWait + WaitBetweenAudios);
-            soundManager.PlayEffect(descriptionAudioClip);
+            blocker.blocksRaycasts = true;
+            zoomedBadge.sprite = badgeImage;
+            zoomPanel.SetActive(true);
+            soundManager.PlayVoice(descriptionAudioClip);
         }
 
         private void CloseZoom()
         {
             zoomPanel.SetActive(false);
             StopAllCoroutines();
-            soundManager.StopEffect();
+            soundManager.StopVoice();
         }
 
         #endregion

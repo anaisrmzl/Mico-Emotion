@@ -55,7 +55,7 @@ namespace Emotion.Mood
         private IEnumerator PlayIdleAudio()
         {
             ResetCounter();
-            soundManager.PlayEffect(idleAudio);
+            soundManager.PlayVoice(idleAudio);
             yield return new WaitForSeconds(idleAudio.length);
             count = true;
         }
@@ -68,7 +68,7 @@ namespace Emotion.Mood
 
         public void Select(float animationLength)
         {
-            soundManager.StopEffect();
+            soundManager.StopVoice();
             StopAllCoroutines();
             blocker.SetActive(true);
             selectionMade = true;
@@ -78,7 +78,7 @@ namespace Emotion.Mood
         private IEnumerator PlaySelectionAudio(float animationLength)
         {
             yield return new WaitForSeconds(animationLength);
-            soundManager.PlayEffect(selectionAudio);
+            soundManager.PlayVoice(selectionAudio);
             yield return new WaitForSeconds(selectionAudio.length);
             ChangeScene();
         }
@@ -106,7 +106,7 @@ namespace Emotion.Mood
         {
             yield return new WaitForSeconds(InitialDelay);
             count = true;
-            soundManager.PlayEffect(initialAudio);
+            soundManager.PlayVoice(initialAudio);
         }
 
         #endregion
