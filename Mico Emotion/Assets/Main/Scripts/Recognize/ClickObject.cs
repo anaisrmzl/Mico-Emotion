@@ -14,7 +14,7 @@ namespace Emotion.Recognize
         [Inject] protected InteractableCharacter interactableCharacter;
 
         [SerializeField] private AnimationClip clickAnimation = null;
-        [SerializeField] private AnimationClip doubleClickAnimation = null;
+        [SerializeField] protected AnimationClip doubleClickAnimation = null;
         [SerializeField] private int clickValue;
         [SerializeField] private int doubleClickValue;
 

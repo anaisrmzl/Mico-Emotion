@@ -148,7 +148,7 @@ MonoBehaviour:
   speed: 20
   offset: 0
   spawnPosition: {x: -10.5, y: -4, z: 0}
-  loopAnimation: {fileID: 7400000, guid: 0acdbfb0869674aa09030e8479f2036d, type: 2}
-  onceAnimation: {fileID: 7400000, guid: 0acdbfb0869674aa09030e8479f2036d, type: 2}
-  idleAnimation: {fileID: 7400000, guid: 8f3d41bd62c594d4c8964bdaea46b40a, type: 2}
+  loopAnimation: {fileID: 7400000, guid: 687476d94d2424d56b7a2574b3d07b3e, type: 2}
+  onceAnimation: {fileID: 7400000, guid: 65cffc7d9471b44d8823492f53fb8071, type: 2}
+  idleAnimation: {fileID: 7400000, guid: 7ee5711a7fc131d46b0ebb61195a0f1d, type: 2}
   value: -1

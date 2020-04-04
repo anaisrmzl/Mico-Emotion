@@ -149,6 +149,6 @@ MonoBehaviour:
   speed: 20
   offset: 0
   spawnPosition: {x: 10.5, y: -4, z: 0}
-  loopAnimation: {fileID: 7400000, guid: 2cd3bbc9cbefbdb4d81fbfc36fcd985d, type: 2}
-  idleAnimation: {fileID: 7400000, guid: 8f3d41bd62c594d4c8964bdaea46b40a, type: 2}
+  loopAnimation: {fileID: 7400000, guid: b8f1ab3bcbd28734b9458993fb1e7376, type: 2}
+  idleAnimation: {fileID: 7400000, guid: 3b6a0a9ceeab8634382b395a2fb238a6, type: 2}
   value: 1
