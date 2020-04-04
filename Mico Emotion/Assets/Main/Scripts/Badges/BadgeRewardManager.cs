@@ -14,6 +14,8 @@ namespace Emotion.Badges
     {
         #region FIELDS
 
+        private const float WaitTime = 0.5f;
+
         [Inject] private BadgesManager badgesManager;
         [Inject] private UserManager userManager;
 
@@ -36,7 +38,7 @@ namespace Emotion.Badges
 
         private IEnumerator ChangeScene()
         {
-            yield return new WaitForSeconds((float)playableDirector.duration);
+            yield return new WaitForSeconds((float)playableDirector.duration - WaitTime);
             AnimationSceneChanger.ChangeScene(SceneNames.Mood);
         }
 
