@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 using Utilities.Zenject;
 using Zenject;
 using Utilities.Extensions;
-using System.Collections;
 
 namespace Emotion.Recognize
 {

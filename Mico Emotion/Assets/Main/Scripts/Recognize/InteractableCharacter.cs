@@ -141,7 +141,7 @@ namespace Emotion.Recognize
         private IEnumerator EndGame()
         {
             characterAnimator.Play(winAnimation.name);
-            yield return new WaitForSeconds(winAnimation.length * 2.0f);
+            yield return new WaitForSeconds(winAnimation.length);
             yield return new WaitForSeconds(AnimationSceneChanger.Animate());
             BadgeRewardManager badgeRewardManager = ZenjectUtilities.Instantiate<BadgeRewardManager>(badgeRewardManagerPrefab, Vector3.zero, Quaternion.identity, null);
             badgeRewardManager.CreateBadge(BadgeType.Recognize);

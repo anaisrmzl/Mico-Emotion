@@ -1065,7 +1065,7 @@ ScriptedImporter:
       y: 3675
       width: 566
       height: 376
-    spriteID: d633dd06af5194d34be1d43d8c54456b
+    spriteID: 7eca4b4af4dfc4b3a9ca746bb2add02e
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -1087,7 +1087,7 @@ ScriptedImporter:
       y: 3675
       width: 714
       height: 304
-    spriteID: b2e8c018bf2694ff0bd403a86e2d2588
+    spriteID: 7da2b69dc3548435ea90fd4ea66d4d96
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -1109,7 +1109,7 @@ ScriptedImporter:
       y: 3675
       width: 593
       height: 293
-    spriteID: 5009d893acc45465e90d9786563d23ea
+    spriteID: 58606d8ea256d45f9b635c67b9a806a9
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -1131,7 +1131,7 @@ ScriptedImporter:
       y: 4
       width: 1520
       height: 1063
-    spriteID: 9c9eafc1dd7f045ff8aed8495690ee22
+    spriteID: 93c26e3c144cc4f29ac4fc820e4bd5cf
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -1340,7 +1340,7 @@ ScriptedImporter:
     spriteName: "TITO_OJOS_REPULSI\xD3N"
     isGroup: 0
     parentIndex: -1
-    spriteID: d633dd06af5194d34be1d43d8c54456b
+    spriteID: 7eca4b4af4dfc4b3a9ca746bb2add02e
     layerID: 239
     mosaicPosition: {x: 2146, y: 3675}
   - name: TITO_OJOS_ABIERTOS
@@ -1354,14 +1354,14 @@ ScriptedImporter:
     spriteName: TITO_OJOS_ERUPTO
     isGroup: 0
     parentIndex: -1
-    spriteID: b2e8c018bf2694ff0bd403a86e2d2588
+    spriteID: 7da2b69dc3548435ea90fd4ea66d4d96
     layerID: 231
     mosaicPosition: {x: 1424, y: 3675}
   - name: TITO_OJOS_ADORMILADO
     spriteName: TITO_OJOS_ADORMILADO
     isGroup: 0
     parentIndex: -1
-    spriteID: 5009d893acc45465e90d9786563d23ea
+    spriteID: 58606d8ea256d45f9b635c67b9a806a9
     layerID: 226
     mosaicPosition: {x: 2720, y: 3675}
   - name: TITO_BOCA_LLORANDO
@@ -1403,7 +1403,7 @@ ScriptedImporter:
     spriteName: TITO_BOCA_ERUPTO
     isGroup: 0
     parentIndex: -1
-    spriteID: 9c9eafc1dd7f045ff8aed8495690ee22
+    spriteID: 93c26e3c144cc4f29ac4fc820e4bd5cf
     layerID: 235
     mosaicPosition: {x: 4447, y: 4}
   - name: TITO_BOCA_SONRISA

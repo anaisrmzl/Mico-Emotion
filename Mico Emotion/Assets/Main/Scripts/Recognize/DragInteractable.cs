@@ -79,14 +79,19 @@ namespace Emotion.Recognize
             if (interactableCharacter.LastInteractionId == loopAnimation.name + transform.name)
                 return;
 
-            StopInteraction();
+            ResetInteraction();
         }
 
         private void StopInteraction()
         {
+            ResetInteraction();
+            interactableCharacter.PlaySingleAnimation(idleAnimation);
+        }
+
+        private void ResetInteraction()
+        {
             interactableCharacter.interacted -= CancelInteraction;
             interactableCharacter.WaitForInteraction(false);
-            interactableCharacter.PlaySingleAnimation(idleAnimation);
             rigidBody.velocity = Vector2.zero;
             rigidBody.gravityScale = 1;
             DragAllowed = false;

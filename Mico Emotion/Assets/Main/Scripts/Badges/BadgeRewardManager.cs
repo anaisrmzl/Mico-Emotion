@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Playables;
 
 using Utilities.Scenes;
 using Utilities.Zenject;
@@ -16,8 +17,7 @@ namespace Emotion.Badges
         [Inject] private BadgesManager badgesManager;
         [Inject] private UserManager userManager;
 
-        [SerializeField] private Animator planetAnimation;
-        [SerializeField] private AnimationClip congratulationAnimation;
+        [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private Transform badgeHolder;
         [SerializeField] private BadgeUI badgePrefab;
 
@@ -36,8 +36,7 @@ namespace Emotion.Badges
 
         private IEnumerator ChangeScene()
         {
-            planetAnimation.Play(congratulationAnimation.name);
-            yield return new WaitForSeconds(congratulationAnimation.length);
+            yield return new WaitForSeconds((float)playableDirector.duration);
             AnimationSceneChanger.ChangeScene(SceneNames.Mood);
         }
 
