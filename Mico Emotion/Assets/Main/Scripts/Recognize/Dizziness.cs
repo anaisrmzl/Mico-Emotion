@@ -13,6 +13,7 @@ namespace Emotion.Recognize
 
         [SerializeField] private AccelerometerShake accelerometerShake;
         [SerializeField] private AnimationClip dizzyAnimation;
+        [SerializeField] private AudioClip dizzyAudio;
         [SerializeField] private int value;
 
         #endregion
@@ -31,7 +32,7 @@ namespace Emotion.Recognize
 
         private void CharacterGoesDizzy()
         {
-            interactableCharacter.PlayAnimation(dizzyAnimation, value, transform.name);
+            interactableCharacter.PlayAnimation(dizzyAnimation, dizzyAudio, value, transform.name);
         }
 
         #endregion

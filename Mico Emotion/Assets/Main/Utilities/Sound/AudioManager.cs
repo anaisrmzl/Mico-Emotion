@@ -8,6 +8,8 @@ namespace Utilities.Sound
 
         [Header("SFX")]
         [SerializeField] private AudioClip audioGeneral;
+        [SerializeField] private AudioClip audioIncrease;
+        [SerializeField] private AudioClip audioDecrease;
 
         [Header("Music")]
         [SerializeField] private AudioClip musicJungle;
@@ -17,6 +19,8 @@ namespace Utilities.Sound
         #region PROPERTIES
 
         public AudioClip AudioGeneral { get => audioGeneral; }
+        public AudioClip AudioIncrease { get => audioIncrease; }
+        public AudioClip AudioDecrease { get => audioDecrease; }
         public AudioClip MusicJungle { get => musicJungle; }
 
         #endregion

@@ -61,8 +61,9 @@ namespace Utilities.Sound
             musicSource.Play();
         }
 
-        public void PlayVoice(AudioClip clip)
+        public void PlayVoice(AudioClip clip, bool isLoop = false)
         {
+            voiceSource.loop = isLoop;
             voiceSource.clip = clip;
             voiceSource.Play();
         }

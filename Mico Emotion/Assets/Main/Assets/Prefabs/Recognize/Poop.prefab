@@ -151,4 +151,7 @@ MonoBehaviour:
   loopAnimation: {fileID: 7400000, guid: c4e965cd8aa0bcc41b7216e0527034e1, type: 2}
   onceAnimation: {fileID: 7400000, guid: 65cffc7d9471b44d8823492f53fb8071, type: 2}
   idleAnimation: {fileID: 7400000, guid: 7ee5711a7fc131d46b0ebb61195a0f1d, type: 2}
+  loopAudio: {fileID: 8300000, guid: 89e756e2ab8f24edb808ee44eb3bda92, type: 3}
+  onceAudio: {fileID: 8300000, guid: 36307a63c94a748198addb791c1cd354, type: 3}
+  idleAudio: {fileID: 8300000, guid: fad75e402d69c47a4a7ffe19d0255ceb, type: 3}
   value: -1

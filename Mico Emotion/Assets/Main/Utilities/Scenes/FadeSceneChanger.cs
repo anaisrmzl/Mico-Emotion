@@ -24,10 +24,11 @@ namespace Utilities.Scenes
             Instantiate(fadeScenePrefab, Vector3.zero, Quaternion.identity).FadeIntoScene(sceneName, fadeDuration);
         }
 
-        public static void FadeCanvas(float fadeDuration = 0.5f, float stayDuration = 0.0f)
+        public static float FadeCanvas(float fadeDuration = 0.5f, float stayDuration = 0.0f)
         {
             FadeSceneChanger fadeScenePrefab = Resources.Load<FadeSceneChanger>(PathToPrefab);
             Instantiate(fadeScenePrefab, Vector3.zero, Quaternion.identity).FadeOnlyCanvas(fadeDuration, stayDuration);
+            return fadeDuration + stayDuration;
         }
 
         private void FadeIntoScene(string sceneName, float fadeDuration)

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
+using Utilities.Sound;
 using Zenject;
 
 namespace Emotion.Recognize
@@ -12,9 +13,12 @@ namespace Emotion.Recognize
         private const int SingleClickAmount = 1;
 
         [Inject] protected InteractableCharacter interactableCharacter;
+        [Inject] private SoundManager soundManager;
 
         [SerializeField] private AnimationClip clickAnimation = null;
         [SerializeField] protected AnimationClip doubleClickAnimation = null;
+        [SerializeField] protected AudioClip doubleClickAudio = null;
+        [SerializeField] protected AudioClip clickAudio = null;
         [SerializeField] private int clickValue;
         [SerializeField] private int doubleClickValue;
 
@@ -68,7 +72,7 @@ namespace Emotion.Recognize
             if (doubleClickAnimation == null)
                 return;
 
-            interactableCharacter.PlayAnimation(doubleClickAnimation, doubleClickValue, transform.name);
+            interactableCharacter.PlayAnimation(doubleClickAnimation, doubleClickAudio, doubleClickValue, transform.name);
         }
 
         private void DoSingleClick()
@@ -76,7 +80,7 @@ namespace Emotion.Recognize
             if (clickAnimation == null)
                 return;
 
-            interactableCharacter.PlayAnimation(clickAnimation, clickValue, transform.name);
+            interactableCharacter.PlayAnimation(clickAnimation, clickAudio, clickValue, transform.name);
         }
 
         private void ResetClick()
