@@ -27,7 +27,6 @@ namespace Emotion.Recognize
         {
             yield return new WaitForSeconds(doubleClickAnimation.length);
             ZenjectUtilities.Instantiate<DragInteractable>(interactable, interactable.transform.position, interactable.transform.rotation, null);
-
         }
 
         #endregion

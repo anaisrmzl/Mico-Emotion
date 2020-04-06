@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 using Utilities.Sound;
@@ -27,12 +26,6 @@ namespace Emotion.Discover
 
         #endregion
 
-        #region EVENTS
-
-        public event UnityAction<float> pressedButton;
-
-        #endregion
-
         #region BEHAVIORS
 
         public void Initialize()
@@ -51,7 +44,6 @@ namespace Emotion.Discover
 
         private void PlayAnswerAudio()
         {
-            pressedButton?.Invoke(answerAudio.length);
             soundManager.PlayEffect(soundManager.AudioGeneral);
             animator.Play(pressAnimation.name);
             StartCoroutine(PlayNarrative());
