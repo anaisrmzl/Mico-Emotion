@@ -41,7 +41,7 @@ namespace Emotion.Explore
             {
                 yield return new WaitForSeconds(AnimationSceneChanger.Animate());
                 BadgeRewardManager badgeRewardManager = ZenjectUtilities.Instantiate<BadgeRewardManager>(badgeRewardManagerPrefab, Vector3.zero, Quaternion.identity, null);
-                badgeRewardManager.CreateBadge(BadgeType.Explore);
+                badgeRewardManager.CreateRandomBadge(BadgeType.Explore);
             }
             else
             {

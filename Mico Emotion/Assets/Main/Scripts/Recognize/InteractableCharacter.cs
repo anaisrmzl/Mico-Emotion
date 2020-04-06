@@ -154,7 +154,7 @@ namespace Emotion.Recognize
             yield return new WaitForSeconds(winAnimation.length);
             yield return new WaitForSeconds(AnimationSceneChanger.Animate());
             BadgeRewardManager badgeRewardManager = ZenjectUtilities.Instantiate<BadgeRewardManager>(badgeRewardManagerPrefab, Vector3.zero, Quaternion.identity, null);
-            badgeRewardManager.CreateBadge(BadgeType.Recognize);
+            badgeRewardManager.CreateRandomBadge(BadgeType.Recognize);
         }
 
         #endregion

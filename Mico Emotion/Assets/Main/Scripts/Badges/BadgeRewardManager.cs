@@ -27,12 +27,23 @@ namespace Emotion.Badges
 
         #region BEHAVIORS
 
-        public void CreateBadge(BadgeType badgeType)
+        public void CreateRandomBadge(BadgeType badgeType)
         {
             Badge badge = badgesManager.UnlockRandomBadge(badgeType);
+            CreateBadge(badge, (int)badgeType);
+        }
+
+        public void CreateSpecificBadge(BadgeType badgeType, string id)
+        {
+            Badge badge = badgesManager.UnlockBadge(id);
+            CreateBadge(badge, (int)badgeType);
+        }
+
+        private void CreateBadge(Badge badge, int badgeType)
+        {
             BadgeUI badgeUI = ZenjectUtilities.Instantiate<BadgeUI>(badgePrefab, badgeHolder.position, Quaternion.identity, badgeHolder);
             badgeUI.Initialize(badge);
-            userManager.UpdateLastGamePlayed((int)badgeType);
+            userManager.UpdateLastGamePlayed(badgeType);
             StartCoroutine(ChangeScene());
         }
 

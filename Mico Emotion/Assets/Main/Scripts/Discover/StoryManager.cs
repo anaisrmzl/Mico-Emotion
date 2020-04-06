@@ -1,8 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using Emotion.Badges;
 using UnityEngine;
 
 using Utilities.Scenes;
+using Utilities.Extensions;
+using Utilities.Zenject;
 
 namespace Emotion.Discover
 {
@@ -10,7 +12,11 @@ namespace Emotion.Discover
     {
         #region FIELDS
 
+        private const float FadeDuration = 1.0f;
+        private const float StayDuration = 0.5f;
+
         [SerializeField] private Page[] storyPages;
+        [SerializeField] private BadgeRewardManager badgeRewardManagerPrefab;
 
         private int currentPage = 0;
 
@@ -31,13 +37,6 @@ namespace Emotion.Discover
 
         private void EnableNextPage()
         {
-            if (currentPage >= storyPages.Length)
-            {
-                storyPages[currentPage - 1].gameObject.SetActive(false);
-                currentPage = 0;
-                return;
-            }
-
             storyPages[currentPage].gameObject.SetActive(true);
             if (storyPages[currentPage].PageLength != 0)
                 StartCoroutine(ChangeSimplePage());
@@ -50,8 +49,15 @@ namespace Emotion.Discover
 
         private IEnumerator FadePage()
         {
-            yield return new WaitForSeconds(FadeSceneChanger.FadeCanvas(1.0f, 0.5f));
-            EnableNextPage();
+            if (currentPage >= storyPages.Length)
+            {
+                yield return EndGame();
+            }
+            else
+            {
+                yield return new WaitForSeconds(FadeSceneChanger.FadeCanvas(FadeDuration, StayDuration));
+                EnableNextPage();
+            }
         }
 
         private IEnumerator ChangeSimplePage()
@@ -59,6 +65,13 @@ namespace Emotion.Discover
             yield return new WaitForSeconds(storyPages[currentPage].PageLength);
             currentPage++;
             StartCoroutine(FadePage());
+        }
+
+        private IEnumerator EndGame()
+        {
+            yield return new WaitForSeconds(AnimationSceneChanger.Animate());
+            BadgeRewardManager badgeRewardManager = ZenjectUtilities.Instantiate<BadgeRewardManager>(badgeRewardManagerPrefab, Vector3.zero, Quaternion.identity, null);
+            badgeRewardManager.CreateSpecificBadge(BadgeType.Discover, EnumExtensions.GetEnumName<DiscoverBadges>(0));
         }
 
         #endregion

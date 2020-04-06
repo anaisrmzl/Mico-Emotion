@@ -21,6 +21,7 @@ namespace Emotion.Discover
 
         private Button button;
         private Animator animator;
+        private ColorBlock colors;
 
         #endregion
 
@@ -36,12 +37,13 @@ namespace Emotion.Discover
         {
             button = GetComponent<Button>();
             animator = GetComponent<Animator>();
+            colors = GetComponent<Button>().colors;
             button.onClick.AddListener(PlayAnswerAudio);
         }
 
         public void EnableButton(bool status)
         {
-            button.enabled = status;
+            button.interactable = status;
             animator.speed = status ? 1 : 0;
         }
 
@@ -56,6 +58,8 @@ namespace Emotion.Discover
         private IEnumerator PlayNarrative()
         {
             soundManager.PlayVoice(answerAudio);
+            colors.disabledColor = colors.pressedColor;
+            GetComponent<Button>().colors = colors;
             button.interactable = false;
             otherButton.EnableButton(false);
             yield return new WaitForSeconds(pressAnimation.length);

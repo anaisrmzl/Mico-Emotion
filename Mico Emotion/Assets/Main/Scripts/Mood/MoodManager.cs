@@ -91,7 +91,7 @@ namespace Emotion.Mood
                     AnimationSceneChanger.ChangeScene(SceneNames.CharacterSelection);
                     break;
                 case (int)BadgeType.Discover:
-                    AnimationSceneChanger.ChangeScene(SceneNames.GameSelection);
+                    AnimationSceneChanger.ChangeScene(SceneNames.Stories);
                     break;
                 case (int)BadgeType.Explore:
                     AnimationSceneChanger.ChangeScene(SceneNames.Map);
