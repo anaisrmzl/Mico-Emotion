@@ -13,6 +13,8 @@ namespace Emotion.Recognize
 
         [SerializeField] private AnimationClip scaredClip;
         [SerializeField] private AnimationClip reliefClip;
+        [SerializeField] private AudioClip scaredAudio;
+        [SerializeField] private AudioClip reliefAudio;
         [SerializeField] private Button spiderButton;
 
         private Animator animator;
@@ -32,7 +34,7 @@ namespace Emotion.Recognize
         public void AppearSpider()
         {
             interactableCharacter.WaitForInteraction(true);
-            interactableCharacter.PlayAnimation(scaredClip, -1, transform.name);
+            interactableCharacter.PlayAnimation(scaredClip, scaredAudio, -1, transform.name);
             animator.SetBool(AppearKey, true);
         }
 
@@ -40,7 +42,7 @@ namespace Emotion.Recognize
         {
             interactableCharacter.WaitForInteraction(false);
             animator.SetBool(AppearKey, false);
-            interactableCharacter.PlayAnimation(reliefClip, 1, transform.name);
+            interactableCharacter.PlayAnimation(reliefClip, reliefAudio, 1, transform.name);
         }
 
         private void CancelSpider()

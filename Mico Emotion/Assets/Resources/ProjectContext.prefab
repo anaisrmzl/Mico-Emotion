@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioGeneral: {fileID: 8300000, guid: b570bb14b76f04e4db227ce40308128c, type: 3}
+  audioIncrease: {fileID: 8300000, guid: 7310bef7c97f84aa395ef8947f65e52a, type: 3}
+  audioDecrease: {fileID: 8300000, guid: 4905826b5842345158d9a621501450e6, type: 3}
   musicJungle: {fileID: 8300000, guid: e089a8f620023472aad902b5a85b4fc0, type: 3}
   effectSource: {fileID: 5523456067852743923}
   musicSource: {fileID: 5472770691038224219}

@@ -131,8 +131,8 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -2.9062653, y: -2.3157816}
       - {x: 3.0021152, y: -2.2266712}
-      - {x: 0.69820595, y: 2.0331416}
-      - {x: -0.55602264, y: 2.7493677}
+      - {x: 1.2744694, y: 1.771204}
+      - {x: -1.3680315, y: 1.7801952}
 --- !u!114 &3712817454279147611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,7 +148,10 @@ MonoBehaviour:
   speed: 20
   offset: 0
   spawnPosition: {x: -10.5, y: -4, z: 0}
-  loopAnimation: {fileID: 7400000, guid: 0acdbfb0869674aa09030e8479f2036d, type: 2}
-  onceAnimation: {fileID: 7400000, guid: 0acdbfb0869674aa09030e8479f2036d, type: 2}
-  idleAnimation: {fileID: 7400000, guid: 8f3d41bd62c594d4c8964bdaea46b40a, type: 2}
+  loopAnimation: {fileID: 7400000, guid: c4e965cd8aa0bcc41b7216e0527034e1, type: 2}
+  onceAnimation: {fileID: 7400000, guid: 65cffc7d9471b44d8823492f53fb8071, type: 2}
+  idleAnimation: {fileID: 7400000, guid: 7ee5711a7fc131d46b0ebb61195a0f1d, type: 2}
+  loopAudio: {fileID: 8300000, guid: 89e756e2ab8f24edb808ee44eb3bda92, type: 3}
+  onceAudio: {fileID: 8300000, guid: 36307a63c94a748198addb791c1cd354, type: 3}
+  idleAudio: {fileID: 8300000, guid: fad75e402d69c47a4a7ffe19d0255ceb, type: 3}
   value: -1

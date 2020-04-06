@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 using Utilities.Scenes;
 using Utilities.Zenject;
+using Utilities.Sound;
+using Zenject;
 using DG.Tweening;
 
 using Emotion.Badges;
@@ -19,9 +21,12 @@ namespace Emotion.Recognize
         private const float TweenDuration = 0.5f;
         private const float MaxIdleTime = 3.0f;
 
+        [Inject] private SoundManager soundManager;
+
         [SerializeField] private BadgeRewardManager badgeRewardManagerPrefab;
         [SerializeField] private Image emotionsBar;
         [SerializeField] private AnimationClip winAnimation;
+        [SerializeField] private AudioClip winAudio;
         [SerializeField] private Animator characterAnimator;
 
         private bool isIdle = true;
@@ -73,7 +78,7 @@ namespace Emotion.Recognize
             WaitingInteraction = status;
         }
 
-        public void PlayAnimation(AnimationClip clip, int value, string name)
+        public void PlayAnimation(AnimationClip clip, AudioClip audio, int value, string name)
         {
             if (block)
                 return;
@@ -85,20 +90,24 @@ namespace Emotion.Recognize
             {
                 happiness += value;
                 emotionsBar.DOFillAmount(happiness / NumberOfSteps, TweenDuration);
+                if (value != 0)
+                    soundManager.PlayEffect(value > 0 ? soundManager.AudioIncrease : soundManager.AudioDecrease);
             }
 
             lastInteractionId = id;
             characterAnimator.Play(clip.name);
+            soundManager.PlayVoice(audio);
             interacted?.Invoke();
             StartCoroutine(WaitAnimation(clip.length));
         }
 
-        public void PlaySingleAnimation(AnimationClip clip)
+        public void PlaySingleAnimation(AnimationClip clip, AudioClip audio, bool isLoop = false)
         {
             if (happiness == NumberOfSteps)
                 return;
 
             characterAnimator.Play(clip.name);
+            soundManager.PlayVoice(audio, isLoop);
             interacted?.Invoke();
         }
 
@@ -141,10 +150,11 @@ namespace Emotion.Recognize
         private IEnumerator EndGame()
         {
             characterAnimator.Play(winAnimation.name);
+            soundManager.PlayVoice(winAudio);
             yield return new WaitForSeconds(winAnimation.length);
             yield return new WaitForSeconds(AnimationSceneChanger.Animate());
             BadgeRewardManager badgeRewardManager = ZenjectUtilities.Instantiate<BadgeRewardManager>(badgeRewardManagerPrefab, Vector3.zero, Quaternion.identity, null);
-            badgeRewardManager.CreateBadge(BadgeType.Recognize);
+            badgeRewardManager.CreateRandomBadge(BadgeType.Recognize);
         }
 
         #endregion

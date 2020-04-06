@@ -19,6 +19,8 @@ namespace Emotion.Recognize
         [SerializeField] private Vector3 spawnPosition;
         [SerializeField] private AnimationClip loopAnimation;
         [SerializeField] private AnimationClip idleAnimation;
+        [SerializeField] private AudioClip loopAudio;
+        [SerializeField] private AudioClip idleAudio;
         [SerializeField] int value;
 
         private bool interacting = false;
@@ -61,7 +63,7 @@ namespace Emotion.Recognize
             if (other.tag == InteractableTag)
             {
                 interacting = true;
-                interactableCharacter.PlayAnimation(loopAnimation, value, transform.name);
+                interactableCharacter.PlayAnimation(loopAnimation, loopAudio, value, transform.name);
             }
 
             if (other.tag == DestroyableTag)
@@ -79,14 +81,19 @@ namespace Emotion.Recognize
             if (interactableCharacter.LastInteractionId == loopAnimation.name + transform.name)
                 return;
 
-            StopInteraction();
+            ResetInteraction();
         }
 
         private void StopInteraction()
         {
+            ResetInteraction();
+            interactableCharacter.PlaySingleAnimation(idleAnimation, idleAudio);
+        }
+
+        private void ResetInteraction()
+        {
             interactableCharacter.interacted -= CancelInteraction;
             interactableCharacter.WaitForInteraction(false);
-            interactableCharacter.PlaySingleAnimation(idleAnimation);
             rigidBody.velocity = Vector2.zero;
             rigidBody.gravityScale = 1;
             DragAllowed = false;

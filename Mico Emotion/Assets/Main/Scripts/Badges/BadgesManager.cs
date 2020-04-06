@@ -66,6 +66,13 @@ namespace Emotion.Badges
             return badges[randomBadge];
         }
 
+        public Badge UnlockBadge(string id)
+        {
+            Badge badge = GetBadgeById(id);
+            badge.AcquireBadge();
+            return badge;
+        }
+
         #endregion
     }
 }

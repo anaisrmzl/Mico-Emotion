@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 using Utilities.Zenject;
 
@@ -16,8 +17,15 @@ namespace Emotion.Recognize
 
         public override void DoDoubleClick()
         {
+            StopAllCoroutines();
             base.DoDoubleClick();
             interactableCharacter.WaitForInteraction(true);
+            StartCoroutine(AppearTissue());
+        }
+
+        private IEnumerator AppearTissue()
+        {
+            yield return new WaitForSeconds(doubleClickAnimation.length);
             ZenjectUtilities.Instantiate<DragInteractable>(interactable, interactable.transform.position, interactable.transform.rotation, null);
         }
 

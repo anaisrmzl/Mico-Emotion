@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+using Zenject;
+using Utilities.Sound;
+
 namespace Emotion.Mood
 {
     public class MoodSelector : MonoBehaviour
     {
         #region FIELDS
+
+        [Inject] private SoundManager soundManager;
 
         [SerializeField] private Animator animator;
         [SerializeField] private AnimationClip selectionAnimation;
@@ -26,6 +31,7 @@ namespace Emotion.Mood
         private void Select()
         {
             animator.Play(selectionAnimation.name);
+            soundManager.PlayEffect(soundManager.AudioGeneral);
             moodManager.Select(selectionAnimation.length);
         }
 

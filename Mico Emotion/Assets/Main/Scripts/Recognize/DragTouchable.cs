@@ -20,6 +20,9 @@ namespace Emotion.Recognize
         [SerializeField] private AnimationClip loopAnimation;
         [SerializeField] private AnimationClip onceAnimation;
         [SerializeField] private AnimationClip idleAnimation;
+        [SerializeField] private AudioClip loopAudio;
+        [SerializeField] private AudioClip onceAudio;
+        [SerializeField] private AudioClip idleAudio;
         [SerializeField] int value;
 
         private bool touching = false;
@@ -44,7 +47,7 @@ namespace Emotion.Recognize
             if (touching)
             {
                 Destroy(gameObject);
-                interactableCharacter.PlayAnimation(onceAnimation, value, transform.name);
+                interactableCharacter.PlayAnimation(onceAnimation, onceAudio, value, transform.name);
             }
 
             rigidBody.gravityScale = 0;
@@ -62,7 +65,7 @@ namespace Emotion.Recognize
             if (other.tag == TouchableTag)
             {
                 touching = true;
-                interactableCharacter.PlaySingleAnimation(loopAnimation);
+                interactableCharacter.PlaySingleAnimation(loopAnimation, loopAudio, true);
             }
         }
 
@@ -71,7 +74,7 @@ namespace Emotion.Recognize
             if (other.tag == TouchableTag)
             {
                 touching = false;
-                interactableCharacter.PlaySingleAnimation(idleAnimation);
+                interactableCharacter.PlaySingleAnimation(idleAnimation, idleAudio);
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Playables;
 
 using Utilities.Scenes;
 using Utilities.Zenject;
@@ -13,11 +14,12 @@ namespace Emotion.Badges
     {
         #region FIELDS
 
+        private const float WaitTime = 0.5f;
+
         [Inject] private BadgesManager badgesManager;
         [Inject] private UserManager userManager;
 
-        [SerializeField] private Animator planetAnimation;
-        [SerializeField] private AnimationClip congratulationAnimation;
+        [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private Transform badgeHolder;
         [SerializeField] private BadgeUI badgePrefab;
 
@@ -25,19 +27,29 @@ namespace Emotion.Badges
 
         #region BEHAVIORS
 
-        public void CreateBadge(BadgeType badgeType)
+        public void CreateRandomBadge(BadgeType badgeType)
         {
             Badge badge = badgesManager.UnlockRandomBadge(badgeType);
+            CreateBadge(badge, (int)badgeType);
+        }
+
+        public void CreateSpecificBadge(BadgeType badgeType, string id)
+        {
+            Badge badge = badgesManager.UnlockBadge(id);
+            CreateBadge(badge, (int)badgeType);
+        }
+
+        private void CreateBadge(Badge badge, int badgeType)
+        {
             BadgeUI badgeUI = ZenjectUtilities.Instantiate<BadgeUI>(badgePrefab, badgeHolder.position, Quaternion.identity, badgeHolder);
             badgeUI.Initialize(badge);
-            userManager.UpdateLastGamePlayed((int)badgeType);
+            userManager.UpdateLastGamePlayed(badgeType);
             StartCoroutine(ChangeScene());
         }
 
         private IEnumerator ChangeScene()
         {
-            planetAnimation.Play(congratulationAnimation.name);
-            yield return new WaitForSeconds(congratulationAnimation.length);
+            yield return new WaitForSeconds((float)playableDirector.duration - WaitTime);
             AnimationSceneChanger.ChangeScene(SceneNames.Mood);
         }
 
