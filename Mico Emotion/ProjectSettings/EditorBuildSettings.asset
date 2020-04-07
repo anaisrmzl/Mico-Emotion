@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/CharacterSelection.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Main/Scenes/ForParents.unity
+    path: Assets/Main/Scenes/Info.unity
     guid: f0d117857dc51485f8cb6ae1a23cb67f
   - enabled: 1
     path: Assets/Main/Scenes/Explore.unity
