@@ -263,12 +263,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: edbd2fa6f40264b52a33f621a741704b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06dc1348609ba405e9c7eb21fb15c8fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 123.20999, y: 108.1697}
+  m_Size: {x: 44.359997, y: 20.490507}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1295,8 +1295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1024.0001, y: 0}
-  m_SizeDelta: {x: 2048.0002, y: 0}
+  m_AnchoredPosition: {x: 1662.1449, y: 0}
+  m_SizeDelta: {x: 3324.2898, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340353488
 MonoBehaviour:
