@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/Mood.unity
     guid: 1812897ffa969466ba056b71233eec42
   - enabled: 1
+    path: Assets/Main/Scenes/ForParents.unity
+    guid: f50475123d7164cf187ae3981d56b87b
+  - enabled: 1
     path: Assets/Main/Scenes/Discover.unity
     guid: e4305fc6244ce4246bffbc13f2da61f3
   - enabled: 1
