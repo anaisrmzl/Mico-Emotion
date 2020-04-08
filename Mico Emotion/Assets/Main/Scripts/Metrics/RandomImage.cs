@@ -14,12 +14,19 @@ namespace Emotion.Metrics
 
         #endregion
 
+        #region PROPERTIES
+
+        public int Index { get; private set; }
+
+        #endregion
+
         #region BEHAVIORS
 
         private void Awake()
         {
             imageElement = GetComponent<Image>();
-            imageElement.sprite = sprites[Random.Range(0, sprites.Length)];
+            Index = Random.Range(0, sprites.Length);
+            imageElement.sprite = sprites[Index];
         }
 
         #endregion
