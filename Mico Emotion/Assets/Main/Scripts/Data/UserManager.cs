@@ -3,6 +3,8 @@
 using Zenject;
 using Utilities.Data;
 
+using Emotion.Badges;
+
 namespace Emotion.Data
 {
     public class UserManager : MonoBehaviour
@@ -33,6 +35,24 @@ namespace Emotion.Data
             private set => dataManager.SetData<int>(DataManager.GenerateKeys(APIKeys.LastGamePlayedKey), value);
         }
 
+        public string LastRecognizeBadgeWon
+        {
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastRecognizeBadgeWonKey), "carino");
+            private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastRecognizeBadgeWonKey), value);
+        }
+
+        public string LastDiscoverBadgeWon
+        {
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastDiscoverBadgeWonKey), "miedo");
+            private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastDiscoverBadgeWonKey), value);
+        }
+
+        public string LastExploreBadgeWon
+        {
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastExploreBadgeWonKey), "gratitud");
+            private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastExploreBadgeWonKey), value);
+        }
+
         #endregion
 
         #region BEHAVIORS
@@ -50,6 +70,51 @@ namespace Emotion.Data
         public void UpdateLastGamePlayed(int game)
         {
             LastGamePlayed = game;
+        }
+
+        public void UpdateLastRecognizeBadgeWon(string id)
+        {
+            LastRecognizeBadgeWon = id;
+        }
+
+        public void UpdateLastDiscoverBadgeWon(string id)
+        {
+            LastDiscoverBadgeWon = id;
+        }
+
+        public void UpdateLastExploreBadgeWon(string id)
+        {
+            LastExploreBadgeWon = id;
+        }
+
+        public void UpdateLastBadgeWon(string id, BadgeType badgeType)
+        {
+            switch (badgeType)
+            {
+                case BadgeType.Recognize:
+                    UpdateLastRecognizeBadgeWon(id);
+                    break;
+                case BadgeType.Discover:
+                    UpdateLastDiscoverBadgeWon(id);
+                    break;
+                case BadgeType.Explore:
+                    UpdateLastExploreBadgeWon(id);
+                    break;
+            }
+        }
+
+        public string GetLastBadgeWon(BadgeType badgeType)
+        {
+            switch (badgeType)
+            {
+                case BadgeType.Recognize:
+                    return LastRecognizeBadgeWon;
+                case BadgeType.Discover:
+                    return LastDiscoverBadgeWon;
+                case BadgeType.Explore:
+                default:
+                    return LastExploreBadgeWon;
+            }
         }
 
         #endregion

@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/Info.unity
     guid: f0d117857dc51485f8cb6ae1a23cb67f
   - enabled: 1
+    path: Assets/Main/Scenes/Metrics.unity
+    guid: 996771f21d440420c993a77b90b351e9
+  - enabled: 1
     path: Assets/Main/Scenes/Explore.unity
     guid: b92c8d77564ae43c4bdfe4d655fa7d38
   - enabled: 1

@@ -30,12 +30,14 @@ namespace Emotion.Badges
         public void CreateRandomBadge(BadgeType badgeType)
         {
             Badge badge = badgesManager.UnlockRandomBadge(badgeType);
+            userManager.UpdateLastBadgeWon(badge.Id, badgeType);
             CreateBadge(badge, (int)badgeType);
         }
 
         public void CreateSpecificBadge(BadgeType badgeType, string id)
         {
             Badge badge = badgesManager.UnlockBadge(id);
+            userManager.UpdateLastBadgeWon(badge.Id, badgeType);
             CreateBadge(badge, (int)badgeType);
         }
 
