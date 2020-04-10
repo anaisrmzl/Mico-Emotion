@@ -26,9 +26,9 @@ namespace Emotion.Explore
         [SerializeField] private AudioClip introAudio;
         [SerializeField] private AudioClip meditationAudio;
         [SerializeField] private AudioClip afterMeditationAudio;
-        [SerializeField] private AnimationClip meditationAnimation;
         [SerializeField] private AnimationClip sittingAnimation;
         [SerializeField] private Animator totiAnimator;
+        [SerializeField] private GameObject totiSleep;
 
         #endregion
 
@@ -47,9 +47,12 @@ namespace Emotion.Explore
             totiAnimator.Play(sittingAnimation.name);
             soundManager.PlayVoice(introAudio);
             yield return new WaitForSeconds(introAudio.length + WaitTime);
-            totiAnimator.Play(meditationAnimation.name);
+            totiAnimator.gameObject.SetActive(false);
+            totiSleep.SetActive(true);
             soundManager.PlayVoice(meditationAudio);
             yield return new WaitForSeconds(meditationAudio.length + WaitTime);
+            totiAnimator.gameObject.SetActive(true);
+            totiSleep.SetActive(false);
             totiAnimator.SetTrigger(NamasteKey);
             soundManager.PlayVoice(afterMeditationAudio);
             yield return new WaitForSeconds(afterMeditationAudio.length + WaitTime);
