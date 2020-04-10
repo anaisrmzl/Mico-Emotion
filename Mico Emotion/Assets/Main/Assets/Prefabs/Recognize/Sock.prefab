@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5848992296388850113}
   - component: {fileID: 8915815089590709329}
   - component: {fileID: 965908114773028548}
-  - component: {fileID: 8757880798552354644}
   - component: {fileID: 3712817454279147611}
+  - component: {fileID: 7988084021966954673}
   m_Layer: 11
-  m_Name: Poop
+  m_Name: Sock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,35 +104,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &8757880798552354644
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2179642040384059528}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.11, y: 4.71}
-    newSize: {x: 5.01, y: 4.95}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -2.9062653, y: -2.3157816}
-      - {x: 3.0021152, y: -2.2266712}
-      - {x: 1.2744694, y: 1.771204}
-      - {x: -1.3680315, y: 1.7801952}
 --- !u!114 &3712817454279147611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,3 +126,29 @@ MonoBehaviour:
   onceAudio: {fileID: 8300000, guid: 36307a63c94a748198addb791c1cd354, type: 3}
   idleAudio: {fileID: 8300000, guid: fad75e402d69c47a4a7ffe19d0255ceb, type: 3}
   value: -1
+--- !u!61 &7988084021966954673
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179642040384059528}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 9d67af5080eca49d8a26e8175592fee4, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1, y: -0.56}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.38, y: 6.6}
+    newSize: {x: 5.01, y: 4.95}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4, y: 5.5}
+  m_EdgeRadius: 0
