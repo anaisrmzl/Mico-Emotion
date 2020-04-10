@@ -17,5 +17,5 @@ MonoBehaviour:
   type: 2
   acquired: 1
   sprite: {fileID: 21300000, guid: 61d1e1f958dcd414f94ef62aaf21b2f7, type: 3}
-  description: {fileID: 8300000, guid: 4a0c9ade68b014a248bb47e64f6f7bd5, type: 3}
-  title: {fileID: 8300000, guid: dd459ec9c0cfc436cad64e2e8ae6ab10, type: 3}
+  description: {fileID: 8300000, guid: e347288391903463ebce0e45a8c681d2, type: 3}
+  title: {fileID: 8300000, guid: 1610493e6f3ec43f2b49165ea7230fc1, type: 3}

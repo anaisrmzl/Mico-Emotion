@@ -24,6 +24,7 @@ namespace Utilities.Sound
         public AudioSource VoiceSource { get => voiceSource; }
         public AudioSource MusicSource { get => musicSource; }
         public bool MusicIsPlaying { get => musicSource.isPlaying; }
+        public bool VoiceIsPlaying { get => VoiceSource.isPlaying; }
         public AudioClip CurrentMusic { get => musicSource.clip; }
 
         #endregion

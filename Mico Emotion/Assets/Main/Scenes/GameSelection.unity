@@ -537,7 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClick: {fileID: 8300000, guid: ac43aacf8174a40d3893cac05d5ba25d, type: 3}
+  audioClick: {fileID: 8300000, guid: 53be3f77047c04702a46c10483701831, type: 3}
 --- !u!1 &766703993
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +799,55 @@ Transform:
   m_Father: {fileID: 1329121676}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1054951044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054951045}
+  - component: {fileID: 1054951046}
+  m_Layer: 0
+  m_Name: RandomAudios
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1054951045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054951044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1329121676}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054951046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054951044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a91edc0bf564acba4c13bbf8b2d699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomAudios:
+  - {fileID: 8300000, guid: 7f33639ce840b4befae13345ebe1af9a, type: 3}
+  - {fileID: 8300000, guid: 5535ff8542b8d4665abc730666fcca51, type: 3}
+  - {fileID: 8300000, guid: bf00ed442387142e98313bdfe93b50e1, type: 3}
+  - {fileID: 8300000, guid: e2ee4c1547d8b4ed98b394b469016394, type: 3}
+  - {fileID: 8300000, guid: 02fae2f1c6cc04ae78de7531cfeb257c, type: 3}
 --- !u!1 &1300383363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1106,7 @@ Transform:
   - {fileID: 1991400586}
   - {fileID: 766703996}
   - {fileID: 1045784778}
+  - {fileID: 1054951045}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1531,7 +1581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClick: {fileID: 8300000, guid: ce89c6f6c17274a649272aa6095c34a7, type: 3}
+  audioClick: {fileID: 8300000, guid: 53be3f77047c04702a46c10483701831, type: 3}
 --- !u!1 &1860607286
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,11 +11,12 @@ namespace Emotion.Sound
         #region FIELDS
 
         private const string PlayingAudioMethod = "StartPlayingAudio";
-        private const float WaitTime = 6.0f;
+        private const float WaitTime = 7.0f;
 
         [Inject] private SoundManager soundManager;
 
         [SerializeField] private AudioClip[] randomAudios;
+        [SerializeField] private bool playOnStart = false;
 
         #endregion 
 
@@ -23,7 +24,7 @@ namespace Emotion.Sound
 
         private void Awake()
         {
-            Invoke(PlayingAudioMethod, WaitTime);
+            Invoke(PlayingAudioMethod, playOnStart ? 0.0f : WaitTime);
         }
 
         private void StartPlayingAudio()
@@ -34,8 +35,13 @@ namespace Emotion.Sound
         private IEnumerator PlayAudio()
         {
             int randomIndex = Random.Range(0, randomAudios.Length);
-            soundManager.PlayVoice(randomAudios[randomIndex]);
-            yield return new WaitForSeconds(randomAudios[randomIndex].length);
+            if (!soundManager.VoiceIsPlaying)
+            {
+                soundManager.PlayVoice(randomAudios[randomIndex]);
+                yield return new WaitForSeconds(randomAudios[randomIndex].length);
+            }
+
+            yield return null;
             Invoke(PlayingAudioMethod, WaitTime);
         }
 
