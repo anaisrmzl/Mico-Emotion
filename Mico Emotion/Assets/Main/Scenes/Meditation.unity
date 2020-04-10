@@ -317,6 +317,115 @@ Transform:
   m_Father: {fileID: 1509147809}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &277806612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1588624790}
+    m_Modifications:
+    - target: {fileID: 3896729432895771425, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.90955436
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896729432895771425, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4155849
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004512910560005721, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.28231427
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004512910560005721, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95932204
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088936708721714436, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.041947186
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088936708721714436, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9991199
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088936708721714436, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 4.808
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556833900764303627, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_Name
+      value: TotiMedita3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556833900764303627, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3efbbc87b5053f4c8ac897bfceaedd6, type: 3}
 --- !u!1 &390582724
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,13 +732,13 @@ MonoBehaviour:
   badgeRewardManagerPrefab: {fileID: 734971829222553394, guid: 0532f86dcbe5e4b1295e23e6a78e986a,
     type: 3}
   blocker: {fileID: 424212362}
-  introAudio: {fileID: 8300000, guid: 73f37ecc6c4974810ae2fd2c1aa7eebb, type: 3}
-  meditationAudio: {fileID: 8300000, guid: 2009df0e89d7f4d05b5d095096adf0e6, type: 3}
-  afterMeditationAudio: {fileID: 8300000, guid: 904b88759d269413eae2c1a14bc84ad6,
+  introAudio: {fileID: 8300000, guid: 389d79756a0074839a78c7b082eb2b53, type: 3}
+  meditationAudio: {fileID: 8300000, guid: bd5032839ea0649b29cfc598c77d9274, type: 3}
+  afterMeditationAudio: {fileID: 8300000, guid: a00dacec366834d6390a6e54c6d86cd6,
     type: 3}
-  meditationAnimation: {fileID: 7400000, guid: 7be75e8313634b941b065c554b8c8b6c, type: 2}
   sittingAnimation: {fileID: 7400000, guid: 21459d87a3961834aa0c9af4782030d9, type: 2}
   totiAnimator: {fileID: 1244732211}
+  totiSleep: {fileID: 1991610063}
 --- !u!1 &1509147808
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +832,7 @@ Transform:
   m_Children:
   - {fileID: 1268428370}
   - {fileID: 1898186061810236863}
+  - {fileID: 1991610064}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1033,6 +1143,18 @@ MonoBehaviour:
   _parentNewObjectsUnderSceneContext: 0
   _contractNames: []
   _parentContractNames: []
+--- !u!1 &1991610063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6556833900764303627, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 277806612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1991610064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5613723921352177044, guid: b3efbbc87b5053f4c8ac897bfceaedd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 277806612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1898186061810236862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1204,6 +1326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TotiMedita
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812853431917274848, guid: 89a2452d4749e8048a48648c8398452e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8090087278898531893, guid: 89a2452d4749e8048a48648c8398452e,
         type: 3}
