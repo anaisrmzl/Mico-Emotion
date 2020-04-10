@@ -11,6 +11,10 @@ namespace Emotion.Data
     {
         #region FIELDS
 
+        private const string MiedoBadge = "miedo";
+        private const string CarinoBadge = "carino";
+        private const string GratitudBadge = "gratitud";
+
         [Inject] private DataManager dataManager;
 
         #endregion
@@ -37,19 +41,19 @@ namespace Emotion.Data
 
         public string LastRecognizeBadgeWon
         {
-            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastRecognizeBadgeWonKey), "carino");
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastRecognizeBadgeWonKey), CarinoBadge);
             private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastRecognizeBadgeWonKey), value);
         }
 
         public string LastDiscoverBadgeWon
         {
-            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastDiscoverBadgeWonKey), "miedo");
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastDiscoverBadgeWonKey), MiedoBadge);
             private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastDiscoverBadgeWonKey), value);
         }
 
         public string LastExploreBadgeWon
         {
-            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastExploreBadgeWonKey), "gratitud");
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastExploreBadgeWonKey), GratitudBadge);
             private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastExploreBadgeWonKey), value);
         }
 
