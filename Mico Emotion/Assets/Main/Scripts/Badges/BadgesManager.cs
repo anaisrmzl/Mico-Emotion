@@ -55,6 +55,11 @@ namespace Emotion.Badges
             return GetAcquiredBadges(true).FindAll(collectible => collectible.Type == type);
         }
 
+        public List<Badge> GetBadgesByType(BadgeType type)
+        {
+            return badges.FindAll(collectible => collectible.Type == type);
+        }
+
         public Badge UnlockRandomBadge(BadgeType type)
         {
             List<Badge> badges = GetLockedBadgesByType(type);
