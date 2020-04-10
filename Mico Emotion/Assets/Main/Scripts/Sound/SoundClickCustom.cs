@@ -7,11 +7,13 @@ using Utilities.Sound;
 namespace Emotion.Sound
 {
     [RequireComponent(typeof(Button))]
-    public class SoundClick : MonoBehaviour
+    public class SoundClickCustom : MonoBehaviour
     {
         #region FIELDS
 
         [Inject] private SoundManager soundManager;
+
+        [SerializeField] private AudioClip audioClick;
 
         #endregion 
 
@@ -24,7 +26,7 @@ namespace Emotion.Sound
 
         private void ClickSound()
         {
-            soundManager.PlayEffect(soundManager.AudioGeneral);
+            soundManager.PlayEffect(audioClick);
         }
 
         #endregion

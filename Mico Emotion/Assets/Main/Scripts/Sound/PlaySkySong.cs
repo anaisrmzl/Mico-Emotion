@@ -23,7 +23,7 @@ namespace Emotion.Sound
                 return;
 
             soundManager.PlayMusic(soundManager.MusicSky);
-            soundManager.PlayEffect(soundManager.AudioTietoEmotions, true);
+            soundManager.PlayVoice(soundManager.AudioTietoEmotions, true);
         }
 
         #endregion
