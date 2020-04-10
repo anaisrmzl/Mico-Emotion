@@ -2,8 +2,6 @@
 using UnityEngine.UI;
 
 using Utilities.Scenes;
-using Utilities.Sound;
-using Zenject;
 
 namespace Emotion.MainMenu
 {
@@ -11,8 +9,6 @@ namespace Emotion.MainMenu
     public class ChangeScene : MonoBehaviour
     {
         #region FIELDS
-
-        [Inject] private SoundManager soundManager;
 
         [SerializeField] private string sceneName;
 
@@ -30,9 +26,6 @@ namespace Emotion.MainMenu
 
         private void GoToScene()
         {
-            soundManager.StopEffect();
-            soundManager.StopVoice();
-            soundManager.PlayEffect(soundManager.AudioGeneral);
             actionButton.interactable = false;
             AnimationSceneChanger.ChangeScene(sceneName);
         }
