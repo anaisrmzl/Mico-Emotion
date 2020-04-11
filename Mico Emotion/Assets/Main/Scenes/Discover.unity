@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 55447965}
   - component: {fileID: 55447966}
   - component: {fileID: 55447970}
+  - component: {fileID: 55447971}
   m_Layer: 0
   m_Name: Wrong_Button
   m_TagString: Untagged
@@ -290,6 +291,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: 0fabea29e9615514db7cbdb224c547d1, type: 2}
   animator: {fileID: 217871888}
+--- !u!114 &55447971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55447963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 74ab60a93a9924dbfb5d126cebd98f39, type: 3}
 --- !u!1 &59783997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1171,7 @@ GameObject:
   - component: {fileID: 322969701}
   - component: {fileID: 322969697}
   - component: {fileID: 322969702}
+  - component: {fileID: 322969703}
   m_Layer: 0
   m_Name: Heart_Button
   m_TagString: Untagged
@@ -1311,6 +1326,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: 241f457705286a74291d975fb178c6e1, type: 2}
   animator: {fileID: 60842895}
+--- !u!114 &322969703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322969695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: fb7229efef1c648e4b81b6e6df2be8ff, type: 3}
 --- !u!95 &332065343 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3214588291744409786, guid: 0bdb663409dc64c4eb8231740993d650,
@@ -1981,6 +2009,7 @@ GameObject:
   - component: {fileID: 467421820}
   - component: {fileID: 467421819}
   - component: {fileID: 467421818}
+  - component: {fileID: 467421822}
   m_Layer: 5
   m_Name: Back_Button
   m_TagString: Untagged
@@ -2099,6 +2128,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467421816}
   m_CullTransparentMesh: 0
+--- !u!114 &467421822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467421816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &483114551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,6 +2155,7 @@ GameObject:
   - component: {fileID: 483114553}
   - component: {fileID: 483114554}
   - component: {fileID: 483114558}
+  - component: {fileID: 483114559}
   m_Layer: 0
   m_Name: Wrong_Button
   m_TagString: Untagged
@@ -2269,6 +2311,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: 0fabea29e9615514db7cbdb224c547d1, type: 2}
   animator: {fileID: 217871888}
+--- !u!114 &483114559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483114551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 74ab60a93a9924dbfb5d126cebd98f39, type: 3}
 --- !u!1 &491840747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,6 +2339,7 @@ GameObject:
   - component: {fileID: 491840749}
   - component: {fileID: 491840753}
   - component: {fileID: 491840754}
+  - component: {fileID: 491840755}
   m_Layer: 0
   m_Name: Right_Button
   m_TagString: Untagged
@@ -2439,6 +2495,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: a9e750545ecd3a141870070a2edcda29, type: 2}
   animator: {fileID: 1139445921}
+--- !u!114 &491840755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491840747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 60716b3f592c749d187354be24fa2c1d, type: 3}
 --- !u!1 &574706278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,6 +2523,7 @@ GameObject:
   - component: {fileID: 574706280}
   - component: {fileID: 574706284}
   - component: {fileID: 574706285}
+  - component: {fileID: 574706286}
   m_Layer: 0
   m_Name: Right_Button
   m_TagString: Untagged
@@ -2609,6 +2679,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: a9e750545ecd3a141870070a2edcda29, type: 2}
   animator: {fileID: 1139445921}
+--- !u!114 &574706286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574706278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 60716b3f592c749d187354be24fa2c1d, type: 3}
 --- !u!1 &591472151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,6 +3001,7 @@ GameObject:
   - component: {fileID: 836277795}
   - component: {fileID: 836277794}
   - component: {fileID: 836277800}
+  - component: {fileID: 836277801}
   m_Layer: 0
   m_Name: Wrong_Button
   m_TagString: Untagged
@@ -3073,6 +3157,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: 0fabea29e9615514db7cbdb224c547d1, type: 2}
   animator: {fileID: 1139445921}
+--- !u!114 &836277801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836277793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 74ab60a93a9924dbfb5d126cebd98f39, type: 3}
 --- !u!114 &853702382 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863253254950840661, guid: 9ce1a2c8546b2498198cac5a5adb87b8,
@@ -3096,6 +3193,7 @@ GameObject:
   - component: {fileID: 866374189}
   - component: {fileID: 866374188}
   - component: {fileID: 866374187}
+  - component: {fileID: 866374190}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3168,6 +3266,18 @@ Transform:
   m_Father: {fileID: 1412359681}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866374190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866374186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58eab95a7eb249ad9d213947952b7b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &866593076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3878,6 +3988,7 @@ GameObject:
   - component: {fileID: 1072153966}
   - component: {fileID: 1072153967}
   - component: {fileID: 1072153971}
+  - component: {fileID: 1072153972}
   m_Layer: 0
   m_Name: Right_Button
   m_TagString: Untagged
@@ -4033,6 +4144,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: a9e750545ecd3a141870070a2edcda29, type: 2}
   animator: {fileID: 217871888}
+--- !u!114 &1072153972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072153964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 60716b3f592c749d187354be24fa2c1d, type: 3}
 --- !u!1 &1073285474
 GameObject:
   m_ObjectHideFlags: 0
@@ -4150,6 +4274,7 @@ GameObject:
   - component: {fileID: 1075834490}
   - component: {fileID: 1075834491}
   - component: {fileID: 1075834495}
+  - component: {fileID: 1075834496}
   m_Layer: 0
   m_Name: Right_Button
   m_TagString: Untagged
@@ -4305,6 +4430,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: a9e750545ecd3a141870070a2edcda29, type: 2}
   animator: {fileID: 217871888}
+--- !u!114 &1075834496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075834488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 60716b3f592c749d187354be24fa2c1d, type: 3}
 --- !u!114 &1088205231 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863253254950840661, guid: 9ce1a2c8546b2498198cac5a5adb87b8,
@@ -5596,6 +5734,7 @@ GameObject:
   - component: {fileID: 1912510935}
   - component: {fileID: 1912510936}
   - component: {fileID: 1912510941}
+  - component: {fileID: 1912510942}
   m_Layer: 0
   m_Name: Legs_Button
   m_TagString: Untagged
@@ -5750,6 +5889,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: 62c3de84795b32a4399d2c12d84abce1, type: 2}
   animator: {fileID: 60842895}
+--- !u!114 &1912510942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912510934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: aa134df79f4c64f169b6beaa8d316a19, type: 3}
 --- !u!1001 &1915191861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6343,6 +6495,7 @@ GameObject:
   - component: {fileID: 2087737600}
   - component: {fileID: 2087737604}
   - component: {fileID: 2087737605}
+  - component: {fileID: 2087737606}
   m_Layer: 0
   m_Name: Right_Button
   m_TagString: Untagged
@@ -6498,6 +6651,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationToPlay: {fileID: 7400000, guid: a9e750545ecd3a141870070a2edcda29, type: 2}
   animator: {fileID: 1139445921}
+--- !u!114 &2087737606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087737598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 60716b3f592c749d187354be24fa2c1d, type: 3}
 --- !u!223 &2992520437176320580
 Canvas:
   m_ObjectHideFlags: 0

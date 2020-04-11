@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 4863253255742929990}
   - component: {fileID: 4863253255742929985}
   - component: {fileID: 4863253255742929986}
+  - component: {fileID: 1484878891323352531}
   m_Layer: 0
   m_Name: Wrong_Button
   m_TagString: Untagged
@@ -497,6 +498,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1484878891323352531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863253255742929988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 74ab60a93a9924dbfb5d126cebd98f39, type: 3}
 --- !u!1 &4863253255854211555
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +525,7 @@ GameObject:
   - component: {fileID: 4863253255854211565}
   - component: {fileID: 4863253255854211560}
   - component: {fileID: 4863253255854211561}
+  - component: {fileID: 7392306166835801206}
   m_Layer: 0
   m_Name: Right_Button
   m_TagString: Untagged
@@ -651,3 +666,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7392306166835801206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863253255854211555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 60716b3f592c749d187354be24fa2c1d, type: 3}

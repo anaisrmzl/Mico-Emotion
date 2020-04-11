@@ -50,7 +50,6 @@ namespace Emotion.Discover
         private void PlayAnswerAudio()
         {
             pressedButton?.Invoke(answerAudio.length);
-            soundManager.PlayEffect(soundManager.AudioGeneral);
             animator.Play(pressAnimation.name);
             StartCoroutine(PlayNarrative());
         }
