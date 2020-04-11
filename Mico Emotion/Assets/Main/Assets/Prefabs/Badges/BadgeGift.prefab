@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 876602006263674662, guid: 729d552ae2e994cdb948586d2c2f6f80,
+        type: 3}
+      propertyPath: openButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2349707192685033810, guid: 729d552ae2e994cdb948586d2c2f6f80,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -122,5 +127,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5062067382753892454, guid: 729d552ae2e994cdb948586d2c2f6f80, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 729d552ae2e994cdb948586d2c2f6f80, type: 3}
