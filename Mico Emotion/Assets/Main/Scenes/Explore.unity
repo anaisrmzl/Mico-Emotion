@@ -1248,6 +1248,7 @@ MonoBehaviour:
   blueManager: {fileID: 802524267}
   pinkManager: {fileID: 1805910063}
   yellowManager: {fileID: 1480612432}
+  winAudio: {fileID: 8300000, guid: 501ced694491a470eb5245c6d269e3b1, type: 3}
 --- !u!1 &1412359680
 GameObject:
   m_ObjectHideFlags: 0

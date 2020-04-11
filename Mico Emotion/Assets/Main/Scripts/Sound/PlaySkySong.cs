@@ -19,11 +19,11 @@ namespace Emotion.Sound
         {
             soundManager.StopEffect();
             soundManager.StopVoice();
+            soundManager.PlayVoice(soundManager.AudioTietoEmotions, true);
             if (soundManager.CurrentMusic == soundManager.MusicSky)
                 return;
 
             soundManager.PlayMusic(soundManager.MusicSky);
-            soundManager.PlayVoice(soundManager.AudioTietoEmotions, true);
         }
 
         #endregion

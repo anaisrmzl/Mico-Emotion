@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 using Utilities.Scenes;
 using Utilities.Sound;
@@ -17,9 +18,10 @@ namespace Emotion.Explore
         [Inject] private UserManager userManager;
         [Inject] private SoundManager soundManager;
 
-        [SerializeField] StonesManager blueManager;
-        [SerializeField] StonesManager pinkManager;
-        [SerializeField] StonesManager yellowManager;
+        [SerializeField] private StonesManager blueManager;
+        [SerializeField] private StonesManager pinkManager;
+        [SerializeField] private StonesManager yellowManager;
+        [SerializeField] private AudioClip winAudio;
 
         private int finishCounter = 0;
 
@@ -54,6 +56,13 @@ namespace Emotion.Explore
             userManager.UpdateCompletedStonesGame(true);
             soundManager.StopEffect();
             soundManager.StopVoice();
+            StartCoroutine(PlayWinAudio());
+        }
+
+        private IEnumerator PlayWinAudio()
+        {
+            soundManager.PlayEffect(winAudio);
+            yield return new WaitForSeconds(winAudio.length);
             AnimationSceneChanger.ChangeScene(SceneNames.Meditation);
         }
 

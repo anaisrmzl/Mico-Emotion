@@ -35,7 +35,7 @@ namespace Emotion.Sound
         private IEnumerator PlayAudio()
         {
             int randomIndex = Random.Range(0, randomAudios.Length);
-            if (!soundManager.VoiceIsPlaying)
+            if (!(soundManager.VoiceIsPlaying || soundManager.EffectIsPlaying))
             {
                 soundManager.PlayVoice(randomAudios[randomIndex]);
                 yield return new WaitForSeconds(randomAudios[randomIndex].length);
