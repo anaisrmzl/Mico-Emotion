@@ -10,6 +10,7 @@ namespace Utilities.Sound
         [SerializeField] private AudioClip audioGeneral;
         [SerializeField] private AudioClip audioIncrease;
         [SerializeField] private AudioClip audioDecrease;
+        [SerializeField] private AudioClip audioCompleteBar;
         [SerializeField] private AudioClip audioTietoEmotions;
 
         [Header("Music")]
@@ -26,6 +27,7 @@ namespace Utilities.Sound
         public AudioClip AudioGeneral { get => audioGeneral; }
         public AudioClip AudioIncrease { get => audioIncrease; }
         public AudioClip AudioDecrease { get => audioDecrease; }
+        public AudioClip AudioCompleteBar { get => audioCompleteBar; }
         public AudioClip AudioTietoEmotions { get => audioTietoEmotions; }
         public AudioClip MusicJungle { get => musicJungle; }
         public AudioClip MusicStones { get => musicStones; }

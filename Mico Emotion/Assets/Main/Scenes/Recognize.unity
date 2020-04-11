@@ -2843,7 +2843,7 @@ MonoBehaviour:
   clickAnimation: {fileID: 7400000, guid: 5e860e3c9e53746e1864d4b71dbb15f1, type: 2}
   doubleClickAnimation: {fileID: 7400000, guid: b9bf610a679ba4fdeacc1ee071355b7b,
     type: 2}
-  doubleClickAudio: {fileID: 8300000, guid: d6350b30a5adb4dc8b91779022b6d68b, type: 3}
+  doubleClickAudio: {fileID: 8300000, guid: 31a973ec0fe584e2abb45598aa82bf65, type: 3}
   clickAudio: {fileID: 8300000, guid: 118e35375da5e47dda2647591f86da02, type: 3}
   clickValue: 1
   doubleClickValue: 0
@@ -3036,6 +3036,8 @@ MonoBehaviour:
   emotionsBar: {fileID: 2062689301}
   winAnimation: {fileID: 7400000, guid: a807bd35a409e1343aab74e6b49f8bce, type: 2}
   winAudio: {fileID: 8300000, guid: 3cbc67795811b4549b34dbd499eebd37, type: 3}
+  finalAudio1: {fileID: 8300000, guid: db61b575584f74a7587a9f81b031a6b4, type: 3}
+  finalAudio2: {fileID: 8300000, guid: 99b1fc38109e24911b870e1fb306ca5f, type: 3}
   characterAnimator: {fileID: 1217232353}
 --- !u!4 &1179076474
 Transform:
@@ -3762,7 +3764,7 @@ MonoBehaviour:
   clickAnimation: {fileID: 0}
   doubleClickAnimation: {fileID: 7400000, guid: 42cec2e1dc792fd4fbdf8eba14b628fc,
     type: 2}
-  doubleClickAudio: {fileID: 8300000, guid: a9f15f2237f074439bd24bdd8eff623b, type: 3}
+  doubleClickAudio: {fileID: 8300000, guid: 02452b31658ff4663baa420b3c5b5d62, type: 3}
   clickAudio: {fileID: 0}
   clickValue: 0
   doubleClickValue: 0
@@ -3802,7 +3804,8 @@ MonoBehaviour:
   surpriseAnimation: {fileID: 7400000, guid: 42cec2e1dc792fd4fbdf8eba14b628fc, type: 2}
   burpAudio: {fileID: 8300000, guid: b887b44ffb9e54ba28bf4d94055c2905, type: 3}
   sneezeAudio: {fileID: 8300000, guid: 36307a63c94a748198addb791c1cd354, type: 3}
-  surpriseAudio: {fileID: 8300000, guid: c3cb319de79fb4fa680fddd149fb4e7d, type: 3}
+  surpriseAudio: {fileID: 8300000, guid: a9f15f2237f074439bd24bdd8eff623b, type: 3}
+  smellBadAudio: {fileID: 8300000, guid: 913281849d4974642b4af5ca7d9ecdb8, type: 3}
   dragables:
   - {fileID: -8914251034914518736, guid: 5103e0770665446e7a946a45155bbc9a, type: 3}
   - {fileID: 895560050603868013, guid: d3f600dfb874243c6a40990843d122c4, type: 3}
@@ -3974,7 +3977,7 @@ MonoBehaviour:
   clickAnimation: {fileID: 7400000, guid: 5e860e3c9e53746e1864d4b71dbb15f1, type: 2}
   doubleClickAnimation: {fileID: 7400000, guid: b9bf610a679ba4fdeacc1ee071355b7b,
     type: 2}
-  doubleClickAudio: {fileID: 8300000, guid: d6350b30a5adb4dc8b91779022b6d68b, type: 3}
+  doubleClickAudio: {fileID: 8300000, guid: 31a973ec0fe584e2abb45598aa82bf65, type: 3}
   clickAudio: {fileID: 8300000, guid: 118e35375da5e47dda2647591f86da02, type: 3}
   clickValue: 1
   doubleClickValue: 0
@@ -4147,7 +4150,7 @@ MonoBehaviour:
   scaredClip: {fileID: 7400000, guid: e26c16242e39e9645adcaacf4737c10e, type: 2}
   reliefClip: {fileID: 7400000, guid: 7ee5711a7fc131d46b0ebb61195a0f1d, type: 2}
   scaredAudio: {fileID: 8300000, guid: 2013a1f762b454fa2ac1a6c2416c4d5c, type: 3}
-  reliefAudio: {fileID: 8300000, guid: 995a70500d7234050903a23e9b6ca031, type: 3}
+  reliefAudio: {fileID: 8300000, guid: 3c566b99c468d47abb0ff7b76e3e841e, type: 3}
   spiderButton: {fileID: 744754962}
 --- !u!95 &2002633133
 Animator:

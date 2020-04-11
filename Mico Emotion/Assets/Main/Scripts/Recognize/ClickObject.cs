@@ -20,7 +20,7 @@ namespace Emotion.Recognize
         [SerializeField] protected AudioClip doubleClickAudio = null;
         [SerializeField] protected AudioClip clickAudio = null;
         [SerializeField] private int clickValue;
-        [SerializeField] private int doubleClickValue;
+        [SerializeField] protected int doubleClickValue;
 
         private float clicked = 0;
         private float clickTime = 0;

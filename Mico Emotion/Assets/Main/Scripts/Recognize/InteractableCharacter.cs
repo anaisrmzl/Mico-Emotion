@@ -20,6 +20,7 @@ namespace Emotion.Recognize
         private const float NumberOfSteps = 10.0f;
         private const float TweenDuration = 0.5f;
         private const float MaxIdleTime = 3.0f;
+        private const float HalftPercentage = 0.5f;
 
         [Inject] private SoundManager soundManager;
 
@@ -27,6 +28,8 @@ namespace Emotion.Recognize
         [SerializeField] private Image emotionsBar;
         [SerializeField] private AnimationClip winAnimation;
         [SerializeField] private AudioClip winAudio;
+        [SerializeField] private AudioClip finalAudio1;
+        [SerializeField] private AudioClip finalAudio2;
         [SerializeField] private Animator characterAnimator;
 
         private bool isIdle = true;
@@ -78,7 +81,7 @@ namespace Emotion.Recognize
             WaitingInteraction = status;
         }
 
-        public void PlayAnimation(AnimationClip clip, AudioClip audio, int value, string name)
+        public void PlayAnimation(AnimationClip clip, AudioClip audio, int value, string name, bool isLoop = false)
         {
             if (block)
                 return;
@@ -96,7 +99,7 @@ namespace Emotion.Recognize
 
             lastInteractionId = id;
             characterAnimator.Play(clip.name);
-            soundManager.PlayVoice(audio);
+            soundManager.PlayVoice(audio, isLoop);
             interacted?.Invoke();
             StartCoroutine(WaitAnimation(clip.length));
         }
@@ -135,6 +138,7 @@ namespace Emotion.Recognize
                 return false;
 
             ResetValues();
+            soundManager.PlayEffect(soundManager.AudioCompleteBar);
             StartCoroutine(EndGame());
             return true;
         }
@@ -152,6 +156,9 @@ namespace Emotion.Recognize
             characterAnimator.Play(winAnimation.name);
             soundManager.PlayVoice(winAudio);
             yield return new WaitForSeconds(winAnimation.length);
+            AudioClip audioFinal = Random.value > HalftPercentage ? finalAudio1 : finalAudio2;
+            soundManager.PlayVoice(audioFinal);
+            yield return new WaitForSeconds(audioFinal.length);
             yield return new WaitForSeconds(AnimationSceneChanger.Animate());
             BadgeRewardManager badgeRewardManager = ZenjectUtilities.Instantiate<BadgeRewardManager>(badgeRewardManagerPrefab, Vector3.zero, Quaternion.identity, null);
             badgeRewardManager.CreateRandomBadge(BadgeType.Recognize);

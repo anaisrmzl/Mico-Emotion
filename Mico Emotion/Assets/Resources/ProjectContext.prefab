@@ -50,6 +50,7 @@ MonoBehaviour:
   audioGeneral: {fileID: 8300000, guid: b570bb14b76f04e4db227ce40308128c, type: 3}
   audioIncrease: {fileID: 8300000, guid: 7310bef7c97f84aa395ef8947f65e52a, type: 3}
   audioDecrease: {fileID: 8300000, guid: 4905826b5842345158d9a621501450e6, type: 3}
+  audioCompleteBar: {fileID: 8300000, guid: d3b4bf9fdb40c4c568e909b05acfaa1b, type: 3}
   audioTietoEmotions: {fileID: 8300000, guid: 1c94774c78b274ad6bf8e0ef4c468e70, type: 3}
   musicJungle: {fileID: 8300000, guid: 7c1b152b48458400cbf7a5c501d68fe3, type: 3}
   musicSky: {fileID: 8300000, guid: bede4a86955974fa18b740ef331ddfe4, type: 3}

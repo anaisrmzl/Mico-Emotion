@@ -15,6 +15,7 @@ namespace Emotion.Recognize
         private const string BurpId = "burp";
         private const string SneezeId = "sneeze";
         private const string SurpriseId = "surprise";
+        private const int SockIndex = 2;
 
         [SerializeField] private Spider spider;
         [SerializeField] private AnimationClip burpAnimation;
@@ -23,6 +24,7 @@ namespace Emotion.Recognize
         [SerializeField] private AudioClip burpAudio;
         [SerializeField] private AudioClip sneezeAudio;
         [SerializeField] private AudioClip surpriseAudio;
+        [SerializeField] private AudioClip smellBadAudio;
         [SerializeField] private DragTouchable[] dragables;
         [SerializeField] private DragInteractable interactable;
 
@@ -97,7 +99,7 @@ namespace Emotion.Recognize
             DragTouchable chosen = dragables[currentIndex];
             dragableIndexes.Remove(currentIndex);
             dragableIndexes.Add(oldIndex);
-            interactableCharacter.PlayAnimation(surpriseAnimation, surpriseAudio, 0, SurpriseId);
+            interactableCharacter.PlayAnimation(surpriseAnimation, currentIndex == SockIndex ? smellBadAudio : surpriseAudio, 0, SurpriseId);
             currentDragable = ZenjectUtilities.Instantiate<DragTouchable>(chosen, chosen.transform.position, chosen.transform.rotation, null).gameObject;
         }
 

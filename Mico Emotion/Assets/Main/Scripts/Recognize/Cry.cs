@@ -18,7 +18,10 @@ namespace Emotion.Recognize
         public override void DoDoubleClick()
         {
             StopAllCoroutines();
-            base.DoDoubleClick();
+            if (doubleClickAnimation == null)
+                return;
+
+            interactableCharacter.PlayAnimation(doubleClickAnimation, doubleClickAudio, doubleClickValue, transform.name, true);
             interactableCharacter.WaitForInteraction(true);
             StartCoroutine(AppearTissue());
         }
