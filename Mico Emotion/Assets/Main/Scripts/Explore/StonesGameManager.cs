@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 using Utilities.Scenes;
+using Utilities.Sound;
 using Zenject;
 
 using Emotion.Data;
@@ -14,6 +15,7 @@ namespace Emotion.Explore
         private const int MaxFinishedToWin = 3;
 
         [Inject] private UserManager userManager;
+        [Inject] private SoundManager soundManager;
 
         [SerializeField] StonesManager blueManager;
         [SerializeField] StonesManager pinkManager;
@@ -50,6 +52,8 @@ namespace Emotion.Explore
                 return;
 
             userManager.UpdateCompletedStonesGame(true);
+            soundManager.StopEffect();
+            soundManager.StopVoice();
             AnimationSceneChanger.ChangeScene(SceneNames.Meditation);
         }
 

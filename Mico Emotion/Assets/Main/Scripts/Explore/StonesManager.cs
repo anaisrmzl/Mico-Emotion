@@ -2,6 +2,8 @@
 using UnityEngine.Events;
 
 using Utilities.Zenject;
+using Utilities.Sound;
+using Zenject;
 
 namespace Emotion.Explore
 {
@@ -17,7 +19,10 @@ namespace Emotion.Explore
         private const float MaxScale = 1.0f;
         private const float MinScale = 0.5f;
 
+        [Inject] private SoundManager soundManager;
+
         [SerializeField] private DragStone[] stones;
+        [SerializeField] private AudioClip stonesAudio;
         [SerializeField] private Vector2 spawningPoint;
 
         #endregion
@@ -49,6 +54,7 @@ namespace Emotion.Explore
             newStone.tag = PileTag;
             newStone.GetComponent<SpriteRenderer>().sortingOrder = RockSortOrder;
             newStone.transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = FaceSortOrder;
+            soundManager.PlayEffect(stonesAudio);
             SetBoundY();
         }
 

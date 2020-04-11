@@ -2,6 +2,8 @@
 
 using Utilities.Gestures;
 using DG.Tweening;
+using Utilities.Sound;
+using Zenject;
 
 namespace Emotion.Explore
 {
@@ -15,6 +17,8 @@ namespace Emotion.Explore
         private const string FixedRockTag = "FixedRock";
         private const string ReleaseTrigger = "release";
         private const string TouchTrigger = "touch";
+
+        [Inject] private SoundManager soundManager;
 
         [SerializeField] private AnimationClip sleepAnimation;
 
@@ -82,6 +86,7 @@ namespace Emotion.Explore
         public override void StartedDragging()
         {
             animator.SetTrigger(TouchTrigger);
+            soundManager.PlayEffect(soundManager.AudioTakeStone);
         }
 
         #endregion

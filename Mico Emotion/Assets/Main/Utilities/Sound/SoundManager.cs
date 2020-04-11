@@ -6,8 +6,8 @@ namespace Utilities.Sound
     {
         #region FIELDS
 
-        private const float DefaultMusicVolume = 0.5f;
-        private const float DefaultSFXVolume = 0.8f;
+        private const float DefaultMusicVolume = 0.3f;
+        private const float DefaultSFXVolume = 0.5f;
         private const float DefaultVoiceVolume = 1.0f;
 
         [SerializeField] private AudioSource effectSource;

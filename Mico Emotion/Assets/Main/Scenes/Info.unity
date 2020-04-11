@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 188629697}
   - component: {fileID: 188629696}
   - component: {fileID: 188629695}
+  - component: {fileID: 188629699}
   m_Layer: 5
   m_Name: Back_Button
   m_TagString: Untagged
@@ -251,6 +252,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188629693}
   m_CullTransparentMesh: 0
+--- !u!114 &188629699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188629693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &292107381
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +633,7 @@ GameObject:
   - component: {fileID: 511463529}
   - component: {fileID: 511463528}
   - component: {fileID: 511463531}
+  - component: {fileID: 511463532}
   m_Layer: 5
   m_Name: Youtube
   m_TagString: Untagged
@@ -738,6 +752,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   URL: https://www.youtube.com/channel/UCc7qoa_AlJNqYKRqe6dbmcQ
+--- !u!114 &511463532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511463526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &642663500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,6 +1465,7 @@ GameObject:
   - component: {fileID: 1645840583}
   - component: {fileID: 1645840582}
   - component: {fileID: 1645840585}
+  - component: {fileID: 1645840586}
   m_Layer: 5
   m_Name: Facebook
   m_TagString: Untagged
@@ -1557,6 +1584,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   URL: https://www.facebook.com/wearemicotoys/
+--- !u!114 &1645840586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645840580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1785132054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,6 +1830,7 @@ GameObject:
   - component: {fileID: 1899624404}
   - component: {fileID: 1899624403}
   - component: {fileID: 1899624406}
+  - component: {fileID: 1899624407}
   m_Layer: 5
   m_Name: Instagram
   m_TagString: Untagged
@@ -1909,6 +1949,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   URL: https://www.instagram.com/mico.toys/
+--- !u!114 &1899624407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899624401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1998160915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +2047,7 @@ GameObject:
   - component: {fileID: 2072324696}
   - component: {fileID: 2072324695}
   - component: {fileID: 2072324694}
+  - component: {fileID: 2072324698}
   m_Layer: 5
   m_Name: Web
   m_TagString: Untagged
@@ -2117,3 +2170,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072324692}
   m_CullTransparentMesh: 0
+--- !u!114 &2072324698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072324692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
