@@ -63,7 +63,7 @@ namespace Emotion.Recognize
             if (other.tag == InteractableTag)
             {
                 interacting = true;
-                interactableCharacter.PlayAnimation(loopAnimation, loopAudio, value, transform.name);
+                interactableCharacter.PlayAnimation(loopAnimation, loopAudio, value, transform.name, true);
             }
 
             if (other.tag == DestroyableTag)

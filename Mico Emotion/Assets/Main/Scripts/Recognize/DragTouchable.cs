@@ -65,7 +65,7 @@ namespace Emotion.Recognize
             if (other.tag == TouchableTag)
             {
                 touching = true;
-                interactableCharacter.PlaySingleAnimation(loopAnimation, loopAudio, true);
+                interactableCharacter.PlaySingleAnimation(loopAnimation, loopAudio);
             }
         }
 

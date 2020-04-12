@@ -15,8 +15,10 @@ namespace Emotion.Sound
 
         #region BEHAVIORS
 
-        private void Start()
+        private void Awake()
         {
+            soundManager.StopEffect();
+            soundManager.StopVoice();
             if (soundManager.CurrentMusic == soundManager.MusicJungle)
                 return;
 

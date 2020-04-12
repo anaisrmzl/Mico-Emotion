@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8915815089590709329}
   - component: {fileID: 965908114773028548}
   - component: {fileID: 3712817454279147611}
-  - component: {fileID: 7988084021966954673}
+  - component: {fileID: 5083539073284438919}
   m_Layer: 11
   m_Name: Sock
   m_TagString: Untagged
@@ -126,8 +126,8 @@ MonoBehaviour:
   onceAudio: {fileID: 8300000, guid: 36307a63c94a748198addb791c1cd354, type: 3}
   idleAudio: {fileID: 8300000, guid: fad75e402d69c47a4a7ffe19d0255ceb, type: 3}
   value: -1
---- !u!61 &7988084021966954673
-BoxCollider2D:
+--- !u!58 &5083539073284438919
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,20 +135,10 @@ BoxCollider2D:
   m_GameObject: {fileID: 2179642040384059528}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 9d67af5080eca49d8a26e8175592fee4, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1, y: -0.56}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.38, y: 6.6}
-    newSize: {x: 5.01, y: 4.95}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -0.74}
   serializedVersion: 2
-  m_Size: {x: 4, y: 5.5}
-  m_EdgeRadius: 0
+  m_Radius: 2.7

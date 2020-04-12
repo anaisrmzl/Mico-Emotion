@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 707515330}
   - component: {fileID: 707515329}
   - component: {fileID: 707515332}
+  - component: {fileID: 707515333}
   m_Layer: 5
   m_Name: Flower_Button
   m_TagString: Untagged
@@ -524,6 +525,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Map
+--- !u!114 &707515333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707515327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 53be3f77047c04702a46c10483701831, type: 3}
 --- !u!1 &766703993
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,8 +694,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 90}
   m_LocalScale: {x: 0.013333333, y: 0.013333333, z: 0.013333333}
   m_Children:
-  - {fileID: 1805842039}
   - {fileID: 1458761396}
+  - {fileID: 1805842039}
   - {fileID: 707515328}
   m_Father: {fileID: 909910693}
   m_RootOrder: 1
@@ -785,6 +799,55 @@ Transform:
   m_Father: {fileID: 1329121676}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1054951044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054951045}
+  - component: {fileID: 1054951046}
+  m_Layer: 0
+  m_Name: RandomAudios
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1054951045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054951044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1329121676}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054951046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054951044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a91edc0bf564acba4c13bbf8b2d699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomAudios:
+  - {fileID: 8300000, guid: 7f33639ce840b4befae13345ebe1af9a, type: 3}
+  - {fileID: 8300000, guid: 5535ff8542b8d4665abc730666fcca51, type: 3}
+  - {fileID: 8300000, guid: bf00ed442387142e98313bdfe93b50e1, type: 3}
+  - {fileID: 8300000, guid: e2ee4c1547d8b4ed98b394b469016394, type: 3}
+  - {fileID: 8300000, guid: 02fae2f1c6cc04ae78de7531cfeb257c, type: 3}
 --- !u!1 &1300383363
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +945,7 @@ GameObject:
   - component: {fileID: 1301500980}
   - component: {fileID: 1301500979}
   - component: {fileID: 1301500982}
+  - component: {fileID: 1301500983}
   m_Layer: 5
   m_Name: Insignias
   m_TagString: Untagged
@@ -1000,6 +1064,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Badges
+--- !u!114 &1301500983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301500977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1329121675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1106,7 @@ Transform:
   - {fileID: 1991400586}
   - {fileID: 766703996}
   - {fileID: 1045784778}
+  - {fileID: 1054951045}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1046,6 +1123,7 @@ GameObject:
   - component: {fileID: 1458761398}
   - component: {fileID: 1458761397}
   - component: {fileID: 1458761400}
+  - component: {fileID: 1458761401}
   m_Layer: 5
   m_Name: Heart_Button
   m_TagString: Untagged
@@ -1066,7 +1144,7 @@ RectTransform:
   m_Children:
   - {fileID: 2126402231}
   m_Father: {fileID: 782280021}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1165,6 +1243,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: CharacterSelection
+--- !u!114 &1458761401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458761395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 53be3f77047c04702a46c10483701831, type: 3}
 --- !u!1 &1535132069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,6 +1449,7 @@ GameObject:
   - component: {fileID: 1805842041}
   - component: {fileID: 1805842040}
   - component: {fileID: 1805842043}
+  - component: {fileID: 1805842044}
   m_Layer: 5
   m_Name: Book_Button
   m_TagString: Untagged
@@ -1378,7 +1470,7 @@ RectTransform:
   m_Children:
   - {fileID: 1942943}
   m_Father: {fileID: 782280021}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1477,6 +1569,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stories
+--- !u!114 &1805842044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805842038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcea8d6496b64af7b5077205d06fb9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClick: {fileID: 8300000, guid: 53be3f77047c04702a46c10483701831, type: 3}
 --- !u!1 &1860607286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,6 +1931,7 @@ GameObject:
   - component: {fileID: 2087776899}
   - component: {fileID: 2087776898}
   - component: {fileID: 2087776901}
+  - component: {fileID: 2087776902}
   m_Layer: 5
   m_Name: Home_Button
   m_TagString: Untagged
@@ -1944,6 +2050,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: MainMenu
+--- !u!114 &2087776902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087776896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2113268751
 GameObject:
   m_ObjectHideFlags: 0

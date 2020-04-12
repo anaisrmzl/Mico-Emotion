@@ -44,7 +44,6 @@ namespace Emotion.Discover
 
         private void PlayAnswerAudio()
         {
-            soundManager.PlayEffect(soundManager.AudioGeneral);
             animator.Play(pressAnimation.name);
             StartCoroutine(PlayNarrative());
         }

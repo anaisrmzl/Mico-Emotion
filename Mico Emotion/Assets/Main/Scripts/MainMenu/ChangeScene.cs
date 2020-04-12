@@ -30,10 +30,8 @@ namespace Emotion.MainMenu
 
         private void GoToScene()
         {
-            soundManager.StopEffect();
-            soundManager.StopVoice();
-            soundManager.PlayEffect(soundManager.AudioGeneral);
             actionButton.interactable = false;
+            soundManager.StopVoice();
             AnimationSceneChanger.ChangeScene(sceneName);
         }
 

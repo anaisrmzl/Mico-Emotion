@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using Utilities.Scenes;
+using Utilities.Sound;
+using Zenject;
 
 namespace Emotion.Recognize
 {
@@ -17,10 +19,13 @@ namespace Emotion.Recognize
         private const float MaxSecondsHi = 6.0f;
         private const float HiPercentage = 0.5f;
 
+        [Inject] private SoundManager soundManager;
+
         [SerializeField] private Button selectionButton;
         [SerializeField] private Button backButton;
         [SerializeField] private AnimationClip celebration;
         [SerializeField] private AnimationClip goodbyeAnimation;
+        [SerializeField] private AudioClip hiAudio;
         [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private Goodbye goodbye;
         [SerializeField] private Renderer bodyRenderer;
@@ -67,6 +72,8 @@ namespace Emotion.Recognize
         private void Salute()
         {
             animator.SetTrigger(HiTrigger);
+            if (bodyRenderer.isVisible)
+                soundManager.PlayVoice(hiAudio);
         }
 
         private void Goodbye()

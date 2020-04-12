@@ -38,6 +38,9 @@ namespace Emotion.Explore
         {
             userManager.UpdateCompletedMeditationGame(false);
             blocker.SetActive(false);
+            soundManager.StopMusic();
+            soundManager.StopEffect();
+            soundManager.StopVoice();
             StartCoroutine(GameSequence());
         }
 

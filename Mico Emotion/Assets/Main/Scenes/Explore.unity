@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 467421820}
   - component: {fileID: 467421819}
   - component: {fileID: 467421818}
+  - component: {fileID: 467421822}
   m_Layer: 5
   m_Name: Back_Button
   m_TagString: Untagged
@@ -348,6 +349,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467421816}
   m_CullTransparentMesh: 0
+--- !u!114 &467421822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467421816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &486694155
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +654,7 @@ MonoBehaviour:
   - {fileID: 9096558093355217995, guid: bb03f8da9f8fd4ec5a91c88974529467, type: 3}
   - {fileID: 6982069581407364620, guid: 4f3935c24bd0f4e43812e70421a6f08c, type: 3}
   - {fileID: 3811172489898951490, guid: 1b91ebe1253e44cbd886ffddf37e707d, type: 3}
+  stonesAudio: {fileID: 8300000, guid: 6a0f26abea5c94c9890334bb0bd8cdbe, type: 3}
   spawningPoint: {x: 11, y: 12}
 --- !u!4 &802524268
 Transform:
@@ -668,6 +682,7 @@ GameObject:
   - component: {fileID: 866374189}
   - component: {fileID: 866374188}
   - component: {fileID: 866374187}
+  - component: {fileID: 866374190}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -740,6 +755,18 @@ Transform:
   m_Father: {fileID: 1412359681}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866374190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866374186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f8877855e794445ae393a1a8ca7e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1008843242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1248,7 @@ MonoBehaviour:
   blueManager: {fileID: 802524267}
   pinkManager: {fileID: 1805910063}
   yellowManager: {fileID: 1480612432}
+  winAudio: {fileID: 8300000, guid: 501ced694491a470eb5245c6d269e3b1, type: 3}
 --- !u!1 &1412359680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1279,7 @@ Transform:
   - {fileID: 866374189}
   - {fileID: 1976561971}
   - {fileID: 1040254305}
+  - {fileID: 1771545187}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1409,6 +1438,7 @@ MonoBehaviour:
   - {fileID: 9096558093355217995, guid: 32230bf7ed6ca47e2908be5403f9cd38, type: 3}
   - {fileID: 6982069581407364620, guid: 4222d099f9cb1461091930a77f005e65, type: 3}
   - {fileID: 3811172489898951490, guid: c6b522b695f16427ba972f65d346244b, type: 3}
+  stonesAudio: {fileID: 8300000, guid: 6a0f26abea5c94c9890334bb0bd8cdbe, type: 3}
   spawningPoint: {x: 11, y: 12}
 --- !u!4 &1480612433
 Transform:
@@ -1532,6 +1562,56 @@ Transform:
   m_Father: {fileID: 1887599266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1771545186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1771545187}
+  - component: {fileID: 1771545188}
+  m_Layer: 0
+  m_Name: randomAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1771545187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771545186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1412359681}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1771545188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771545186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a91edc0bf564acba4c13bbf8b2d699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomAudios:
+  - {fileID: 8300000, guid: 633cacac2befb407a990adef8e7eb527, type: 3}
+  - {fileID: 8300000, guid: 58de5578929d64ccdace03db4060cc93, type: 3}
+  - {fileID: 8300000, guid: 579603beafb0f408586c7f875536efb2, type: 3}
+  - {fileID: 8300000, guid: b95cfd416d09f4bbba62f7b39ae7b034, type: 3}
+  - {fileID: 8300000, guid: f697930f9743549c797fae999d1dff72, type: 3}
+  playOnStart: 0
 --- !u!1 &1805910062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,6 +1645,7 @@ MonoBehaviour:
   - {fileID: 9096558093355217995, guid: 5d6ef05ff47a8477ab9ac9844d5282b7, type: 3}
   - {fileID: 6982069581407364620, guid: e3a6dd6ffbd8949f3b0468d303fcd0d2, type: 3}
   - {fileID: 3811172489898951490, guid: 04bd6aa415911408cbb9c50be81b7400, type: 3}
+  stonesAudio: {fileID: 8300000, guid: 6a0f26abea5c94c9890334bb0bd8cdbe, type: 3}
   spawningPoint: {x: 11, y: 12}
 --- !u!4 &1805910064
 Transform:
@@ -2115,6 +2196,7 @@ GameObject:
   - component: {fileID: 2082290281}
   - component: {fileID: 2082290280}
   - component: {fileID: 2082290283}
+  - component: {fileID: 2082290284}
   m_Layer: 5
   m_Name: Next_Button
   m_TagString: Untagged
@@ -2233,3 +2315,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Meditation
+--- !u!114 &2082290284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082290278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e95cfb0fe34f7488b5dac4a26b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

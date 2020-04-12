@@ -50,7 +50,14 @@ MonoBehaviour:
   audioGeneral: {fileID: 8300000, guid: b570bb14b76f04e4db227ce40308128c, type: 3}
   audioIncrease: {fileID: 8300000, guid: 7310bef7c97f84aa395ef8947f65e52a, type: 3}
   audioDecrease: {fileID: 8300000, guid: 4905826b5842345158d9a621501450e6, type: 3}
-  musicJungle: {fileID: 8300000, guid: e089a8f620023472aad902b5a85b4fc0, type: 3}
+  audioCompleteBar: {fileID: 8300000, guid: d3b4bf9fdb40c4c568e909b05acfaa1b, type: 3}
+  audioTietoEmotions: {fileID: 8300000, guid: 1c94774c78b274ad6bf8e0ef4c468e70, type: 3}
+  audioTakeStone: {fileID: 8300000, guid: 88edbc545ac35495c8272af90ce2ea1b, type: 3}
+  musicJungle: {fileID: 8300000, guid: 7c1b152b48458400cbf7a5c501d68fe3, type: 3}
+  musicSky: {fileID: 8300000, guid: bede4a86955974fa18b740ef331ddfe4, type: 3}
+  musicDiscover: {fileID: 8300000, guid: bd6375a53833543e0a9012d1d1d8f6a1, type: 3}
+  musicBadges: {fileID: 8300000, guid: 571cbff68a6474f0a91eb78d30af4986, type: 3}
+  musicStones: {fileID: 8300000, guid: ba01982dd354847bab163b80f2e04861, type: 3}
   effectSource: {fileID: 5523456067852743923}
   musicSource: {fileID: 5472770691038224219}
   voiceSource: {fileID: 6478967540979926558}
@@ -84,7 +91,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -180,7 +187,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 
 using Utilities.Scenes;
+using Zenject;
+using Utilities.Sound;
 using DG.Tweening;
 
 namespace Emotion.MainMenu
@@ -14,6 +16,8 @@ namespace Emotion.MainMenu
 
         private const float MinOrthographicSize = 0.5f;
         private const float TransitionDuration = 2.0f;
+
+        [Inject] private SoundManager soundManager;
 
         [SerializeField] private AnimationClip pressAnimation;
         [SerializeField] private AnimationClip appearAnimation;
@@ -48,6 +52,8 @@ namespace Emotion.MainMenu
             canvasGroup.alpha = 0;
             planetAnimator.Play(transitionPlanet.name);
             Camera.main.DOOrthoSize(MinOrthographicSize, TransitionDuration).SetEase(Ease.InOutQuart);
+            soundManager.StopEffect();
+            soundManager.StopVoice();
             yield return new WaitForSeconds(1.0f);
             FadeSceneChanger.ChangeScene(SceneNames.GameSelection);
         }

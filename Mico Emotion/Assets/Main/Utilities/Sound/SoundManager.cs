@@ -6,8 +6,8 @@ namespace Utilities.Sound
     {
         #region FIELDS
 
-        private const float DefaultMusicVolume = 0.5f;
-        private const float DefaultSFXVolume = 0.8f;
+        private const float DefaultMusicVolume = 0.3f;
+        private const float DefaultSFXVolume = 0.5f;
         private const float DefaultVoiceVolume = 1.0f;
 
         [SerializeField] private AudioSource effectSource;
@@ -24,6 +24,8 @@ namespace Utilities.Sound
         public AudioSource VoiceSource { get => voiceSource; }
         public AudioSource MusicSource { get => musicSource; }
         public bool MusicIsPlaying { get => musicSource.isPlaying; }
+        public bool VoiceIsPlaying { get => VoiceSource.isPlaying; }
+        public bool EffectIsPlaying { get => effectSource.isPlaying; }
         public AudioClip CurrentMusic { get => musicSource.clip; }
 
         #endregion
