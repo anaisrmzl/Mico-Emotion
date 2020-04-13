@@ -14,6 +14,7 @@ namespace Emotion.MainMenu
         private const string PlayingParticlesMethod = "StartPlayingParticles";
         private const float WaitTime = 5.0f;
         private const int MaxCount = 5;
+        private const float PiecesDuration = 10.0f;
 
         [Inject] private SoundManager soundManager;
 
@@ -46,8 +47,8 @@ namespace Emotion.MainMenu
                 Instantiate(downParticles);
 
             soundManager.PlayEffect(audioEartquake);
-            Camera.main.DOShakePosition(2.0f, new Vector3(0.5f, 0.0f, 0.0f), 5, randomness: 0, fadeOut: true).SetEase(Ease.InOutCubic);
-            yield return new WaitForSeconds(10.0f);
+            Camera.main.DOShakePosition(2.0f, new Vector3(0.5f, 0.0f, 0.0f), 5, 0, true).SetEase(Ease.InOutCubic);
+            yield return new WaitForSeconds(PiecesDuration);
             Invoke(PlayingParticlesMethod, WaitTime);
         }
 
