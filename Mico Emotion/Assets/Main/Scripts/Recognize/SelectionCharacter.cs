@@ -15,8 +15,8 @@ namespace Emotion.Recognize
         private const string HiTrigger = "hi";
         private const string ByeTrigger = "bye";
         private const string SelectedTrigger = "selected";
-        private const float MinSecondsHi = 3.0f;
-        private const float MaxSecondsHi = 6.0f;
+        private const float MinSecondsHi = 5.0f;
+        private const float MaxSecondsHi = 10.0f;
         private const float HiPercentage = 0.5f;
 
         [Inject] private SoundManager soundManager;
@@ -64,6 +64,7 @@ namespace Emotion.Recognize
         private void Celebrate()
         {
             selected = true;
+            StopAllCoroutines();
             canvasGroup.blocksRaycasts = false;
             animator.SetTrigger(SelectedTrigger);
             StartCoroutine(CelebrationAnimation());
