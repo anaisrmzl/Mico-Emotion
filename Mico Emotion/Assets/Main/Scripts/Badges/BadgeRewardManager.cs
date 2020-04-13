@@ -4,6 +4,7 @@ using UnityEngine.Playables;
 
 using Utilities.Scenes;
 using Utilities.Zenject;
+using Utilities.Sound;
 using Zenject;
 
 using Emotion.Data;
@@ -18,6 +19,7 @@ namespace Emotion.Badges
 
         [Inject] private BadgesManager badgesManager;
         [Inject] private UserManager userManager;
+        [Inject] private SoundManager soundManager;
 
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private Transform badgeHolder;
@@ -26,6 +28,13 @@ namespace Emotion.Badges
         #endregion
 
         #region BEHAVIORS
+
+        private void Awake()
+        {
+            soundManager.StopMusic();
+            soundManager.StopVoice();
+            soundManager.StopEffect();
+        }
 
         public void CreateRandomBadge(BadgeType badgeType)
         {

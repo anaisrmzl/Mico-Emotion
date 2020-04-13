@@ -74,3 +74,6 @@ TagManager:
   - name: happy
     uniqueID: 753237087
     locked: 0
+  - name: Activity
+    uniqueID: 1121892531
+    locked: 0

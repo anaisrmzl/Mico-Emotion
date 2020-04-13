@@ -25,7 +25,7 @@ namespace Emotion.Recognize
 
         private IEnumerator GoodbyeAnimation(float length)
         {
-            yield return new WaitForSeconds(length);
+            yield return new WaitForSeconds(length / 2.0f);
             AnimationSceneChanger.ChangeScene(SceneNames.GameSelection);
         }
 

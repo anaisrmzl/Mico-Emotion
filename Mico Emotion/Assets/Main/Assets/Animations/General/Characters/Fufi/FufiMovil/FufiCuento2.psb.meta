@@ -1,0 +1,697 @@
+fileFormatVersion: 2
+guid: 32deeb6e9f3ce5f44948a4a9e4c97664
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Estrella
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4933
+      y: 4
+      width: 145
+      height: 140
+    spriteID: 003a5f85f6788874996e45d862a22cd5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2036, y: -1371}
+  - name: Luna
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4933
+      y: 152
+      width: 134
+      height: 145
+    spriteID: 44b366fa6592d004f86064125857aa23
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2532, y: -1080}
+  - name: Estrella_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5944
+      y: 4
+      width: 119
+      height: 117
+    spriteID: 0a50ca3bb07671644a79be56352549e0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3197, y: -1548}
+  - name: Estrella_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6477
+      y: 4
+      width: 84
+      height: 82
+    spriteID: 3732e202ac6aa724cab5b91b5a9a8c15
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4215, y: -1757}
+  - name: Estrella_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6294
+      y: 4
+      width: 84
+      height: 84
+    spriteID: f068d4a0fd5e03f418b41e7800bc06e1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2835, y: -1505}
+  - name: Estrella_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6185
+      y: 4
+      width: 101
+      height: 98
+    spriteID: 1a5510ad4c5c70d4497a1868da79a238
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2889, y: -1349}
+  - name: Estrella_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5815
+      y: 4
+      width: 121
+      height: 118
+    spriteID: cc123c4d860ad4140bda8899af544c9e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4027, y: -1610}
+  - name: Estrella_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5384
+      y: 4
+      width: 140
+      height: 137
+    spriteID: f94cd075a0049eb43873a31465cd7e62
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3519, y: -1258}
+  - name: Estrella_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5086
+      y: 4
+      width: 141
+      height: 137
+    spriteID: bc029ccdbc7eb8a4892aa4ac26374149
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1966, y: -1531}
+  - name: Estrella_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5235
+      y: 4
+      width: 141
+      height: 137
+    spriteID: 4ad7f282f6808f24e95fa478c3d2bd91
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3197, y: -1458}
+  - name: Estrella_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6386
+      y: 4
+      width: 83
+      height: 84
+    spriteID: 154f556220bb4a14fb766d2e4f428eba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3431, y: -1714}
+  - name: Estrella_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5532
+      y: 4
+      width: 140
+      height: 137
+    spriteID: 6219fcc40cb516d4f8f2f30144c39155
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2457, y: -1277}
+  - name: Palo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4447
+      y: 421
+      width: 53
+      height: 358
+    spriteID: ecefcb0ad564983419d5579910283a14
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1951, y: -1269}
+  - name: Estrella2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6750
+      y: 4
+      width: 68
+      height: 65
+    spriteID: 7c41df13a26df3349ab75c9b777aeb52
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4167, y: -1406}
+  - name: Estrella1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6660
+      y: 4
+      width: 82
+      height: 78
+    spriteID: 65b8b652dfce6e440b14aaab28befd12
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4277, y: -1393}
+  - name: Estrella3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6569
+      y: 4
+      width: 83
+      height: 79
+    spriteID: 8400fc1f6425e4f47bb3f3a30a8115d2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4093, y: -1247}
+  - name: Luna_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6071
+      y: 4
+      width: 106
+      height: 118
+    spriteID: f052a3717110cc749aae2a4875c2ee3f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3824, y: -1278}
+  - name: Sol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5680
+      y: 4
+      width: 127
+      height: 122
+    spriteID: bb6e29d05dc8d894ab36fa29ee1738f4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2983, y: -1267}
+  - name: Patas
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4447
+      y: 4
+      width: 478
+      height: 409
+    spriteID: 07549475ccf6c8b459abf1b85e150d67
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2164, y: -1306}
+  - name: BG_322
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 4435
+      height: 2048
+    spriteID: aec43e96d89a2c94dac231c46e3b114a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 4435, y: 2048}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 8192
+  textureActualHeight: 8192
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Estrella
+    spriteName: Estrella
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 003a5f85f6788874996e45d862a22cd5
+    layerID: 181
+    mosaicPosition: {x: 4933, y: 4}
+  - name: Luna
+    spriteName: Luna
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 44b366fa6592d004f86064125857aa23
+    layerID: 177
+    mosaicPosition: {x: 4933, y: 152}
+  - name: Estrella
+    spriteName: Estrella_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0a50ca3bb07671644a79be56352549e0
+    layerID: 173
+    mosaicPosition: {x: 5944, y: 4}
+  - name: Estrella
+    spriteName: Estrella_2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3732e202ac6aa724cab5b91b5a9a8c15
+    layerID: 169
+    mosaicPosition: {x: 6477, y: 4}
+  - name: Estrella
+    spriteName: Estrella_3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f068d4a0fd5e03f418b41e7800bc06e1
+    layerID: 165
+    mosaicPosition: {x: 6294, y: 4}
+  - name: Estrella
+    spriteName: Estrella_4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1a5510ad4c5c70d4497a1868da79a238
+    layerID: 161
+    mosaicPosition: {x: 6185, y: 4}
+  - name: Estrella
+    spriteName: Estrella_5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cc123c4d860ad4140bda8899af544c9e
+    layerID: 157
+    mosaicPosition: {x: 5815, y: 4}
+  - name: Estrella
+    spriteName: Estrella_6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f94cd075a0049eb43873a31465cd7e62
+    layerID: 153
+    mosaicPosition: {x: 5384, y: 4}
+  - name: Estrella
+    spriteName: Estrella_7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bc029ccdbc7eb8a4892aa4ac26374149
+    layerID: 149
+    mosaicPosition: {x: 5086, y: 4}
+  - name: Estrella
+    spriteName: Estrella_8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4ad7f282f6808f24e95fa478c3d2bd91
+    layerID: 145
+    mosaicPosition: {x: 5235, y: 4}
+  - name: Estrella
+    spriteName: Estrella_9
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 154f556220bb4a14fb766d2e4f428eba
+    layerID: 96
+    mosaicPosition: {x: 6386, y: 4}
+  - name: Estrella
+    spriteName: Estrella_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6219fcc40cb516d4f8f2f30144c39155
+    layerID: 141
+    mosaicPosition: {x: 5532, y: 4}
+  - name: Palo
+    spriteName: Palo
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ecefcb0ad564983419d5579910283a14
+    layerID: 93
+    mosaicPosition: {x: 4447, y: 421}
+  - name: Estrella2
+    spriteName: Estrella2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7c41df13a26df3349ab75c9b777aeb52
+    layerID: 92
+    mosaicPosition: {x: 6750, y: 4}
+  - name: Estrella1
+    spriteName: Estrella1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65b8b652dfce6e440b14aaab28befd12
+    layerID: 91
+    mosaicPosition: {x: 6660, y: 4}
+  - name: Estrella3
+    spriteName: Estrella3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8400fc1f6425e4f47bb3f3a30a8115d2
+    layerID: 90
+    mosaicPosition: {x: 6569, y: 4}
+  - name: Luna
+    spriteName: Luna_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f052a3717110cc749aae2a4875c2ee3f
+    layerID: 89
+    mosaicPosition: {x: 6071, y: 4}
+  - name: Sol
+    spriteName: Sol
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb6e29d05dc8d894ab36fa29ee1738f4
+    layerID: 86
+    mosaicPosition: {x: 5680, y: 4}
+  - name: Patas
+    spriteName: Patas
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 07549475ccf6c8b459abf1b85e150d67
+    layerID: 82
+    mosaicPosition: {x: 4447, y: 4}
+  - name: BG_322
+    spriteName: BG_322
+    isGroup: 0
+    parentIndex: -1
+    spriteID: aec43e96d89a2c94dac231c46e3b114a
+    layerID: 137
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  boneGOs: []
+  generateGOHierarchy: 0
+  textureAssetName: FufiCuento2 Texture
+  prefabAssetName: FufiCuento2 Prefab
+  spriteLibAssetName: FufiCuento2 Sprite Lib
