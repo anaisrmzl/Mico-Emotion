@@ -10,6 +10,7 @@ namespace Emotion.Mood
         [SerializeField] private Animator animator;
         [SerializeField] private AnimationClip selectionAnimation;
         [SerializeField] private MoodManager moodManager;
+        [SerializeField] private bool positive;
 
         private Button selectionButton;
 
@@ -26,7 +27,7 @@ namespace Emotion.Mood
         private void Select()
         {
             animator.Play(selectionAnimation.name);
-            moodManager.Select(selectionAnimation.length);
+            moodManager.Select(selectionAnimation.length, positive);
         }
 
         #endregion

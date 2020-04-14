@@ -2633,7 +2633,7 @@ MonoBehaviour:
   - {fileID: 1979021337}
   playOnStart: 0
   characterAudios:
-  - {fileID: 8300000, guid: 352e9141fc08742eaa5dc676668e6bfb, type: 3}
+  - {fileID: 8300000, guid: b0c097aad67154b1aaf8037ed28ecfa0, type: 3}
   - {fileID: 8300000, guid: 352e9141fc08742eaa5dc676668e6bfb, type: 3}
   - {fileID: 8300000, guid: 44bb616d709f2420cb7f8d92b189039a, type: 3}
   outAudio: {fileID: 8300000, guid: a421b6d12fe20411384ebc6417b750f7, type: 3}

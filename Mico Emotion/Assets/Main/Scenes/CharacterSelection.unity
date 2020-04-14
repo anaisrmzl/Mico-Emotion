@@ -983,6 +983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 562edc43625b143b5a32b4e5413e202d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strength: 0.5
   blockAudio: {fileID: 8300000, guid: 74ab60a93a9924dbfb5d126cebd98f39, type: 3}
   actionButton: {fileID: 1591826577}
 --- !u!1 &519420028
@@ -2985,6 +2986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 562edc43625b143b5a32b4e5413e202d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strength: 0.5
   blockAudio: {fileID: 8300000, guid: 74ab60a93a9924dbfb5d126cebd98f39, type: 3}
   actionButton: {fileID: 291001810}
 --- !u!1 &1297283421
@@ -4170,7 +4172,7 @@ MonoBehaviour:
   celebration: {fileID: 7400000, guid: a4cf943d0fc1b43fbba0927ba1c37a1e, type: 2}
   goodbyeAnimation: {fileID: 7400000, guid: 0de5c10cb4e3647c0ad299d621cde804, type: 2}
   earthquakeAnimation: {fileID: 7400000, guid: 6c9c163b520644705ac4b180186d937f, type: 2}
-  hiAudio: {fileID: 8300000, guid: 44bb616d709f2420cb7f8d92b189039a, type: 3}
+  hiAudio: {fileID: 8300000, guid: b0c097aad67154b1aaf8037ed28ecfa0, type: 3}
   canvasGroup: {fileID: 662913363}
   goodbye: {fileID: 1513513468}
   bodyRenderer: {fileID: 519755181}
