@@ -11,7 +11,7 @@ namespace Emotion.ActivityCards
     {
         #region FIELDS
 
-        private const float TimeToAppear = 900.0f;
+        private const float TimeToAppear = 10.0f;//900.0f;
         private const float TimeToSeeCard = 10.0f;
         private const string InTrigger = "In";
         private const string OutTrigger = "Out";
@@ -24,6 +24,7 @@ namespace Emotion.ActivityCards
         [SerializeField] private Image closeButtonImage;
         [SerializeField] private Animator cardAnimator;
         [SerializeField] private Button closeButton;
+        [SerializeField] private Button blackPanel;
 
         private float counter = 0.0f;
         private bool count = true;
@@ -37,6 +38,7 @@ namespace Emotion.ActivityCards
         {
             cardIndex = Random.Range(0, cards.Length);
             closeButton.onClick.AddListener(CloseCard);
+            blackPanel.onClick.AddListener(CloseCard);
         }
 
         private void Update()

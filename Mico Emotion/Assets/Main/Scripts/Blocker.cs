@@ -15,6 +15,7 @@ namespace Emotion
 
         [Inject] private SoundManager soundManager;
 
+        [SerializeField] private float strength = 0.5f;
         [SerializeField] private AudioClip blockAudio;
         [SerializeField] private Button actionButton;
 
@@ -29,7 +30,7 @@ namespace Emotion
 
         private void PlayAnimation()
         {
-            transform.DOShakePosition(1.0f, Vector3.right * 0.5f, randomness: 0, fadeOut: false);
+            transform.DOShakePosition(1.0f, Vector3.right * strength, randomness: 0, fadeOut: false);
             soundManager.PlayEffect(blockAudio);
         }
 

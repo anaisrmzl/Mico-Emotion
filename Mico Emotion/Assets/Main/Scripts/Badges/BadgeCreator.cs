@@ -20,7 +20,7 @@ namespace Emotion.Badges
         [SerializeField] private Image zoomedBadge;
         [SerializeField] private CanvasGroup blocker;
         [SerializeField] private Button backButton;
-        [SerializeField] private GameObject zoomPanel;
+        [SerializeField] private Button zoomPanel;
         [SerializeField] private BadgeUI badgePrefab;
 
         #endregion
@@ -30,6 +30,7 @@ namespace Emotion.Badges
         private void Awake()
         {
             backButton.onClick.AddListener(CloseZoom);
+            zoomPanel.onClick.AddListener(CloseZoom);
 
             foreach (Badge badge in badgesManager.GetAcquiredBadges(true))
             {
@@ -55,13 +56,13 @@ namespace Emotion.Badges
             yield return new WaitForSeconds(timeToWait + WaitBetweenAudios);
             blocker.blocksRaycasts = true;
             zoomedBadge.sprite = badgeImage;
-            zoomPanel.SetActive(true);
+            zoomPanel.gameObject.SetActive(true);
             soundManager.PlayVoice(descriptionAudioClip);
         }
 
         private void CloseZoom()
         {
-            zoomPanel.SetActive(false);
+            zoomPanel.gameObject.SetActive(false);
             StopAllCoroutines();
             soundManager.StopVoice();
         }
