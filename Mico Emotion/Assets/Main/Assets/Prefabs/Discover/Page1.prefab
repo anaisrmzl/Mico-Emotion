@@ -374,7 +374,7 @@ RectTransform:
   m_GameObject: {fileID: 4863253255742929988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4863253254990712274}
   m_Father: {fileID: 4863253255331882700}
@@ -479,6 +479,7 @@ MonoBehaviour:
   answerAudio: {fileID: 8300000, guid: 226df5674897a4675803a72851ebfd54, type: 3}
   otherButton: {fileID: 4863253255854211560}
   pressAnimation: {fileID: 7400000, guid: 165924d101b5d4c18a7436e749b38b36, type: 2}
+  appearAnimation: {fileID: 7400000, guid: b34f6b72dc38d4378964d39ea101011d, type: 2}
 --- !u!95 &4863253255742929986
 Animator:
   serializedVersion: 3
@@ -489,7 +490,7 @@ Animator:
   m_GameObject: {fileID: 4863253255742929988}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd0f55369eba840b8845ccda2dd8f238, type: 2}
+  m_Controller: {fileID: 9100000, guid: e0e76ea8895ad4ba6875aa532e65abcb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -542,7 +543,7 @@ RectTransform:
   m_GameObject: {fileID: 4863253255854211555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4863253255145628619}
   m_Father: {fileID: 4863253255331882700}
@@ -647,6 +648,7 @@ MonoBehaviour:
   answerAudio: {fileID: 8300000, guid: 36b9133bcb42944649cbc8d676f610e9, type: 3}
   otherButton: {fileID: 4863253255742929985}
   pressAnimation: {fileID: 7400000, guid: 165924d101b5d4c18a7436e749b38b36, type: 2}
+  appearAnimation: {fileID: 7400000, guid: b34f6b72dc38d4378964d39ea101011d, type: 2}
 --- !u!95 &4863253255854211561
 Animator:
   serializedVersion: 3
@@ -657,7 +659,7 @@ Animator:
   m_GameObject: {fileID: 4863253255854211555}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd0f55369eba840b8845ccda2dd8f238, type: 2}
+  m_Controller: {fileID: 9100000, guid: e0e76ea8895ad4ba6875aa532e65abcb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

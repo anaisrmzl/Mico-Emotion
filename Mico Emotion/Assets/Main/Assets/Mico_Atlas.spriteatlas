@@ -55,11 +55,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: aba0e1a876b9e4954ba86d6448762c1c, type: 3}
-    totalSpriteSurfaceArea: 120575498
+    totalSpriteSurfaceArea: 120779338
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: 8f4b9d80e45ca985a01a75bea93df3a0
+      Hash: 3b20eefc5d4d4f1f259e43e0f8f6c7b2
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ebe3ae00a5fb145eda1244180d26f02f, type: 3}
@@ -162,6 +162,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e4625d439cc004b0c9c3610cf72ede1f, type: 3}
   - {fileID: 21300000, guid: d67f4a835f1f44538a591408d39b34c5, type: 3}
   - {fileID: 21300000, guid: 6e29cfb3a55464be6a55c2c799e9b6e6, type: 3}
+  - {fileID: 21300000, guid: cf9571d3a3bf84ef5845a6007c6191b1, type: 3}
   - {fileID: 21300000, guid: f413a7f3f4c0b4175ab2af941b3b6e78, type: 3}
   - {fileID: 21300000, guid: 0415a804cb64f4a20acb99000fc77d43, type: 3}
   - {fileID: 21300000, guid: 96ce1e141c5fb40a5b334ce8eefed05f, type: 3}
@@ -383,6 +384,7 @@ SpriteAtlas:
   - icon_info
   - small_cloud
   - manzana
+  - papas-24
   - regresar-02
   - cuento_miedo
   - boton_cuerpo-04
