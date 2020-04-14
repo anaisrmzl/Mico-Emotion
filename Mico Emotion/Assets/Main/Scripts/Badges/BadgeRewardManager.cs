@@ -24,6 +24,9 @@ namespace Emotion.Badges
         [SerializeField] private PlayableDirector playableDirector;
         [SerializeField] private Transform badgeHolder;
         [SerializeField] private BadgeUI badgePrefab;
+        [SerializeField] private AudioClip badgeAnnouncement;
+
+        private AudioClip badgeClip;
 
         #endregion
 
@@ -39,6 +42,7 @@ namespace Emotion.Badges
         public void CreateRandomBadge(BadgeType badgeType)
         {
             Badge badge = badgesManager.UnlockRandomBadge(badgeType);
+            badgeClip = badge.Title;
             userManager.UpdateLastBadgeWon(badge.Id, badgeType);
             CreateBadge(badge, (int)badgeType);
         }
@@ -46,6 +50,7 @@ namespace Emotion.Badges
         public void CreateSpecificBadge(BadgeType badgeType, string id)
         {
             Badge badge = badgesManager.UnlockBadge(id);
+            badgeClip = badge.Title;
             userManager.UpdateLastBadgeWon(badge.Id, badgeType);
             CreateBadge(badge, (int)badgeType);
         }
@@ -56,6 +61,18 @@ namespace Emotion.Badges
             badgeUI.Initialize(badge);
             userManager.UpdateLastGamePlayed(badgeType);
             StartCoroutine(ChangeScene());
+        }
+
+        public void BadgeAnnouncement()
+        {
+            StartCoroutine(PlayBadgeAnnouncement());
+        }
+
+        private IEnumerator PlayBadgeAnnouncement()
+        {
+            soundManager.PlayVoice(badgeAnnouncement);
+            yield return new WaitForSeconds(badgeAnnouncement.length);
+            soundManager.PlayVoice(badgeClip);
         }
 
         private IEnumerator ChangeScene()

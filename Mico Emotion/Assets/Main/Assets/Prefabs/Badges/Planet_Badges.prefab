@@ -207,6 +207,7 @@ MonoBehaviour:
   badgeHolder: {fileID: 7195408700840423796}
   badgePrefab: {fileID: 1981030559399443752, guid: 493f77fb8a34a4812b9dc9eba5077988,
     type: 3}
+  badgeAnnouncement: {fileID: 8300000, guid: 8df21125cf4944d298acda07a3fbbf27, type: 3}
 --- !u!82 &5443604960886908177
 AudioSource:
   m_ObjectHideFlags: 0
@@ -615,6 +616,7 @@ GameObject:
   - component: {fileID: 6420206011909836638}
   - component: {fileID: 7468356812214126112}
   - component: {fileID: 6781668056045955858}
+  - component: {fileID: 3372360167701736172}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -660,6 +662,8 @@ PlayableDirector:
     value: {fileID: 5443604960886908177}
   - key: {fileID: -4297132022920745925, guid: 5921a446a16374a66ab71fd82a18c263, type: 2}
     value: {fileID: 5443604960886908177}
+  - key: {fileID: -6893957707875854710, guid: 5921a446a16374a66ab71fd82a18c263, type: 2}
+    value: {fileID: 3372360167701736172}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &6781668056045955858
@@ -681,6 +685,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3372360167701736172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420206011909836639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: ad9e58a68c3f74a5baeba74ba6b90512, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 734971829222553394}
+          m_MethodName: BadgeAnnouncement
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6420206012102734154
 GameObject:
   m_ObjectHideFlags: 0

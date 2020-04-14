@@ -29,7 +29,7 @@ namespace Emotion.Metrics
         {
             addButton.onClick.AddListener(AddNewInfo);
             saveButton.onClick.AddListener(SaveInfo);
-            EnableEditableSection(false);
+            EnableEditableSection(true);
         }
 
         private void EnableEditableSection(bool status)

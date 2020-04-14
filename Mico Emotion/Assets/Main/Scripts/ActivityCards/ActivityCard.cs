@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using Utilities.Sound;
 using Zenject;
@@ -11,7 +12,7 @@ namespace Emotion.ActivityCards
     {
         #region FIELDS
 
-        private const float TimeToAppear = 10.0f;//900.0f;
+        private const float TimeToAppear = 900.0f;
         private const float TimeToSeeCard = 10.0f;
         private const string InTrigger = "In";
         private const string OutTrigger = "Out";
@@ -43,7 +44,7 @@ namespace Emotion.ActivityCards
 
         private void Update()
         {
-            if (!count)
+            if (!count || SceneManager.GetActiveScene() == SceneManager.GetSceneByName(SceneNames.Meditation))
                 return;
 
             counter += Time.deltaTime;
