@@ -5,7 +5,7 @@ using Utilities.Sound;
 
 namespace Emotion.Sound
 {
-    public class PlaySkySong : MonoBehaviour
+    public class PlayParentsSong : MonoBehaviour
     {
         #region FIELDS
 
@@ -19,11 +19,10 @@ namespace Emotion.Sound
         {
             soundManager.StopEffect();
             soundManager.StopVoice();
-            soundManager.PlayVoice(soundManager.AudioTietoEmotions, true);
-            if (soundManager.CurrentMusic == soundManager.MusicJungle)
+            if (soundManager.CurrentMusic == soundManager.MusicSky)
                 return;
 
-            soundManager.PlayMusic(soundManager.MusicJungle);
+            soundManager.PlayMusic(soundManager.MusicSky);
         }
 
         #endregion
