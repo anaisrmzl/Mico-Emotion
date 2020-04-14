@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 using DG.Tweening;
 using Zenject;
@@ -27,6 +28,12 @@ namespace Emotion.MainMenu
 
         #endregion
 
+        #region EVENTS
+
+        public event UnityAction earthquake;
+
+        #endregion
+
         #region BEHAVIORS
 
         private void Awake()
@@ -48,6 +55,7 @@ namespace Emotion.MainMenu
 
             soundManager.PlayEffect(audioEartquake);
             Camera.main.DOShakePosition(2.0f, new Vector3(0.5f, 0.0f, 0.0f), 5, 0, true).SetEase(Ease.InOutCubic);
+            earthquake?.Invoke();
             yield return new WaitForSeconds(PiecesDuration);
             Invoke(PlayingParticlesMethod, WaitTime);
         }

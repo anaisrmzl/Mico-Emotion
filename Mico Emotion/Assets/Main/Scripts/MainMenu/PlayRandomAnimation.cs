@@ -11,7 +11,7 @@ namespace Emotion.MainMenu
         #region FIELDS
 
         private const string PlayingAnimationMethod = "StartPlayingAnimation";
-        private const float WaitTime = 4.0f;
+        private const float WaitTime = 8.0f;
 
         [Inject] private SoundManager soundManager;
 
@@ -19,6 +19,8 @@ namespace Emotion.MainMenu
         [SerializeField] private AnimationClip[] animations;
         [SerializeField] private Transform[] positions;
         [SerializeField] private bool playOnStart = false;
+        [SerializeField] private AudioClip[] characterAudios;
+        [SerializeField] private AudioClip outAudio;
 
         private Vector3 resetPosition = new Vector3(100.0f, 100.0f, 0.0f);
         private int characterIndex = 0;
@@ -53,7 +55,9 @@ namespace Emotion.MainMenu
             animators[characterIndex].transform.position = positions[positionIndex].position;
             animators[characterIndex].transform.rotation = positions[positionIndex].rotation;
             animators[characterIndex].Play(animations[characterIndex].name);
+            soundManager.PlayVoice(characterAudios[characterIndex]);
             yield return new WaitForSeconds(animations[characterIndex].length);
+            soundManager.PlayEffect(outAudio);
             ResetAnimations();
             Invoke(PlayingAnimationMethod, WaitTime);
         }
