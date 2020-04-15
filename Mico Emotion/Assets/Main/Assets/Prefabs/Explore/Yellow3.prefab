@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: e8db3ff5200014f9899898cd2193c746, type: 3}
-  m_Color: {r: 0.93333334, g: 0.92941177, b: 0.6117647, a: 1}
+  m_Color: {r: 0.99215686, g: 0.9882353, b: 0.7254902, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -120,7 +120,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   offset: 3.5
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
   sleepAnimation: {fileID: 7400000, guid: f0a7676cf817e44e8bf362301f948f25, type: 2}
+  offColor: {r: 0.93333334, g: 0.92941177, b: 0.6117647, a: 1}
 --- !u!60 &1043711526587835948
 PolygonCollider2D:
   m_ObjectHideFlags: 0
