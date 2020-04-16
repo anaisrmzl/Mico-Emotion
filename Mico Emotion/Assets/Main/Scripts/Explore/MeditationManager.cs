@@ -16,7 +16,7 @@ namespace Emotion.Explore
         #region FIELDS
 
         private const float WaitTime = 1.0f;
-        private const string NamasteKey = "namaste";
+        //private const string NamasteKey = "namaste";
 
         [Inject] private UserManager userManager;
         [Inject] private SoundManager soundManager;
@@ -49,14 +49,15 @@ namespace Emotion.Explore
             yield return new WaitForSeconds(WaitTime);
             totiAnimator.Play(sittingAnimation.name);
             soundManager.PlayVoice(introAudio);
-            yield return new WaitForSeconds(introAudio.length + WaitTime);
+            yield return new WaitForSeconds(sittingAnimation.length);
             totiAnimator.gameObject.SetActive(false);
             totiSleep.SetActive(true);
+            yield return new WaitForSeconds((introAudio.length - sittingAnimation.length) + WaitTime);
             soundManager.PlayVoice(meditationAudio);
             yield return new WaitForSeconds(meditationAudio.length + WaitTime);
-            totiAnimator.gameObject.SetActive(true);
-            totiSleep.SetActive(false);
-            totiAnimator.SetTrigger(NamasteKey);
+            //totiAnimator.gameObject.SetActive(true);
+            //totiSleep.SetActive(false);
+            //totiAnimator.SetTrigger(NamasteKey);
             soundManager.PlayVoice(afterMeditationAudio);
             yield return new WaitForSeconds(afterMeditationAudio.length + WaitTime);
         }
