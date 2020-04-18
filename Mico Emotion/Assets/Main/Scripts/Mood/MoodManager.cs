@@ -22,8 +22,7 @@ namespace Emotion.Mood
 
         [SerializeField] private AudioClip initialAudio;
         [SerializeField] private AudioClip idleAudio;
-        [SerializeField] private AudioClip selectionAudio;
-        [SerializeField] private AudioClip selectionNegativeAudio;
+        [SerializeField] private AudioClip[] selectionAudios;
         [SerializeField] private GameObject blocker;
 
         private float counter = 0.0f;
@@ -67,20 +66,20 @@ namespace Emotion.Mood
             counter = 0.0f;
         }
 
-        public void Select(float animationLength, bool positive)
+        public void Select(float animationLength, int selectionValue)
         {
             soundManager.StopVoice();
             StopAllCoroutines();
             blocker.SetActive(true);
             selectionMade = true;
-            StartCoroutine(PlaySelectionAudio(animationLength, positive));
+            StartCoroutine(PlaySelectionAudio(animationLength, selectionValue));
         }
 
-        private IEnumerator PlaySelectionAudio(float animationLength, bool positive)
+        private IEnumerator PlaySelectionAudio(float animationLength, int selectionValue)
         {
             yield return new WaitForSeconds(animationLength);
-            soundManager.PlayVoice(positive ? selectionAudio : selectionNegativeAudio);
-            yield return new WaitForSeconds(positive ? selectionAudio.length : selectionNegativeAudio.length);
+            soundManager.PlayVoice(selectionAudios[selectionValue]);
+            yield return new WaitForSeconds(selectionAudios[selectionValue].length);
             ChangeScene();
         }
 
