@@ -317,6 +317,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2955e5b53e70e473abf0040346a6f21f, type: 3}
   - {fileID: 8300000, guid: 0addc2e0793c548188916ce509f71050, type: 3}
   - {fileID: 8300000, guid: ff61dbf112da24a9e9869119e94fbd8e, type: 3}
+  audioIntro: {fileID: 8300000, guid: 8e898b705a94346b1b14306dcb61c177, type: 3}
   cardImage: {fileID: 3109050453994584153}
   closeButtonImage: {fileID: 3237225909033305188}
   cardAnimator: {fileID: 8947861405661119909}

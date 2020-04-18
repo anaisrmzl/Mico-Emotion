@@ -22,6 +22,7 @@ namespace Emotion.ActivityCards
         [SerializeField] private Sprite[] cards;
         [SerializeField] private Sprite[] closeButtons;
         [SerializeField] private AudioClip[] audioCards;
+        [SerializeField] private AudioClip audioIntro;
         [SerializeField] private Image cardImage;
         [SerializeField] private Image closeButtonImage;
         [SerializeField] private Animator cardAnimator;
@@ -67,8 +68,10 @@ namespace Emotion.ActivityCards
             soundManager.PauseMusic(true);
             soundManager.StopEffect();
             soundManager.StopVoice();
+            soundManager.PlayVoice(audioIntro);
+            yield return new WaitForSecondsRealtime(audioIntro.length);
             soundManager.PlayVoice(audioCards[cardIndex]);
-            yield return new WaitForSeconds(TimeToSeeCard);
+            yield return new WaitForSecondsRealtime(TimeToSeeCard);
             CloseCard();
         }
 

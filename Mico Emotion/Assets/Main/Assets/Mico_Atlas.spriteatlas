@@ -55,11 +55,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: aba0e1a876b9e4954ba86d6448762c1c, type: 3}
-    totalSpriteSurfaceArea: 218440058
+    totalSpriteSurfaceArea: 218702202
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: 8968595025856982efbd887854577dce
+      Hash: 478af05ba318695fdc9ee78f21db7b51
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ebe3ae00a5fb145eda1244180d26f02f, type: 3}
@@ -249,6 +249,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: afab93092832f42adbb8ec542194c23a, type: 3}
   - {fileID: 21300000, guid: a60c8619c51aa46ef880703fc78a675f, type: 3}
   - {fileID: 21300000, guid: 17041329bb61b4c92a7ea79b32a40d5d, type: 3}
+  - {fileID: 21300000, guid: 0c044e29d74a3472e95d3a0dcd128ff2, type: 3}
   - {fileID: 21300000, guid: 574db049703874b1bbd2acc831dcfedc, type: 3}
   - {fileID: 21300000, guid: 8db26c591ab8b4166bf1af13052ee743, type: 3}
   - {fileID: 21300000, guid: c2b2346914dbc4926b9925f2f9368bf5, type: 3}
@@ -530,6 +531,7 @@ SpriteAtlas:
   - ua_mapa_lineas_00025
   - icon_registro
   - bgrocksgame
+  - icono_app
   - amabilidad
   - interact_metricas-07
   - Cara_feliz_barra
