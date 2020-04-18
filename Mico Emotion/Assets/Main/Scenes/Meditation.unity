@@ -281,6 +281,21 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 0.99901885
       objectReference: {fileID: 0}
+    - target: {fileID: 824996426861692885, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0938541
+      objectReference: {fileID: 0}
+    - target: {fileID: 824996426861692885, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.995586
+      objectReference: {fileID: 0}
+    - target: {fileID: 824996426861692885, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -10.771001
+      objectReference: {fileID: 0}
     - target: {fileID: 1166369374702480686, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -295,6 +310,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.654003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167231658218933757, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.23261613
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167231658218933757, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.97256863
       objectReference: {fileID: 0}
     - target: {fileID: 1466583348973764655, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
         type: 3}
@@ -515,6 +540,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9979633
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391002640741301338, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.52185655
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391002640741301338, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8530333
       objectReference: {fileID: 0}
     - target: {fileID: 7617500063526875601, guid: 8d5c6f6b17be348f9aa7da9924b76a0c,
         type: 3}
@@ -909,6 +944,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424212362}
   m_CullTransparentMesh: 0
+--- !u!1 &556881882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7812853431917274848, guid: 89a2452d4749e8048a48648c8398452e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1898186061810236862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1268428368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1083,7 @@ MonoBehaviour:
   sittingAnimation: {fileID: 7400000, guid: f87e32b21386943508421820c298e547, type: 2}
   totiAnimator: {fileID: 91078101}
   totiSleep: {fileID: 1991610063}
+  totiSitting: {fileID: 556881882}
 --- !u!1 &1509147808
 GameObject:
   m_ObjectHideFlags: 0
