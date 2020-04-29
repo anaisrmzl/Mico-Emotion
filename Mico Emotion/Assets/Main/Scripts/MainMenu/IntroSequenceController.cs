@@ -2,8 +2,6 @@
 using UnityEngine;
 using UnityEngine.Playables;
 
-using Utilities.Gestures;
-
 namespace Emotion.MainMenu
 {
     [RequireComponent(typeof(PlayableDirector))]
@@ -11,12 +9,12 @@ namespace Emotion.MainMenu
     {
         #region FIELDS
 
-        [SerializeField] private DoubleClick doubleClick;
         [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private Play play;
         [SerializeField] private GameObject parentsButton;
 
         private PlayableDirector playableDirector;
+        private bool cameraStopped = false;
 
         #endregion
 
@@ -30,14 +28,18 @@ namespace Emotion.MainMenu
             StartCoroutine(WaitForSequenceToEnd());
         }
 
-        public void CameraStopped()
+        private void Update()
         {
-            doubleClick.doubleClicked += SkipAnimation;
+            if (!cameraStopped)
+                return;
+
+            if (Input.GetMouseButtonDown(0))
+                SkipAnimation();
         }
 
-        private void OnDestroy()
+        public void CameraStopped()
         {
-            doubleClick.doubleClicked -= SkipAnimation;
+            cameraStopped = true;
         }
 
         private IEnumerator WaitForSequenceToEnd()
@@ -50,7 +52,7 @@ namespace Emotion.MainMenu
         private void SkipAnimation()
         {
             playableDirector.Stop();
-            doubleClick.doubleClicked -= SkipAnimation;
+            cameraStopped = false;
             canvasGroup.blocksRaycasts = true;
             play.AppearSequence();
             parentsButton.SetActive(true);

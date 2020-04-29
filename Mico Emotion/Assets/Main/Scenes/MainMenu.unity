@@ -452,7 +452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019c256ba9a0f49d286b3999a37da002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doubleClick: {fileID: 1206997184}
   canvasGroup: {fileID: 1629752603}
   play: {fileID: 1654764917}
   parentsButton: {fileID: 1802761566}
@@ -807,7 +806,7 @@ Transform:
   m_GameObject: {fileID: 556353005}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.002514489, y: 0.002514489, z: 0.002514489}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 2114360458}
   m_RootOrder: 4
@@ -2645,6 +2644,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: MundoT_Partes
       objectReference: {fileID: 0}
+    - target: {fileID: 5061568692427086478, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 624541286977295166, guid: 6d9e39fe4b6854c43ba2e6db7555f939,
+        type: 3}
+    - target: {fileID: 5061568692427086478, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399336335177818864, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6033501419276048957, guid: 6d9e39fe4b6854c43ba2e6db7555f939,
+        type: 3}
+    - target: {fileID: 5399336335177818864, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7401356926340842970, guid: 5b8f1801024564cdda0afc15e846cd00,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2714,6 +2735,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991158184047473485, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5763324169949635681, guid: 6d9e39fe4b6854c43ba2e6db7555f939,
+        type: 3}
+    - target: {fileID: 7991158184047473485, guid: 5b8f1801024564cdda0afc15e846cd00,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8417725559920871414, guid: 5b8f1801024564cdda0afc15e846cd00,
         type: 3}
@@ -3583,8 +3615,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -280, y: -105}
-  m_SizeDelta: {x: 500, y: 150}
+  m_AnchoredPosition: {x: -330, y: -120}
+  m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1802761568
 Animator:

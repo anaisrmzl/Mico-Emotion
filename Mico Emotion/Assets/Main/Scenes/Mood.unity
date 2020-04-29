@@ -175,6 +175,7 @@ MonoBehaviour:
   animator: {fileID: 617208251}
   selectionAnimation: {fileID: 7400000, guid: db2899e566e0d4fd99457075a0dcec6e, type: 2}
   moodManager: {fileID: 1111476271}
+  value: 2
 --- !u!114 &239197333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,7 +947,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialAudio: {fileID: 8300000, guid: 683eea09f50764b89b40ec7dc6ab3a0a, type: 3}
   idleAudio: {fileID: 8300000, guid: 78b155e664c0f4d2cad7abd74d916938, type: 3}
-  selectionAudio: {fileID: 8300000, guid: f5ba84dd68bdc4dc9b7efcb67b28ffe5, type: 3}
+  selectionAudios:
+  - {fileID: 8300000, guid: f5ba84dd68bdc4dc9b7efcb67b28ffe5, type: 3}
+  - {fileID: 8300000, guid: 893b8a8491fe445ac822d1765c838d03, type: 3}
+  - {fileID: 8300000, guid: 8bbddbdb97f684c8aa80ffa43a5a3820, type: 3}
   blocker: {fileID: 535900350}
 --- !u!1 &1186790497
 GameObject:
@@ -1105,6 +1109,7 @@ MonoBehaviour:
   animator: {fileID: 1198017033}
   selectionAnimation: {fileID: 7400000, guid: db2899e566e0d4fd99457075a0dcec6e, type: 2}
   moodManager: {fileID: 1111476271}
+  value: 0
 --- !u!114 &1551981057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,6 +1256,7 @@ MonoBehaviour:
   animator: {fileID: 1186790498}
   selectionAnimation: {fileID: 7400000, guid: db2899e566e0d4fd99457075a0dcec6e, type: 2}
   moodManager: {fileID: 1111476271}
+  value: 1
 --- !u!114 &1595988853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1621,6 +1627,7 @@ MonoBehaviour:
   animator: {fileID: 273919392}
   selectionAnimation: {fileID: 7400000, guid: db2899e566e0d4fd99457075a0dcec6e, type: 2}
   moodManager: {fileID: 1111476271}
+  value: 2
 --- !u!114 &1963879009
 MonoBehaviour:
   m_ObjectHideFlags: 0

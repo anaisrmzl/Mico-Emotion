@@ -11,7 +11,7 @@ namespace Emotion.Explore
     {
         #region FIELDS
 
-        private const float MinDistance = 1.0f;
+        private const float MinDistance = 1.5f;
         private const float TweenDuration = 0.2f;
         private const string FloorTag = "Floor";
         private const string FixedRockTag = "FixedRock";
@@ -21,9 +21,11 @@ namespace Emotion.Explore
         [Inject] private SoundManager soundManager;
 
         [SerializeField] private AnimationClip sleepAnimation;
+        [SerializeField] private Color offColor;
 
         private Animator animator;
         private StonesManager stonesManager;
+        private SpriteRenderer spriteRenderer;
 
         #endregion
 
@@ -33,6 +35,7 @@ namespace Emotion.Explore
         {
             base.Awake();
             animator = GetComponent<Animator>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         public override void Update()
@@ -59,7 +62,9 @@ namespace Emotion.Explore
             if (other.transform.tag == StonesManager.PileTag && transform.parent == null)
             {
                 rigidBody.bodyType = RigidbodyType2D.Static;
+                spriteRenderer.color = offColor;
                 stonesManager.AddToThePile(gameObject);
+                DragAllowed = false;
                 animator.Play(sleepAnimation.name);
             }
 

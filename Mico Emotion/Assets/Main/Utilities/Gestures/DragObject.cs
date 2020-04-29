@@ -8,6 +8,7 @@ namespace Utilities.Gestures
 
         [SerializeField] private float speed = 20.0f;
         [SerializeField] private float offset = 0.0f;
+        [SerializeField] private LayerMask layerMask;
 
         protected Rigidbody2D rigidBody;
         protected Collider2D objectCollider;
@@ -118,7 +119,7 @@ namespace Utilities.Gestures
         private bool CheckIfObjectIsTouched(Vector3 touchPosition)
         {
             Vector3 position = Camera.main.ScreenToWorldPoint(touchPosition);
-            RaycastHit2D hit = Physics2D.Raycast(position, Vector2.zero);
+            RaycastHit2D hit = Physics2D.Raycast(position, Vector2.zero, Mathf.Infinity, layerMask);
             return (hit.collider == objectCollider);
         }
 

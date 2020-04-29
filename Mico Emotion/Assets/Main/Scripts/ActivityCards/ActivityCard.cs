@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using Utilities.Sound;
 using Zenject;
@@ -20,10 +21,13 @@ namespace Emotion.ActivityCards
 
         [SerializeField] private Sprite[] cards;
         [SerializeField] private Sprite[] closeButtons;
+        [SerializeField] private AudioClip[] audioCards;
+        [SerializeField] private AudioClip audioIntro;
         [SerializeField] private Image cardImage;
         [SerializeField] private Image closeButtonImage;
         [SerializeField] private Animator cardAnimator;
         [SerializeField] private Button closeButton;
+        [SerializeField] private Button blackPanel;
 
         private float counter = 0.0f;
         private bool count = true;
@@ -37,11 +41,12 @@ namespace Emotion.ActivityCards
         {
             cardIndex = Random.Range(0, cards.Length);
             closeButton.onClick.AddListener(CloseCard);
+            blackPanel.onClick.AddListener(CloseCard);
         }
 
         private void Update()
         {
-            if (!count)
+            if (!count || SceneManager.GetActiveScene() == SceneManager.GetSceneByName(SceneNames.Meditation))
                 return;
 
             counter += Time.deltaTime;
@@ -63,14 +68,18 @@ namespace Emotion.ActivityCards
             soundManager.PauseMusic(true);
             soundManager.StopEffect();
             soundManager.StopVoice();
-            yield return new WaitForSeconds(TimeToSeeCard);
+            soundManager.PlayVoice(audioIntro);
+            yield return new WaitForSecondsRealtime(audioIntro.length);
+            soundManager.PlayVoice(audioCards[cardIndex]);
+            yield return new WaitForSecondsRealtime(TimeToSeeCard);
             CloseCard();
         }
 
         private void CloseCard()
         {
-            Time.timeScale = 1;
             soundManager.PauseMusic(false);
+            soundManager.StopVoice();
+            Time.timeScale = 1;
             StopAllCoroutines();
             cardAnimator.SetTrigger(OutTrigger);
             count = true;

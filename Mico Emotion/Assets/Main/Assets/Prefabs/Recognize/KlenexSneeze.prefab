@@ -148,6 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   offset: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1024
   spawnPosition: {x: 10.5, y: -4, z: 0}
   loopAnimation: {fileID: 7400000, guid: 0f23611e11b1d494e8df5f3cc22f7a6c, type: 2}
   idleAnimation: {fileID: 7400000, guid: 860c0dfa83602bd48bdcb579d7188f16, type: 2}

@@ -20,10 +20,10 @@ namespace Emotion.Sound
             soundManager.StopEffect();
             soundManager.StopVoice();
             soundManager.PlayVoice(soundManager.AudioTietoEmotions, true);
-            if (soundManager.CurrentMusic == soundManager.MusicSky)
+            if (soundManager.CurrentMusic == soundManager.MusicJungle)
                 return;
 
-            soundManager.PlayMusic(soundManager.MusicSky);
+            soundManager.PlayMusic(soundManager.MusicJungle);
         }
 
         #endregion

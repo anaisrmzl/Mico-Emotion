@@ -16,6 +16,6 @@ MonoBehaviour:
   id: miedo
   type: 1
   acquired: 1
-  sprite: {fileID: 21300000, guid: e7384f8161d2a4689bd902d452fd661c, type: 3}
+  sprite: {fileID: 21300000, guid: 55adf788be6ae43b3ba8b2fa0f2bb6a8, type: 3}
   description: {fileID: 8300000, guid: c421fea0e40b64822a22b71f0ccec41b, type: 3}
   title: {fileID: 8300000, guid: 384c747ef2e62403eb1c6331c6038b8f, type: 3}

@@ -16985,7 +16985,7 @@ ScriptedImporter:
       y: 4
       width: 3810
       height: 1859
-    spriteID: a730652a2c8da479791ef438708223f1
+    spriteID: bc5db4116566040daa8c501a55392d63
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -17007,7 +17007,7 @@ ScriptedImporter:
       y: 1871
       width: 3810
       height: 1859
-    spriteID: 28c39f80859384110b24ff5ec32a5c7f
+    spriteID: ff3abf675191a4f1f896c6b1e62de4fa
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -17029,7 +17029,7 @@ ScriptedImporter:
       y: 3738
       width: 3810
       height: 1859
-    spriteID: 245aedc612e194caa92d8b69467cf2db
+    spriteID: cf62292e3cea744b7ae8ba87e780c605
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -17259,21 +17259,21 @@ ScriptedImporter:
     spriteName: Planeta_Tieto_Mapa
     isGroup: 0
     parentIndex: 0
-    spriteID: a730652a2c8da479791ef438708223f1
+    spriteID: bc5db4116566040daa8c501a55392d63
     layerID: 148
     mosaicPosition: {x: 4, y: 4}
   - name: Planeta_Tieto_Mapa_verde
     spriteName: Planeta_Tieto_Mapa_verde
     isGroup: 0
     parentIndex: 0
-    spriteID: 28c39f80859384110b24ff5ec32a5c7f
+    spriteID: ff3abf675191a4f1f896c6b1e62de4fa
     layerID: 147
     mosaicPosition: {x: 4, y: 1871}
   - name: Planeta_Tieto_Mapa_congelado
     spriteName: Planeta_Tieto_Mapa_congelado
     isGroup: 0
     parentIndex: 0
-    spriteID: 245aedc612e194caa92d8b69467cf2db
+    spriteID: cf62292e3cea744b7ae8ba87e780c605
     layerID: 146
     mosaicPosition: {x: 4, y: 3738}
   characterData:

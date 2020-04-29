@@ -29,6 +29,7 @@ namespace Emotion.Explore
         [SerializeField] private AnimationClip sittingAnimation;
         [SerializeField] private Animator totiAnimator;
         [SerializeField] private GameObject totiSleep;
+        [SerializeField] private GameObject totiSitting;
 
         #endregion
 
@@ -41,24 +42,37 @@ namespace Emotion.Explore
             soundManager.StopMusic();
             soundManager.StopEffect();
             soundManager.StopVoice();
+            Screen.sleepTimeout = SleepTimeout.NeverSleep;
             StartCoroutine(GameSequence());
+        }
+
+        private void OnDestroy()
+        {
+            Screen.sleepTimeout = SleepTimeout.SystemSetting;
         }
 
         private IEnumerator PlayMeditation()
         {
             yield return new WaitForSeconds(WaitTime);
-            totiAnimator.Play(sittingAnimation.name);
             soundManager.PlayVoice(introAudio);
+            StartCoroutine(PlayAnimations());
             yield return new WaitForSeconds(introAudio.length + WaitTime);
-            totiAnimator.gameObject.SetActive(false);
-            totiSleep.SetActive(true);
             soundManager.PlayVoice(meditationAudio);
             yield return new WaitForSeconds(meditationAudio.length + WaitTime);
-            totiAnimator.gameObject.SetActive(true);
-            totiSleep.SetActive(false);
-            totiAnimator.SetTrigger(NamasteKey);
             soundManager.PlayVoice(afterMeditationAudio);
-            yield return new WaitForSeconds(afterMeditationAudio.length + WaitTime);
+            totiSleep.SetActive(false);
+            totiSitting.SetActive(true);
+            yield return new WaitForSeconds(WaitTime);
+            totiSitting.GetComponent<Animator>().SetTrigger(NamasteKey);
+            yield return new WaitForSeconds(afterMeditationAudio.length);
+        }
+
+        private IEnumerator PlayAnimations()
+        {
+            totiAnimator.Play(sittingAnimation.name);
+            yield return new WaitForSeconds(sittingAnimation.length);
+            totiAnimator.gameObject.SetActive(false);
+            totiSleep.SetActive(true);
         }
 
         private IEnumerator GameSequence()
