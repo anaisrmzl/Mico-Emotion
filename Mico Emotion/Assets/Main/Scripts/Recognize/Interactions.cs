@@ -5,6 +5,7 @@
         Food,
         Burp,
         Spider,
-        Sneeze
+        Sneeze,
+        Help
     }
 }

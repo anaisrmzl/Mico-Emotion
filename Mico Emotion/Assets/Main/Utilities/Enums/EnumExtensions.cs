@@ -31,5 +31,10 @@ namespace Utilities.Extensions
         {
             return Enum.GetValues(typeof(TEnum)).Cast<TEnum>().Select(v => v.ToString().ToLower()).ToList();
         }
+
+        public static List<int> GetEnumsAsIntList<TEnum>()
+        {
+            return Enum.GetValues(typeof(TEnum)).Cast<TEnum>().Select(v => Convert.ToInt32(v)).ToList();
+        }
     }
 }
