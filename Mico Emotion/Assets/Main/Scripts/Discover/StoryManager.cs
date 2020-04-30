@@ -5,6 +5,8 @@ using UnityEngine;
 using Utilities.Scenes;
 using Utilities.Extensions;
 using Utilities.Zenject;
+using Utilities.Sound;
+using Zenject;
 
 namespace Emotion.Discover
 {
@@ -14,6 +16,8 @@ namespace Emotion.Discover
 
         private const float FadeDuration = 1.0f;
         private const float StayDuration = 0.5f;
+
+        [Inject] private SoundManager soundManager;
 
         [SerializeField] private Page[] storyPages;
         [SerializeField] private BadgeRewardManager badgeRewardManagerPrefab;
@@ -38,6 +42,9 @@ namespace Emotion.Discover
         private void EnableNextPage()
         {
             storyPages[currentPage].gameObject.SetActive(true);
+            if (currentPage == storyPages.Length - 1)
+                soundManager.PlayEffect(soundManager.AudioWin);
+
             if (storyPages[currentPage].PageLength != 0)
                 StartCoroutine(ChangeSimplePage());
 
