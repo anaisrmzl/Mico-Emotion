@@ -302,7 +302,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_TargetDisplay: 0
 --- !u!114 &4863253255331882702
 MonoBehaviour:
@@ -479,7 +479,6 @@ MonoBehaviour:
   answerAudio: {fileID: 8300000, guid: 226df5674897a4675803a72851ebfd54, type: 3}
   otherButton: {fileID: 4863253255854211560}
   pressAnimation: {fileID: 7400000, guid: 165924d101b5d4c18a7436e749b38b36, type: 2}
-  appearAnimation: {fileID: 7400000, guid: b34f6b72dc38d4378964d39ea101011d, type: 2}
 --- !u!95 &4863253255742929986
 Animator:
   serializedVersion: 3
@@ -648,7 +647,6 @@ MonoBehaviour:
   answerAudio: {fileID: 8300000, guid: 36b9133bcb42944649cbc8d676f610e9, type: 3}
   otherButton: {fileID: 4863253255742929985}
   pressAnimation: {fileID: 7400000, guid: 165924d101b5d4c18a7436e749b38b36, type: 2}
-  appearAnimation: {fileID: 7400000, guid: b34f6b72dc38d4378964d39ea101011d, type: 2}
 --- !u!95 &4863253255854211561
 Animator:
   serializedVersion: 3
