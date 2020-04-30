@@ -38,7 +38,6 @@ namespace Emotion.Recognize
         private GameObject currentDragable;
         private List<int> dragableIndexes = new List<int>();
         private int currentDragableIndex;
-
         private List<int> randomInteractionIndexes = new List<int>();
         private int interactionIndex;
 
@@ -55,7 +54,6 @@ namespace Emotion.Recognize
             randomInteractionIndexes = EnumExtensions.GetEnumsAsIntList<Interactions>();
             interactionIndex = randomInteractionIndexes.Count - 1;
             randomInteractionIndexes.Remove(interactionIndex);
-
             interactableCharacter.idle += GenerateRandomInteraction;
         }
 
@@ -75,7 +73,7 @@ namespace Emotion.Recognize
                     InstantiateFood();
                     break;
                 case Interactions.Burp:
-                    interactableCharacter.PlayAnimation(burpAnimation, burpAudio, 0, HelpId);
+                    interactableCharacter.PlayAnimation(burpAnimation, burpAudio, 0, BurpId);
                     break;
                 case Interactions.Spider:
                     spider.AppearSpider();
