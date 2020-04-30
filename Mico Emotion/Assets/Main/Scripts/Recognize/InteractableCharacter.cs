@@ -60,7 +60,8 @@ namespace Emotion.Recognize
         private void Awake()
         {
             happiness = (int)(emotionsBar.fillAmount * NumberOfSteps);
-            CountForIdle();
+            isIdle = false;
+            timer = MaxIdleTime - 1.0f;
         }
 
         private void Update()
