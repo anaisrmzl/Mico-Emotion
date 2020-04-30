@@ -11,6 +11,7 @@ namespace Emotion.Recognize
         #region FIELDS
 
         private const string TouchableTag = "Touchable";
+        private const string DestroyableTag = "Destroyable";
         private const float TweenDuration = 0.5f;
 
         [Inject] private RandomInteractions randomInteractions;
@@ -44,15 +45,12 @@ namespace Emotion.Recognize
             if (!DragAllowed)
                 return;
 
-            if (touching)
-            {
-                Destroy(gameObject);
-                interactableCharacter.PlayAnimation(onceAnimation, onceAudio, value, transform.name);
-            }
+            if (!touching)
+                return;
 
-            rigidBody.gravityScale = 0;
-            rigidBody.velocity = Vector2.zero;
-            transform.DOMove(spawnPosition, TweenDuration);
+            interactableCharacter.PlayAnimation(onceAnimation, onceAudio, value, transform.name);
+            touching = false;
+            Destroy(gameObject);
         }
 
         public override void StartedDragging()
@@ -67,11 +65,16 @@ namespace Emotion.Recognize
                 touching = true;
                 interactableCharacter.PlaySingleAnimation(loopAnimation, loopAudio);
             }
+            else if (other.tag == DestroyableTag)
+            {
+                interactableCharacter.PlaySingleAnimation(idleAnimation, idleAudio);
+                Destroy(gameObject);
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (other.tag == TouchableTag)
+            if (other.tag == TouchableTag && touching)
             {
                 touching = false;
                 interactableCharacter.PlaySingleAnimation(idleAnimation, idleAudio);
