@@ -19,7 +19,7 @@ namespace Emotion.Sound
         {
             soundManager.StopEffect();
             soundManager.StopVoice();
-            if (soundManager.CurrentMusic == soundManager.MusicBadges)
+            if (soundManager.CurrentMusic == soundManager.MusicBadges && soundManager.MusicIsPlaying)
                 return;
 
             soundManager.PlayMusic(soundManager.MusicBadges);
