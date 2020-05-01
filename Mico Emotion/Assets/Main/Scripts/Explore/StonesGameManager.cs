@@ -21,7 +21,6 @@ namespace Emotion.Explore
         [SerializeField] private StonesManager blueManager;
         [SerializeField] private StonesManager pinkManager;
         [SerializeField] private StonesManager yellowManager;
-        [SerializeField] private AudioClip winAudio;
 
         private int finishCounter = 0;
 
@@ -61,8 +60,8 @@ namespace Emotion.Explore
 
         private IEnumerator PlayWinAudio()
         {
-            soundManager.PlayEffect(winAudio);
-            yield return new WaitForSeconds(winAudio.length);
+            soundManager.PlayEffect(soundManager.AudioWin);
+            yield return new WaitForSeconds(soundManager.AudioWin.length);
             AnimationSceneChanger.ChangeScene(SceneNames.Meditation);
         }
 

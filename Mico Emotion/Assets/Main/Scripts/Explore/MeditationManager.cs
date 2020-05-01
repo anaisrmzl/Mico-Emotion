@@ -24,6 +24,7 @@ namespace Emotion.Explore
         [SerializeField] private BadgeRewardManager badgeRewardManagerPrefab;
         [SerializeField] private GameObject blocker;
         [SerializeField] private AudioClip introAudio;
+        [SerializeField] private AudioClip parentsAudio;
         [SerializeField] private AudioClip meditationAudio;
         [SerializeField] private AudioClip afterMeditationAudio;
         [SerializeField] private AnimationClip sittingAnimation;
@@ -54,6 +55,8 @@ namespace Emotion.Explore
         private IEnumerator PlayMeditation()
         {
             yield return new WaitForSeconds(WaitTime);
+            soundManager.PlayVoice(parentsAudio);
+            yield return new WaitForSeconds(parentsAudio.length + WaitTime);
             soundManager.PlayVoice(introAudio);
             StartCoroutine(PlayAnimations());
             yield return new WaitForSeconds(introAudio.length + WaitTime);
