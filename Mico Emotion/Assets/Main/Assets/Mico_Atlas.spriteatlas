@@ -55,11 +55,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: aba0e1a876b9e4954ba86d6448762c1c, type: 3}
-    totalSpriteSurfaceArea: 222973552
+    totalSpriteSurfaceArea: 223124096
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: 01460b675f5a704d3c4a7c4b40edc554
+      Hash: a9281094bb0ee84a750ba326ad6fafa3
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ebe3ae00a5fb145eda1244180d26f02f, type: 3}
@@ -294,6 +294,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ba8ab7ebec67d49789b40bcb9e590de4, type: 3}
   - {fileID: 21300000, guid: ca005eeb9a644492c93eabe067ec2993, type: 3}
   - {fileID: 21300000, guid: d12e53fb9e420483e85362f3b8d33e5e, type: 3}
+  - {fileID: 21300000, guid: da54bbfb5776b483481eb00b7f401460, type: 3}
   - {fileID: 21300000, guid: f66fbe0cb1f564d79b4363cec6a52ff8, type: 3}
   - {fileID: 21300000, guid: 205fc72c1f50b495ea1e9397126fe473, type: 3}
   - {fileID: 21300000, guid: 6224dd2c5a24d4e41b5bde904be0605e, type: 3}
@@ -449,7 +450,7 @@ SpriteAtlas:
   - ua_mapa_lineas_00018
   - cuento_tristeza
   - bgjungle_rocks2
-  - Hoja_cae
+  - leaf
   - barra-08
   - poster_oscuro
   - sudor
@@ -585,6 +586,7 @@ SpriteAtlas:
   - marco blanco-23
   - ua_mapa_lineas_00032
   - Screen_1-2_game_1
+  - Hoja_cae
   - fondo_menu
   - cuadro_gris
   - ua_mapa_lineas_00048
