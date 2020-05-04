@@ -1356,7 +1356,7 @@ MonoBehaviour:
     type: 3}
   blocker: {fileID: 424212362}
   introAudio: {fileID: 8300000, guid: 389d79756a0074839a78c7b082eb2b53, type: 3}
-  parentsAudio: {fileID: 8300000, guid: 8e898b705a94346b1b14306dcb61c177, type: 3}
+  parentsAudio: {fileID: 8300000, guid: 3099f8d3c660d406c93e6819af481d85, type: 3}
   meditationAudio: {fileID: 8300000, guid: bd5032839ea0649b29cfc598c77d9274, type: 3}
   afterMeditationAudio: {fileID: 8300000, guid: a00dacec366834d6390a6e54c6d86cd6,
     type: 3}
