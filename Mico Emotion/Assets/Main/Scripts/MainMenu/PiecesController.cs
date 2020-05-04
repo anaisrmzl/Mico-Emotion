@@ -12,7 +12,6 @@ namespace Emotion.MainMenu
     {
         #region FIELDS
 
-        private const string PlayingParticlesMethod = "StartPlayingParticles";
         private const float WaitTime = 5.0f;
         private const int MaxCount = 5;
         private const float PiecesDuration = 10.0f;
@@ -38,16 +37,12 @@ namespace Emotion.MainMenu
 
         private void Awake()
         {
-            Invoke(PlayingParticlesMethod, WaitTime);
-        }
-
-        private void StartPlayingParticles()
-        {
             StartCoroutine(PlayParticles());
         }
 
         private IEnumerator PlayParticles()
         {
+            yield return new WaitForSeconds(WaitTime);
             GetAndPlayParticles();
             counter++;
             if (counter <= MaxCount)
@@ -57,7 +52,7 @@ namespace Emotion.MainMenu
             Camera.main.DOShakePosition(2.0f, new Vector3(0.5f, 0.0f, 0.0f), 5, 0, true).SetEase(Ease.InOutCubic);
             earthquake?.Invoke();
             yield return new WaitForSeconds(PiecesDuration);
-            Invoke(PlayingParticlesMethod, WaitTime);
+            StartCoroutine(PlayParticles());
         }
 
         private void GetAndPlayParticles()
