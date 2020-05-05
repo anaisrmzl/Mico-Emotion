@@ -55,11 +55,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: aba0e1a876b9e4954ba86d6448762c1c, type: 3}
-    totalSpriteSurfaceArea: 223138020
+    totalSpriteSurfaceArea: 232317469
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: 4378d1c18bc20df5daf3356fee0cc06d
+      Hash: df1b74dc229bda1d72aa8c4839a08a17
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ebe3ae00a5fb145eda1244180d26f02f, type: 3}
@@ -158,6 +158,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ed5d2f72a2d0a480c8f867a5519c2fa6, type: 3}
   - {fileID: 21300000, guid: 64da29927ca8149ae92b089ba44c9d73, type: 3}
   - {fileID: 21300000, guid: 4dfeb1a21489a4420a057d4b76606d2b, type: 3}
+  - {fileID: 21300000, guid: 78faf9d20c24042ccb67ab0cf4507a9c, type: 3}
   - {fileID: 21300000, guid: 4f69d0e256c924cb8b8df1e8d970045d, type: 3}
   - {fileID: 21300000, guid: 2a1814e2718a3411da981ded42c2a204, type: 3}
   - {fileID: 21300000, guid: a27246f2423bd4a41bfb2d88ef03c121, type: 3}
@@ -214,7 +215,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e8db3ff5200014f9899898cd2193c746, type: 3}
   - {fileID: 21300000, guid: 34cb0146afaa943279ba85b47a235f5f, type: 3}
   - {fileID: 21300000, guid: 0cc15a46a7d3946778c8b3260c107436, type: 3}
+  - {fileID: 21300000, guid: 872d4ab6871c14763bb0d297f8f00d75, type: 3}
   - {fileID: 21300000, guid: cde841f6864cd4876a4d7f61849f92a7, type: 3}
+  - {fileID: 21300000, guid: 48d4c8f6a49f341e39a2e2a8dbdc7125, type: 3}
   - {fileID: 21300000, guid: 3b684f0707cc74a5c86cf2a4a7732d4c, type: 3}
   - {fileID: 21300000, guid: 0b9a54771e1494e60954d07c70f6b165, type: 3}
   - {fileID: 21300000, guid: 6bd9c4a7cf8c2466fa581b3410fde990, type: 3}
@@ -281,6 +284,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 89fe4fca06f764197bd03130fa76df9b, type: 3}
   - {fileID: 21300000, guid: e1d395da3411b4821904f98c4d0ffba3, type: 3}
   - {fileID: 21300000, guid: 7fa037eab87e7483d822c7f839010aab, type: 3}
+  - {fileID: 21300000, guid: 1ab6140b956df40e68236e588c86a06f, type: 3}
   - {fileID: 21300000, guid: 48e0834b2d0774e0f92bc14546292e57, type: 3}
   - {fileID: 21300000, guid: efc1354b481b544e3a0b54b4f58b393d, type: 3}
   - {fileID: 21300000, guid: 05f1564bb1ed94a129516c1896a99a0f, type: 3}
@@ -451,6 +455,7 @@ SpriteAtlas:
   - ua_mapa_lineas_00018
   - cuento_tristeza
   - bgjungle_rocks2
+  - estrellas_2
   - leaf
   - barra-08
   - poster_oscuro
@@ -507,7 +512,9 @@ SpriteAtlas:
   - roca_3
   - manzana_mordida
   - interact_metricas-12
+  - estrellas_1
   - ua_mapa_lineas_00047
+  - brillo_insignia
   - cuento_asco
   - ua_mapa_lineas_00034
   - bg_mountains
@@ -574,6 +581,7 @@ SpriteAtlas:
   - cara_roca_2
   - for_parents-04
   - bgjungle_rocks1
+  - fondo_azul
   - ua_mapa_lineas_00026
   - logo_emotion
   - ua_mapa_lineas_00003
