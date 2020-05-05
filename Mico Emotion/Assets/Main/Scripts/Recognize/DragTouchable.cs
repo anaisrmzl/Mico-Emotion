@@ -25,6 +25,7 @@ namespace Emotion.Recognize
         [SerializeField] private AudioClip onceAudio;
         [SerializeField] private AudioClip idleAudio;
         [SerializeField] int value;
+        [SerializeField] int valueOut;
 
         private bool touching = false;
 
@@ -67,7 +68,7 @@ namespace Emotion.Recognize
             }
             else if (other.tag == DestroyableTag)
             {
-                interactableCharacter.PlaySingleAnimation(idleAnimation, idleAudio);
+                interactableCharacter.PlayAnimation(idleAnimation, idleAudio, valueOut, transform.name);
                 Destroy(gameObject);
             }
         }
@@ -77,7 +78,7 @@ namespace Emotion.Recognize
             if (other.tag == TouchableTag && touching)
             {
                 touching = false;
-                interactableCharacter.PlaySingleAnimation(idleAnimation, idleAudio);
+                interactableCharacter.PlayAnimation(idleAnimation, idleAudio, valueOut, transform.name);
             }
         }
 

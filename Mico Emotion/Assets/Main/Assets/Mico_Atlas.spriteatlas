@@ -55,11 +55,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: aba0e1a876b9e4954ba86d6448762c1c, type: 3}
-    totalSpriteSurfaceArea: 223124096
+    totalSpriteSurfaceArea: 223138020
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: a9281094bb0ee84a750ba326ad6fafa3
+      Hash: 4378d1c18bc20df5daf3356fee0cc06d
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: ebe3ae00a5fb145eda1244180d26f02f, type: 3}
@@ -218,6 +218,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3b684f0707cc74a5c86cf2a4a7732d4c, type: 3}
   - {fileID: 21300000, guid: 0b9a54771e1494e60954d07c70f6b165, type: 3}
   - {fileID: 21300000, guid: 6bd9c4a7cf8c2466fa581b3410fde990, type: 3}
+  - {fileID: 21300000, guid: 5da04ba7fe9104693958aae53507879c, type: 3}
   - {fileID: 21300000, guid: cccd2ea7c454a4ce6922960c09897cf5, type: 3}
   - {fileID: 21300000, guid: ee6a44b7dcd5c43cc87e02a8f39f7831, type: 3}
   - {fileID: 21300000, guid: 3db1e5b7101f94d3899cf2dc1c0a7e86, type: 3}
@@ -510,6 +511,7 @@ SpriteAtlas:
   - cuento_asco
   - ua_mapa_lineas_00034
   - bg_mountains
+  - brillo_caritas
   - ua_mapa_lineas_00008
   - lianas
   - ua_mapa_lineas_00005
