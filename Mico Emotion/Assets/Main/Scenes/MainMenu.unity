@@ -3417,6 +3417,7 @@ MonoBehaviour:
   planetAnimator: {fileID: 845980264}
   transitionPlanet: {fileID: 7400000, guid: 9c43735344d7848a8aedecb14ddcfda0, type: 2}
   canvasGroup: {fileID: 1629752603}
+  celebrateAudio: {fileID: 8300000, guid: 995a70500d7234050903a23e9b6ca031, type: 3}
 --- !u!114 &1654764918
 MonoBehaviour:
   m_ObjectHideFlags: 0

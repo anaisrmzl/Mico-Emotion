@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 using Zenject;
@@ -34,8 +35,16 @@ namespace Emotion.Recognize
         public void AppearSpider()
         {
             interactableCharacter.WaitForInteraction(true);
+            spiderButton.interactable = false;
             interactableCharacter.PlayAnimation(scaredClip, scaredAudio, -1, transform.name);
             animator.SetBool(AppearKey, true);
+            StartCoroutine(EnableButton());
+        }
+
+        private IEnumerator EnableButton()
+        {
+            yield return new WaitForSeconds(scaredAudio.length);
+            spiderButton.interactable = true;
         }
 
         private void DisappearSpider()

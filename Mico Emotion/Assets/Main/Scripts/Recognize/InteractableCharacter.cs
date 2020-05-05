@@ -113,7 +113,7 @@ namespace Emotion.Recognize
             characterAnimator.Play(clip.name);
             soundManager.PlayVoice(audio, isLoop);
             interacted?.Invoke();
-            StartCoroutine(WaitAnimation(clip.length));
+            StartCoroutine(WaitAnimation(Mathf.Max(clip.length, audio.length)));
         }
 
         private void ResetBarColor()
