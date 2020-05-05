@@ -24,6 +24,7 @@ namespace Emotion.MainMenu
         [SerializeField] private Animator planetAnimator;
         [SerializeField] private AnimationClip transitionPlanet;
         [SerializeField] private CanvasGroup canvasGroup;
+        [SerializeField] private AudioClip celebrateAudio;
 
         private Button playButton;
         private Animator animator;
@@ -53,7 +54,7 @@ namespace Emotion.MainMenu
             planetAnimator.Play(transitionPlanet.name);
             Camera.main.DOOrthoSize(MinOrthographicSize, TransitionDuration).SetEase(Ease.InOutQuart);
             soundManager.StopEffect();
-            soundManager.StopVoice();
+            soundManager.PlayVoice(celebrateAudio);
             yield return new WaitForSeconds(1.0f);
             FadeSceneChanger.ChangeScene(SceneNames.GameSelection);
         }

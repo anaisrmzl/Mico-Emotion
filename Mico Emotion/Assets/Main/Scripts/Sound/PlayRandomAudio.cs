@@ -17,6 +17,7 @@ namespace Emotion.Sound
 
         [SerializeField] private AudioClip[] randomAudios;
         [SerializeField] private bool playOnStart = false;
+        [SerializeField] private AudioClip initialClip = null;
 
         #endregion 
 
@@ -37,8 +38,17 @@ namespace Emotion.Sound
             int randomIndex = Random.Range(0, randomAudios.Length);
             if (!(soundManager.VoiceIsPlaying || soundManager.EffectIsPlaying))
             {
-                soundManager.PlayVoice(randomAudios[randomIndex]);
-                yield return new WaitForSeconds(randomAudios[randomIndex].length);
+                if (initialClip == null)
+                {
+                    soundManager.PlayVoice(randomAudios[randomIndex]);
+                    yield return new WaitForSeconds(randomAudios[randomIndex].length);
+                }
+                else
+                {
+                    soundManager.PlayVoice(initialClip);
+                    yield return new WaitForSeconds(initialClip.length);
+                    initialClip = null;
+                }
             }
 
             yield return null;

@@ -146,3 +146,4 @@ MonoBehaviour:
   onceAudio: {fileID: 8300000, guid: 5464f1ad1697543b08f2fecb29619100, type: 3}
   idleAudio: {fileID: 8300000, guid: cf9a4ae1f6219480e898f6535de9056c, type: 3}
   value: 1
+  valueOut: -1

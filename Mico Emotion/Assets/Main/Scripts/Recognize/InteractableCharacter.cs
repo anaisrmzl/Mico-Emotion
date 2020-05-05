@@ -31,6 +31,10 @@ namespace Emotion.Recognize
         [SerializeField] private AudioClip finalAudio1;
         [SerializeField] private AudioClip finalAudio2;
         [SerializeField] private Animator characterAnimator;
+        [SerializeField] private Image shineHappy;
+        [SerializeField] private Image shineSad;
+        [SerializeField] private Color lightColor;
+        [SerializeField] private Color darkColor;
 
         private bool isIdle = true;
         private bool animated;
@@ -95,14 +99,26 @@ namespace Emotion.Recognize
                 happiness += value;
                 emotionsBar.DOFillAmount(happiness / NumberOfSteps, TweenDuration);
                 if (value != 0)
+                {
                     soundManager.PlayEffect(value > 0 ? soundManager.AudioIncrease : soundManager.AudioDecrease);
+                    emotionsBar.DOColor(lightColor, TweenDuration).OnComplete(ResetBarColor);
+                    if (value > 0)
+                        shineHappy.DOFade(1.0f, TweenDuration).OnComplete(() => shineHappy.DOFade(0.0f, TweenDuration));
+                    else
+                        shineSad.DOFade(1.0f, TweenDuration).OnComplete(() => shineSad.DOFade(0.0f, TweenDuration)); ;
+                }
             }
 
             lastInteractionId = id;
             characterAnimator.Play(clip.name);
             soundManager.PlayVoice(audio, isLoop);
             interacted?.Invoke();
-            StartCoroutine(WaitAnimation(clip.length));
+            StartCoroutine(WaitAnimation(Mathf.Max(clip.length, audio.length)));
+        }
+
+        private void ResetBarColor()
+        {
+            emotionsBar.DOColor(darkColor, TweenDuration);
         }
 
         public void PlaySingleAnimation(AnimationClip clip, AudioClip audio, bool isLoop = false)
@@ -139,7 +155,7 @@ namespace Emotion.Recognize
                 return false;
 
             ResetValues();
-            soundManager.PlayEffect(soundManager.AudioCompleteBar);
+            soundManager.PlayEffect(soundManager.AudioWin);
             StartCoroutine(EndGame());
             return true;
         }

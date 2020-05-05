@@ -129,6 +129,7 @@ MonoBehaviour:
   onceAudio: {fileID: 8300000, guid: 36307a63c94a748198addb791c1cd354, type: 3}
   idleAudio: {fileID: 8300000, guid: fad75e402d69c47a4a7ffe19d0255ceb, type: 3}
   value: -1
+  valueOut: 0
 --- !u!58 &5083539073284438919
 CircleCollider2D:
   m_ObjectHideFlags: 0
