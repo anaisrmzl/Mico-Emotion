@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -13594,44 +13595,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: -5763922217996320307, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 0
-  - go: {fileID: -8083267836454282278, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 1
-  - go: {fileID: 8730683503851633335, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 2
-  - go: {fileID: -7459482571476921647, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 3
-  - go: {fileID: -5766149802382523494, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 4
-  - go: {fileID: -3467860315314531196, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 5
-  - go: {fileID: -1278023211505638903, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 6
-  - go: {fileID: 1238638197260331806, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 7
-  - go: {fileID: 3911515109232363365, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 8
-  - go: {fileID: -3266075519407513973, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 9
-  - go: {fileID: 6702142506764940465, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 10
-  - go: {fileID: -8660798255558141434, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 11
-  - go: {fileID: 3826206104893678809, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 12
-  - go: {fileID: -6774258799081793929, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 13
-  - go: {fileID: -8251827646903224717, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 14
-  - go: {fileID: -1304801343991804050, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 15
-  - go: {fileID: 2957398210176423901, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 16
-  - go: {fileID: -8617406973077335474, guid: 399bcbc0dd6ee8e43bcc7791e8323e18, type: 3}
-    index: 17
   generateGOHierarchy: 0
   textureAssetName: FufiCuento1 Texture
   prefabAssetName: FufiCuento1 Prefab
   spriteLibAssetName: FufiCuento1 Sprite Lib
+  secondarySpriteTextures: []

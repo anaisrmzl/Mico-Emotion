@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -11267,52 +11268,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: -4947551546990561211, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 0
-  - go: {fileID: 8642018966433786677, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 1
-  - go: {fileID: -3850167687776938172, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 2
-  - go: {fileID: 4950079908387685305, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 3
-  - go: {fileID: -7566136712951973963, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 4
-  - go: {fileID: -7691615059608875295, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 5
-  - go: {fileID: 8950503417387886693, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 6
-  - go: {fileID: -5115884511224457727, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 7
-  - go: {fileID: -2308882129346036674, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 8
-  - go: {fileID: -3629367566980203634, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 9
-  - go: {fileID: 346799009848034889, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 10
-  - go: {fileID: -3730713607491006835, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 11
-  - go: {fileID: -523109021725480967, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 12
-  - go: {fileID: 2179686962577770080, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 13
-  - go: {fileID: -9108983201011808297, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 14
-  - go: {fileID: 1940664647478482900, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 15
-  - go: {fileID: -3601177329928137494, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 16
-  - go: {fileID: 8162620135299168549, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 17
-  - go: {fileID: 4148661297092978928, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 18
-  - go: {fileID: -7077286423075244550, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 19
-  - go: {fileID: 2314652576810998733, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 20
-  - go: {fileID: -867527692527221509, guid: 7d4f657c3c50dfe4a9f7c4fb917ac730, type: 3}
-    index: 21
   generateGOHierarchy: 0
   textureAssetName: Exploradores_Tito Texture
   prefabAssetName: Exploradores_Tito Prefab
   spriteLibAssetName: Exploradores_Tito Sprite Lib
+  secondarySpriteTextures: []

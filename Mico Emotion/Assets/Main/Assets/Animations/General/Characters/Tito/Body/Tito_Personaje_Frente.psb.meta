@@ -445,6 +445,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -10128,42 +10129,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: 100038, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 0
-  - go: {fileID: 100040, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 1
-  - go: {fileID: 100060, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 2
-  - go: {fileID: 100062, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 3
-  - go: {fileID: 100064, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 4
-  - go: {fileID: 100066, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 5
-  - go: {fileID: 100068, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 6
-  - go: {fileID: 100070, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 7
-  - go: {fileID: 100042, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 8
-  - go: {fileID: 100044, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 9
-  - go: {fileID: 100046, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 10
-  - go: {fileID: 100048, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 11
-  - go: {fileID: 100050, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 12
-  - go: {fileID: 100052, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 13
-  - go: {fileID: 100054, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 14
-  - go: {fileID: 100056, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 15
-  - go: {fileID: 100058, guid: 6b54fe04aa3ab4e49aca830c0f65108c, type: 3}
-    index: 16
   generateGOHierarchy: 0
   textureAssetName: Tito_Personaje_Frente
   prefabAssetName: Tito_Personaje_Frente_GO
   spriteLibAssetName: Tito_Personaje_Frente Sprite Lib
+  secondarySpriteTextures: []

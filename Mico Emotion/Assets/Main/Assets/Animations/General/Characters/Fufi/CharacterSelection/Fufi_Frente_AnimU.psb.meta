@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -8189,40 +8190,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: 8566964190817445458, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 0
-  - go: {fileID: 6664668974817053233, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 1
-  - go: {fileID: -1752000547197872297, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 2
-  - go: {fileID: -9068346629974063939, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 3
-  - go: {fileID: -4398931017526476531, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 4
-  - go: {fileID: 3795820140668816506, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 5
-  - go: {fileID: -4313248839876658118, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 6
-  - go: {fileID: -7409961163074924197, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 7
-  - go: {fileID: -5251823950111844112, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 8
-  - go: {fileID: -8919541253038493018, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 9
-  - go: {fileID: 2278551404567501543, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 10
-  - go: {fileID: -2660944244370712605, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 11
-  - go: {fileID: 848133927457127047, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 12
-  - go: {fileID: 6899800147480555205, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 13
-  - go: {fileID: 7975023915171746819, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 14
-  - go: {fileID: 2306926133846498452, guid: 65b2c47e7dd6b824588c9facc7f40f6f, type: 3}
-    index: 15
   generateGOHierarchy: 0
   textureAssetName: Fufi_Frente_AnimU Texture
   prefabAssetName: Fufi_Frente_AnimU Prefab
   spriteLibAssetName: Fufi_Frente_AnimU Sprite Lib
+  secondarySpriteTextures: []

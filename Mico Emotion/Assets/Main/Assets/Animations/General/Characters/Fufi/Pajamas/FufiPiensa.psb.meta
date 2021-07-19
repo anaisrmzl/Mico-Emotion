@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -5048,26 +5049,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: 7509823273424014797, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 0
-  - go: {fileID: -4998370524957308004, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 1
-  - go: {fileID: 254586715881019879, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 2
-  - go: {fileID: -9017397994216677982, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 3
-  - go: {fileID: 3406982945018138363, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 4
-  - go: {fileID: -5738005602780030274, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 5
-  - go: {fileID: -101246196404127545, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 6
-  - go: {fileID: 3387492873571613959, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 7
-  - go: {fileID: 1739758183696466448, guid: 3813cd347520e4de08bb2bca6962796e, type: 3}
-    index: 8
   generateGOHierarchy: 0
   textureAssetName: FufiPiensa Texture
   prefabAssetName: FufiPiensa Prefab
   spriteLibAssetName: FufiPiensa Sprite Lib
+  secondarySpriteTextures: []

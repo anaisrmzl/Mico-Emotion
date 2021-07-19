@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -17539,14 +17540,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: 5037418011842971357, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-    index: 0
-  - go: {fileID: 8034409709108337700, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-    index: 1
-  - go: {fileID: 1486097958242336371, guid: 6d9e39fe4b6854c43ba2e6db7555f939, type: 3}
-    index: 2
   generateGOHierarchy: 0
   textureAssetName: MundoT_Partes Texture
   prefabAssetName: MundoT_Partes Prefab
   spriteLibAssetName: MundoT_Partes Sprite Lib
+  secondarySpriteTextures: []

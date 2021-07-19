@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -8703,48 +8704,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: -4125896512833881821, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 0
-  - go: {fileID: -7893509930331862497, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 1
-  - go: {fileID: 462821013126128518, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 2
-  - go: {fileID: 3851777538115470217, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 3
-  - go: {fileID: 9181869029873658463, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 4
-  - go: {fileID: -1524894160697534014, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 5
-  - go: {fileID: 5959008704005876177, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 6
-  - go: {fileID: 6574390604978191428, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 7
-  - go: {fileID: 1823710712166069284, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 8
-  - go: {fileID: -8817245907956985873, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 9
-  - go: {fileID: -3845851161499120800, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 10
-  - go: {fileID: -5557740884600513337, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 11
-  - go: {fileID: 2804050410187020447, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 12
-  - go: {fileID: 8653479220997686991, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 13
-  - go: {fileID: -1886586547961365876, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 14
-  - go: {fileID: 9210832960397267943, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 15
-  - go: {fileID: 4109147645122638889, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 16
-  - go: {fileID: -1205318360477047574, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 17
-  - go: {fileID: 1837202695911815900, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 18
-  - go: {fileID: -7650716786907997812, guid: 989d43eb1dbbe9f468b4a7a4275e1c60, type: 3}
-    index: 19
   generateGOHierarchy: 0
   textureAssetName: Exploradores_Fufi Texture
   prefabAssetName: Exploradores_Fufi Prefab
   spriteLibAssetName: Exploradores_Fufi Sprite Lib
+  secondarySpriteTextures: []

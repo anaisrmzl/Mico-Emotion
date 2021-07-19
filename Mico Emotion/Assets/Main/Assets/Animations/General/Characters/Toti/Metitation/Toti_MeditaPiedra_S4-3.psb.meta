@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -18232,78 +18233,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: -2396337746876936560, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 0
-  - go: {fileID: -8148507834323910640, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 1
-  - go: {fileID: -4464051147743400756, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 2
-  - go: {fileID: 7511783190564111625, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 3
-  - go: {fileID: 2417495243808834168, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 4
-  - go: {fileID: -7654379855161334214, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 5
-  - go: {fileID: -1952696520839436716, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 6
-  - go: {fileID: 8329446484698724471, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 7
-  - go: {fileID: -7802134164816031360, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 8
-  - go: {fileID: -9216900503878976075, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 9
-  - go: {fileID: -4009724116578491130, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 10
-  - go: {fileID: -9136867364296728604, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 11
-  - go: {fileID: 2909646312659892009, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 12
-  - go: {fileID: -4670621745564748152, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 13
-  - go: {fileID: 6127241114338735587, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 14
-  - go: {fileID: -8553734527812722552, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 15
-  - go: {fileID: -6283817258101053235, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 16
-  - go: {fileID: 3107381127377512315, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 17
-  - go: {fileID: -9023113620646958651, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 18
-  - go: {fileID: -8585917043001938262, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 19
-  - go: {fileID: -1769905756350438397, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 20
-  - go: {fileID: 8738480428018624079, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 21
-  - go: {fileID: 5557426687295077692, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 22
-  - go: {fileID: -8570571778249130771, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 23
-  - go: {fileID: 8539898539854625144, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 24
-  - go: {fileID: -7500181668119482333, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 25
-  - go: {fileID: -8705598638963176843, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 26
-  - go: {fileID: -305622552718461261, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 27
-  - go: {fileID: -8287516184271996852, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 28
-  - go: {fileID: -4640766590221363058, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 29
-  - go: {fileID: -7385782018242417589, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 30
-  - go: {fileID: -7389813704442952759, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 31
-  - go: {fileID: -7373831722043453291, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 32
-  - go: {fileID: -3898723250777262169, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 33
-  - go: {fileID: 5120116830868236618, guid: 2d13ecac227c84fd99e15b6939ff35a1, type: 3}
-    index: 34
   generateGOHierarchy: 0
   textureAssetName: Toti_MeditaPiedra_S4-3 Texture
   prefabAssetName: Toti_MeditaPiedra_S4-3 Prefab
   spriteLibAssetName: Toti_MeditaPiedra_S4-3 Sprite Lib
+  secondarySpriteTextures: []

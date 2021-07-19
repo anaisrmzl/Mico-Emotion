@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -3173,12 +3174,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: 3646334792670605214, guid: 6d36c2fbab1d1b648abc7fd666dd4725, type: 3}
-    index: 0
-  - go: {fileID: -851998708579398334, guid: 6d36c2fbab1d1b648abc7fd666dd4725, type: 3}
-    index: 1
   generateGOHierarchy: 0
   textureAssetName: CuentoFufiDormido Texture
   prefabAssetName: CuentoFufiDormido Prefab
   spriteLibAssetName: CuentoFufiDormido Sprite Lib
+  secondarySpriteTextures: []

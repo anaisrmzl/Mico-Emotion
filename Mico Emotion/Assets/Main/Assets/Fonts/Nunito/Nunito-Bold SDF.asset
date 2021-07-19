@@ -19,6 +19,8 @@ Texture2D:
   m_TextureFormat: 1
   m_MipCount: 1
   m_IsReadable: 1
+  m_IgnoreMasterTextureLimit: 0
+  m_IsPreProcessed: 0
   m_StreamingMipmaps: 0
   m_StreamingMipmapsPriority: 0
   m_AlphaIsTransparency: 0
@@ -54,7 +56,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hashCode: -771558338
   material: {fileID: 7140913789697576306}
-  materialHashCode: 1142833935
+  materialHashCode: 1340222046
   m_Version: 1.1.0
   m_SourceFontFileGUID: e90dc9979739e4d169c74d9be2c0f0e8
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: e90dc9979739e4d169c74d9be2c0f0e8,
@@ -62,6 +64,7 @@ MonoBehaviour:
   m_SourceFontFile: {fileID: 12800000, guid: e90dc9979739e4d169c74d9be2c0f0e8, type: 3}
   m_AtlasPopulationMode: 1
   m_FaceInfo:
+    m_FaceIndex: 0
     m_FamilyName: Nunito
     m_StyleName: Bold
     m_PointSize: 90
@@ -782,6 +785,20 @@ MonoBehaviour:
       m_Height: 66
     m_Scale: 1
     m_AtlasIndex: 0
+  - m_Index: 882
+    m_Metrics:
+      m_Width: 0
+      m_Height: 0
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 0
+    m_GlyphRect:
+      m_X: 0
+      m_Y: 0
+      m_Width: 0
+      m_Height: 0
+    m_Scale: 1
+    m_AtlasIndex: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 95
@@ -983,9 +1000,15 @@ MonoBehaviour:
     m_Unicode: 57
     m_GlyphIndex: 776
     m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 8203
+    m_GlyphIndex: 882
+    m_Scale: 1
   m_AtlasTextures:
   - {fileID: -4692398585965436520}
   m_AtlasTextureIndex: 0
+  m_IsMultiAtlasTexturesEnabled: 0
+  m_ClearDynamicDataOnBuild: 0
   m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0

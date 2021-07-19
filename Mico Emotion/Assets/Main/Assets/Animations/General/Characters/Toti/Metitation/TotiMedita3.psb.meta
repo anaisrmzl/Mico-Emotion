@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -4629,24 +4630,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: -1371456782998217781, guid: fbb71d6133e2dbd438d983f16dc5d0e4, type: 3}
-    index: 0
-  - go: {fileID: 4620305496740957764, guid: fbb71d6133e2dbd438d983f16dc5d0e4, type: 3}
-    index: 1
-  - go: {fileID: -6249346266416784820, guid: fbb71d6133e2dbd438d983f16dc5d0e4, type: 3}
-    index: 2
-  - go: {fileID: 7487224658335092177, guid: fbb71d6133e2dbd438d983f16dc5d0e4, type: 3}
-    index: 3
-  - go: {fileID: -3196049356343176467, guid: fbb71d6133e2dbd438d983f16dc5d0e4, type: 3}
-    index: 4
-  - go: {fileID: -4069073122302200295, guid: fbb71d6133e2dbd438d983f16dc5d0e4, type: 3}
-    index: 5
-  - go: {fileID: 8348171408459686539, guid: fbb71d6133e2dbd438d983f16dc5d0e4, type: 3}
-    index: 6
-  - go: {fileID: -3792760582688417260, guid: fbb71d6133e2dbd438d983f16dc5d0e4, type: 3}
-    index: 7
   generateGOHierarchy: 0
   textureAssetName: TotiMedita3 Texture
   prefabAssetName: TotiMedita3 Prefab
   spriteLibAssetName: TotiMedita3 Sprite Lib
+  secondarySpriteTextures: []

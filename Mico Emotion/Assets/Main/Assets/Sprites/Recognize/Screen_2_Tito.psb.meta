@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -1525,8 +1526,8 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs: []
   generateGOHierarchy: 0
   textureAssetName: Screen_2_Tito Texture
   prefabAssetName: Screen_2_Tito Prefab
   spriteLibAssetName: Screen_2_Tito Sprite Lib
+  secondarySpriteTextures: []

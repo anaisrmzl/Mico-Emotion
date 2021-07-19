@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -10334,44 +10335,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: 7369023288907269468, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 0
-  - go: {fileID: 921044831082778739, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 1
-  - go: {fileID: -4482743113069176964, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 2
-  - go: {fileID: 8580604442354083532, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 3
-  - go: {fileID: 7304074069327164412, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 4
-  - go: {fileID: -4170843674774239103, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 5
-  - go: {fileID: -279462354655989130, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 6
-  - go: {fileID: 1241480086491675778, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 7
-  - go: {fileID: -3066175464753249006, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 8
-  - go: {fileID: -2545941913619534011, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 9
-  - go: {fileID: -6872681839058458515, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 10
-  - go: {fileID: -1021641922832130649, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 11
-  - go: {fileID: -6613918801624360111, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 12
-  - go: {fileID: 408300499759970125, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 13
-  - go: {fileID: -151278670272466999, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 14
-  - go: {fileID: -18049916651235156, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 15
-  - go: {fileID: -2789228175074489817, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 16
-  - go: {fileID: -4284917679061546206, guid: 7164f56aef632c64ea4b1010563f7c16, type: 3}
-    index: 17
   generateGOHierarchy: 0
   textureAssetName: TotiMedita Texture
   prefabAssetName: TotiMedita Prefab
   spriteLibAssetName: TotiMedita Sprite Lib
+  secondarySpriteTextures: []

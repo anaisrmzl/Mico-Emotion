@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -2169,52 +2170,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: 4682988763818501810, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 0
-  - go: {fileID: 3576234496062188831, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 1
-  - go: {fileID: 4206727408191961114, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 2
-  - go: {fileID: 6369927140673182167, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 3
-  - go: {fileID: -7675032902048769461, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 4
-  - go: {fileID: -8147027105125984504, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 5
-  - go: {fileID: 3063960986671096687, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 6
-  - go: {fileID: 5948382456865642165, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 7
-  - go: {fileID: -7226123887551469136, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 8
-  - go: {fileID: 7915150711370217660, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 9
-  - go: {fileID: 5960775700726062314, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 10
-  - go: {fileID: 7453761819900736640, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 11
-  - go: {fileID: -1434239889126051120, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 12
-  - go: {fileID: -7644324123753019954, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 13
-  - go: {fileID: 2070059497567893139, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 14
-  - go: {fileID: -1962951168306621845, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 15
-  - go: {fileID: -5759951223826551798, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 16
-  - go: {fileID: -4171078286562659130, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 17
-  - go: {fileID: -5032651328197850296, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 18
-  - go: {fileID: -5352259859572773388, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 19
-  - go: {fileID: -8940592419720813340, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 20
-  - go: {fileID: -5942613927452176760, guid: ba7de5858fe9641fda50006bd9c30e3a, type: 3}
-    index: 21
   generateGOHierarchy: 0
   textureAssetName: spider_sombra Texture
   prefabAssetName: spider_sombra Prefab
   spriteLibAssetName: spider_sombra Sprite Lib
+  secondarySpriteTextures: []

@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -3438,38 +3439,8 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-  boneGOs:
-  - go: {fileID: -435103737980026488, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 0
-  - go: {fileID: -8502337309096241778, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 1
-  - go: {fileID: 5099959029053178318, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 2
-  - go: {fileID: -2442406227072058327, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 3
-  - go: {fileID: -6136671077182846434, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 4
-  - go: {fileID: 2684297535349610139, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 5
-  - go: {fileID: -4880808652041426642, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 6
-  - go: {fileID: -2899741919233357237, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 7
-  - go: {fileID: -207388385167959491, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 8
-  - go: {fileID: -8105912200967613204, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 9
-  - go: {fileID: -6373584884094562987, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 10
-  - go: {fileID: -1215277552949070362, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 11
-  - go: {fileID: -2504353653140472253, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 12
-  - go: {fileID: -3872528928367676334, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 13
-  - go: {fileID: 6974365908647761812, guid: 77c4fd7490704894483926a316f3d68e, type: 3}
-    index: 14
   generateGOHierarchy: 0
   textureAssetName: FufiRefri Texture
   prefabAssetName: FufiRefri Prefab
   spriteLibAssetName: FufiRefri Sprite Lib
+  secondarySpriteTextures: []
