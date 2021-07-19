@@ -48,10 +48,7 @@ namespace Emotion.Recognize
         public override void StoppedDragging()
         {
             randomInteractions.Dragging(dragging);
-            if (!DragAllowed)
-                return;
-
-            if (!touching)
+            if (!DragAllowed || !touching)
                 return;
 
             interactableCharacter.PlayAnimation(onceAnimation, onceAudio, value, transform.name);

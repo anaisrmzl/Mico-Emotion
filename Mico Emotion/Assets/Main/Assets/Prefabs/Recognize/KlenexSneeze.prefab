@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1190208131232140912}
   - component: {fileID: 1190208131232140913}
   - component: {fileID: 1967905845012308797}
+  - component: {fileID: 2864564382238807884}
   m_Layer: 10
   m_Name: KlenexSneeze
   m_TagString: Untagged
@@ -48,6 +49,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -154,6 +156,26 @@ MonoBehaviour:
   spawnPosition: {x: 10.5, y: -4, z: 0}
   loopAnimation: {fileID: 7400000, guid: 0f23611e11b1d494e8df5f3cc22f7a6c, type: 2}
   idleAnimation: {fileID: 7400000, guid: 860c0dfa83602bd48bdcb579d7188f16, type: 2}
+  animator: {fileID: 2864564382238807884}
   loopAudio: {fileID: 8300000, guid: cbaef191053a64800a81387aad03ca43, type: 3}
   idleAudio: {fileID: 8300000, guid: 8e6fd04f519614a7bb1a7dffb0ab743a, type: 3}
   value: 1
+--- !u!95 &2864564382238807884
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190208131232140927}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 32b5edd7347b94d2791f71c2a85c1a72, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -10,6 +10,7 @@ namespace Emotion.Recognize
     {
         #region FIELDS
 
+        private const string Stop = "stop";
         private const string InteractableTag = "Interactable";
         private const string DestroyableTag = "Destroyable";
         private const float TweenDuration = 0.5f;
@@ -19,6 +20,7 @@ namespace Emotion.Recognize
         [SerializeField] private Vector3 spawnPosition;
         [SerializeField] private AnimationClip loopAnimation;
         [SerializeField] private AnimationClip idleAnimation;
+        [SerializeField] private Animator animator;
         [SerializeField] private AudioClip loopAudio;
         [SerializeField] private AudioClip idleAudio;
         [SerializeField] int value;
@@ -103,7 +105,7 @@ namespace Emotion.Recognize
 
         public override void StartedDragging()
         {
-
+            animator.SetTrigger(Stop);
         }
 
         #endregion
