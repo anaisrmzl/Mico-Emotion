@@ -123,6 +123,7 @@ namespace Emotion.Recognize
         private void InstantiateTissue()
         {
             interactableCharacter.PlayAnimation(sneezeAnimation, sneezeAudio, 0, SneezeId);
+            interactableCharacter.WaitForInteraction(true);
             StartCoroutine(AppearTissue());
         }
 

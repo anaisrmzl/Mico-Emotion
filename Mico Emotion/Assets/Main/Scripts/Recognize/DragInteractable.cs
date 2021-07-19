@@ -35,7 +35,6 @@ namespace Emotion.Recognize
         {
             base.Awake();
             transform.DOMove(spawnPosition, 1.0f);
-            interactableCharacter.WaitForInteraction(true);
             interactableCharacter.interacted += CancelInteraction;
         }
 
