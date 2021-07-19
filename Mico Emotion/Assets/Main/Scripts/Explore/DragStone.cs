@@ -38,6 +38,11 @@ namespace Emotion.Explore
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
+        private void OnDestroy()
+        {
+            transform.DOKill();
+        }
+
         public override void Update()
         {
             if (!DragAllowed)

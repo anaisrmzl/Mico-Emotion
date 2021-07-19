@@ -40,6 +40,11 @@ namespace Emotion.MainMenu
             playButton.onClick.AddListener(PressButton);
         }
 
+        private void OnDestroy()
+        {
+            Camera.main.DOKill();
+        }
+
         private void PressButton()
         {
             animator.Play(pressAnimation.name);

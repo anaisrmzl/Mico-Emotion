@@ -40,6 +40,11 @@ namespace Emotion.MainMenu
             StartCoroutine(PlayParticles());
         }
 
+        private void OnDestroy()
+        {
+            Camera.main.DOKill();
+        }
+
         private IEnumerator PlayParticles()
         {
             yield return new WaitForSeconds(WaitTime);

@@ -40,6 +40,11 @@ namespace Emotion.Recognize
             interactableCharacter.CountForIdle();
         }
 
+        private void OnDestroy()
+        {
+            transform.DOKill();
+        }
+
         public override void StoppedDragging()
         {
             randomInteractions.Dragging(dragging);

@@ -28,6 +28,11 @@ namespace Emotion
             actionButton.onClick.AddListener(PlayAnimation);
         }
 
+        private void OnDestroy()
+        {
+            transform.DOKill();
+        }
+
         private void PlayAnimation()
         {
             transform.DOShakePosition(1.0f, Vector3.right * strength, randomness: 0, fadeOut: false);

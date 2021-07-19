@@ -19,6 +19,11 @@ namespace Emotion.Discover
             MoveDown();
         }
 
+        private void OnDestroy()
+        {
+            transform.DOKill();
+        }
+
         private void ResetPosition()
         {
             transform.position = new Vector3(transform.position.x, Height, transform.position.z);

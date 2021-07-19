@@ -40,6 +40,7 @@ namespace Emotion.Recognize
         private void OnDestroy()
         {
             interactableCharacter.interacted -= CancelInteraction;
+            transform.DOKill();
         }
 
         public override void StoppedDragging()

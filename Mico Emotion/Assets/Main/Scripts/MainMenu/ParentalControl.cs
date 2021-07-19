@@ -47,6 +47,11 @@ namespace Emotion.MainMenu
             sendButton.onClick.AddListener(SendAnswer);
         }
 
+        private void OnDestroy()
+        {
+            container.transform.DOKill();
+        }
+
         private void PressButton()
         {
             animator.Play(pressAnimation.name);

@@ -23,6 +23,11 @@ namespace Emotion.MainMenu
             transform.DOMoveX(-MaxXPosition * startValue, speed).From(MaxXPosition * startValue).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Goto(Random.Range(0, speed), true);
         }
 
+        private void OnDestroy()
+        {
+            transform.DOKill();
+        }
+
         #endregion
     }
 }

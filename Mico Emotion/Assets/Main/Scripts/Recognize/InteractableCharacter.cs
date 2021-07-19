@@ -68,6 +68,13 @@ namespace Emotion.Recognize
             timer = MaxIdleTime - 1.0f;
         }
 
+        private void OnDestroy()
+        {
+            emotionsBar.DOKill();
+            shineHappy.DOKill();
+            shineSad.DOKill();
+        }
+
         private void Update()
         {
             if (animated || isIdle)
