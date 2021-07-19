@@ -1,6 +1,6 @@
 ﻿namespace Emotion
 {
-    public class APIKeys
+    public class GameKeys
     {
         #region FIELDS
 

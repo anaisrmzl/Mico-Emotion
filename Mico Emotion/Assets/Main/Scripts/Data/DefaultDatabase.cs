@@ -16,7 +16,7 @@ namespace Emotion.Data
 
         #region PROPERTIES
 
-        public Dictionary<string, object> DefaultBadges { get => LoadDictionaryFromStreamingAssets(APIKeys.BadgesKey); }
+        public Dictionary<string, object> DefaultBadges { get => LoadDictionaryFromStreamingAssets(GameKeys.BadgesKey); }
 
         #endregion
 

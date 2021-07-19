@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4863253254950840651}
   - component: {fileID: 4863253254950840660}
-  - component: {fileID: 4863253254950840661}
+  - component: {fileID: 5427317008142336339}
   m_Layer: 0
   m_Name: Page1
   m_TagString: Untagged
@@ -47,6 +47,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4863253254950840661
+--- !u!114 &5427317008142336339
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,12 +92,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4863253254950840650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea8686913230441c5a2f52fc78e37b5d, type: 3}
+  m_Script: {fileID: 11500000, guid: bfb7c5bf391bb459fb645b0afc12108e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  narrativeAudio: {fileID: 8300000, guid: fdd5e7f8c25774329b356f31369baedf, type: 3}
-  wrongButton: {fileID: 4863253255742929985}
-  rightButton: {fileID: 4863253255854211560}
+  narrativeAudio: {fileID: 0}
+  maxCorrectAnswers: 1
+  interactiveButtons:
+  - {fileID: 870477780804984260}
+  - {fileID: 4337107952248296916}
 --- !u!1 &4863253254990712273
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +160,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -230,6 +234,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -355,9 +360,9 @@ GameObject:
   - component: {fileID: 4863253255742929984}
   - component: {fileID: 4863253255742929991}
   - component: {fileID: 4863253255742929990}
-  - component: {fileID: 4863253255742929985}
   - component: {fileID: 4863253255742929986}
   - component: {fileID: 1484878891323352531}
+  - component: {fileID: 4337107952248296916}
   m_Layer: 0
   m_Name: Wrong_Button
   m_TagString: Untagged
@@ -408,6 +413,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -464,21 +470,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4863253255742929985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4863253255742929988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a9f0211f0a374a3b8051dc3766afe6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  answerAudio: {fileID: 8300000, guid: 226df5674897a4675803a72851ebfd54, type: 3}
-  otherButton: {fileID: 4863253255854211560}
-  pressAnimation: {fileID: 7400000, guid: 165924d101b5d4c18a7436e749b38b36, type: 2}
 --- !u!95 &4863253255742929986
 Animator:
   serializedVersion: 3
@@ -511,6 +502,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClick: {fileID: 8300000, guid: 74ab60a93a9924dbfb5d126cebd98f39, type: 3}
+--- !u!114 &4337107952248296916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863253255742929988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ca0a0493c2046f69684dd8f72cefa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerAudio: {fileID: 0}
+  interactivePage: {fileID: 5427317008142336339}
+  pressAnimation: {fileID: 7400000, guid: 165924d101b5d4c18a7436e749b38b36, type: 2}
+  correctAnswer: 0
 --- !u!1 &4863253255854211555
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,9 +530,9 @@ GameObject:
   - component: {fileID: 4863253255854211567}
   - component: {fileID: 4863253255854211566}
   - component: {fileID: 4863253255854211565}
-  - component: {fileID: 4863253255854211560}
   - component: {fileID: 4863253255854211561}
   - component: {fileID: 7392306166835801206}
+  - component: {fileID: 870477780804984260}
   m_Layer: 0
   m_Name: Right_Button
   m_TagString: Untagged
@@ -576,6 +583,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -632,21 +640,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4863253255854211560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4863253255854211555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a78b5565a7e7443ea9b171b2be157ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  answerAudio: {fileID: 8300000, guid: 36b9133bcb42944649cbc8d676f610e9, type: 3}
-  otherButton: {fileID: 4863253255742929985}
-  pressAnimation: {fileID: 7400000, guid: 165924d101b5d4c18a7436e749b38b36, type: 2}
 --- !u!95 &4863253255854211561
 Animator:
   serializedVersion: 3
@@ -679,3 +672,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClick: {fileID: 8300000, guid: 60716b3f592c749d187354be24fa2c1d, type: 3}
+--- !u!114 &870477780804984260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863253255854211555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ca0a0493c2046f69684dd8f72cefa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerAudio: {fileID: 0}
+  interactivePage: {fileID: 5427317008142336339}
+  pressAnimation: {fileID: 7400000, guid: 165924d101b5d4c18a7436e749b38b36, type: 2}
+  correctAnswer: 1

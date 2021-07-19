@@ -23,38 +23,38 @@ namespace Emotion.Data
 
         public bool CompletedStonesGame
         {
-            get => dataManager.GetData<bool>(DataManager.GenerateKeys(APIKeys.CompletedStonesGameKey), false);
-            private set => dataManager.SetData<bool>(DataManager.GenerateKeys(APIKeys.CompletedStonesGameKey), value);
+            get => dataManager.GetData<bool>(DataManager.GenerateKeys(GameKeys.CompletedStonesGameKey), false);
+            private set => dataManager.SetData<bool>(DataManager.GenerateKeys(GameKeys.CompletedStonesGameKey), value);
         }
 
         public bool CompletedMeditationGame
         {
-            get => dataManager.GetData<bool>(DataManager.GenerateKeys(APIKeys.CompletedMeditationGameKey), false);
-            private set => dataManager.SetData<bool>(DataManager.GenerateKeys(APIKeys.CompletedMeditationGameKey), value);
+            get => dataManager.GetData<bool>(DataManager.GenerateKeys(GameKeys.CompletedMeditationGameKey), false);
+            private set => dataManager.SetData<bool>(DataManager.GenerateKeys(GameKeys.CompletedMeditationGameKey), value);
         }
 
         public int LastGamePlayed
         {
-            get => dataManager.GetData<int>(DataManager.GenerateKeys(APIKeys.LastGamePlayedKey), default(int));
-            private set => dataManager.SetData<int>(DataManager.GenerateKeys(APIKeys.LastGamePlayedKey), value);
+            get => dataManager.GetData<int>(DataManager.GenerateKeys(GameKeys.LastGamePlayedKey), default(int));
+            private set => dataManager.SetData<int>(DataManager.GenerateKeys(GameKeys.LastGamePlayedKey), value);
         }
 
         public string LastRecognizeBadgeWon
         {
-            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastRecognizeBadgeWonKey), CarinoBadge);
-            private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastRecognizeBadgeWonKey), value);
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(GameKeys.LastRecognizeBadgeWonKey), CarinoBadge);
+            private set => dataManager.SetData<string>(DataManager.GenerateKeys(GameKeys.LastRecognizeBadgeWonKey), value);
         }
 
         public string LastDiscoverBadgeWon
         {
-            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastDiscoverBadgeWonKey), MiedoBadge);
-            private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastDiscoverBadgeWonKey), value);
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(GameKeys.LastDiscoverBadgeWonKey), MiedoBadge);
+            private set => dataManager.SetData<string>(DataManager.GenerateKeys(GameKeys.LastDiscoverBadgeWonKey), value);
         }
 
         public string LastExploreBadgeWon
         {
-            get => dataManager.GetData<string>(DataManager.GenerateKeys(APIKeys.LastExploreBadgeWonKey), GratitudBadge);
-            private set => dataManager.SetData<string>(DataManager.GenerateKeys(APIKeys.LastExploreBadgeWonKey), value);
+            get => dataManager.GetData<string>(DataManager.GenerateKeys(GameKeys.LastExploreBadgeWonKey), GratitudBadge);
+            private set => dataManager.SetData<string>(DataManager.GenerateKeys(GameKeys.LastExploreBadgeWonKey), value);
         }
 
         #endregion

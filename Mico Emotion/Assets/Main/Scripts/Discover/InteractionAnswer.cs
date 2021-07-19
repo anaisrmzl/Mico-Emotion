@@ -15,7 +15,7 @@ namespace Emotion.Discover
         [Inject] private SoundManager soundManager;
 
         [SerializeField] private AudioClip answerAudio;
-        [SerializeField] protected InteractivePage interactivePage;
+        [SerializeField] private InteractivePage interactivePage;
         [SerializeField] private AnimationClip pressAnimation;
         [SerializeField] private bool correctAnswer;
 

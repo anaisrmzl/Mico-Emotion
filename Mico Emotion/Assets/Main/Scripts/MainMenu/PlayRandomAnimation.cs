@@ -10,7 +10,6 @@ namespace Emotion.MainMenu
     {
         #region FIELDS
 
-        private const string PlayingAnimationMethod = "StartPlayingAnimation";
         private const float WaitTime = 8.0f;
 
         [Inject] private SoundManager soundManager;
@@ -33,7 +32,7 @@ namespace Emotion.MainMenu
         {
             characterIndex = Random.Range(0, animators.Length);
             ResetAnimations();
-            Invoke(PlayingAnimationMethod, playOnStart ? 0.0f : WaitTime);
+            Invoke(nameof(StartPlayingAnimation), playOnStart ? 0.0f : WaitTime);
         }
 
         private void StartPlayingAnimation()
@@ -59,7 +58,7 @@ namespace Emotion.MainMenu
             yield return new WaitForSeconds(animations[characterIndex].length);
             soundManager.PlayEffect(outAudio);
             ResetAnimations();
-            Invoke(PlayingAnimationMethod, WaitTime);
+            Invoke(nameof(StartPlayingAnimation), WaitTime);
         }
 
         #endregion

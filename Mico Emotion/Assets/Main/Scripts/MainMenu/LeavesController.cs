@@ -8,7 +8,7 @@ namespace Emotion.MainMenu
         #region FIELDS
 
         private const float WaitTime = 5.0f;
-        private const float PiecesDuration = 10.0f;
+        private const float LeavesDuration = 10.0f;
 
         [SerializeField] private GameObject frontParticles;
 
@@ -25,7 +25,7 @@ namespace Emotion.MainMenu
         {
             yield return new WaitForSeconds(WaitTime);
             GetAndPlayParticles();
-            yield return new WaitForSeconds(PiecesDuration);
+            yield return new WaitForSeconds(LeavesDuration);
             StartCoroutine(PlayParticles());
         }
 
